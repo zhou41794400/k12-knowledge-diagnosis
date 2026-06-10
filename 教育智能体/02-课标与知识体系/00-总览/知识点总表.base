@@ -1,0 +1,26 @@
+filters: 'file.hasTag("knowledge-point")'
+views:
+  - type: table
+    name: "知识点总表"
+    limit: 200
+    order:
+      - file.name
+      - subject
+      - stage
+      - grade
+      - topic
+      - tracking_mode
+      - review_required
+  - type: table
+    name: "按学科查看"
+    limit: 200
+    filters:
+      and:
+        - 'file.hasTag("knowledge-point")'
+    order:
+      - subject
+      - stage
+      - grade
+      - topic
+      - file.name
+

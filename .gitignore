@@ -1,0 +1,5 @@
+.DS_Store
+__pycache__/
+*.pyc
+教育智能体/logs/
+dist/
