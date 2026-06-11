@@ -1,0 +1,30 @@
+{
+  "name": "qizhi-knowledge-tracker-frontend",
+  "private": true,
+  "description": "启智知踪 K12 智能学习诊断系统前端依赖占位；当前尚未初始化可运行前端源码。",
+  "dependencies": {
+    "@heroui-pro/react": "^1.0.0-beta.5",
+    "@heroui/react": "^3.1.0",
+    "@heroui/styles": "^3.1.0",
+    "@number-flow/react": "^0.6.0",
+    "embla-carousel": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
+    "heroui-native": "^1.0.4",
+    "heroui-native-pro": "^1.0.0-beta.4",
+    "marked": "^18.0.5",
+    "motion": "^12.40.0",
+    "react": "^19.2.7",
+    "react-aria-components": "^1.18.0",
+    "react-dom": "^19.2.7",
+    "react-markdown": "^10.1.0",
+    "react-resizable-panels": "^4.11.2",
+    "recharts": "^2.15.4",
+    "remark-breaks": "^4.0.0",
+    "remark-gfm": "^4.0.1",
+    "shiki": "^4.2.0",
+    "streamdown": "^2.5.0",
+    "tailwind-merge": "^3.6.0",
+    "tailwind-variants": "^3.2.2",
+    "tailwindcss": "^4.3.0"
+  }
+}

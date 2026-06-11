@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import json
-from dataclasses import asdict
 from pathlib import Path
 from uuid import uuid4
 from typing import Optional
@@ -118,7 +117,7 @@ class LocalPipeline:
         match = match_question(subject, grade, text)
         is_correct = self._derive_correctness(answer, student_answer)
         question.is_correct = is_correct
-        question.review_required = match.confidence < 0.6 or ocr_confidence < 0.6
+        question.review_required = match.confidence < 0.6 or ocr_confidence < 0.6 or is_correct is None
 
         event = EvidenceEvent(
             event_id=f"e_{uuid4().hex[:12]}",
@@ -130,15 +129,7 @@ class LocalPipeline:
             model_version="rule-v1",
         )
 
-        previous = MasteryState(
-            student_id=student_id,
-            point_code=match.point.point_code,
-            mastery_score=0.0,
-            mastery_level="未接触",
-            evidence_count=0,
-            negative_evidence_count=0,
-            review_required=False,
-        )
+        previous = self._latest_mastery_state(student_id, match.point.point_code)
         updated = self._update_mastery(previous, question, event)
         audit = AuditEvent(
             audit_id=f"a_{uuid4().hex[:12]}",
@@ -193,12 +184,20 @@ class LocalPipeline:
         event: EvidenceEvent,
     ) -> MasteryState:
         score = previous.mastery_score
-        if event.evidence_strength == "强":
-            score += 0.35 if question.is_correct else -0.25
-        elif event.evidence_strength == "中":
-            score += 0.2 if question.is_correct else -0.15
-        else:
-            score += 0.05 if question.is_correct else -0.05
+        if question.is_correct is True:
+            if event.evidence_strength == "强":
+                score += 0.35
+            elif event.evidence_strength == "中":
+                score += 0.2
+            else:
+                score += 0.05
+        elif question.is_correct is False:
+            if event.evidence_strength == "强":
+                score -= 0.25
+            elif event.evidence_strength == "中":
+                score -= 0.15
+            else:
+                score -= 0.05
 
         score = max(0.0, min(1.0, score))
         return MasteryState(
@@ -207,9 +206,45 @@ class LocalPipeline:
             mastery_score=round(score, 3),
             mastery_level=mastery_level(score),
             evidence_count=previous.evidence_count + 1,
-            negative_evidence_count=previous.negative_evidence_count + (0 if question.is_correct else 1),
-            review_required=event.evidence_strength == "弱" or question.review_required,
+            negative_evidence_count=previous.negative_evidence_count + (1 if question.is_correct is False else 0),
+            review_required=previous.review_required or event.evidence_strength == "弱" or question.review_required,
             last_evidence_id=event.event_id,
+        )
+
+    def _latest_mastery_state(self, student_id: str, point_code: str) -> MasteryState:
+        latest: Optional[dict] = None
+        path = self.log_dir / "mastery.jsonl"
+        if path.exists():
+            with path.open("r", encoding="utf-8") as handle:
+                for line in handle:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    row = json.loads(line)
+                    if row.get("student_id") != student_id or row.get("point_code") != point_code:
+                        continue
+                    if latest is None or row.get("last_updated_at", "") >= latest.get("last_updated_at", ""):
+                        latest = row
+        if latest is None:
+            return MasteryState(
+                student_id=student_id,
+                point_code=point_code,
+                mastery_score=0.0,
+                mastery_level="未接触",
+                evidence_count=0,
+                negative_evidence_count=0,
+                review_required=False,
+            )
+        return MasteryState(
+            student_id=student_id,
+            point_code=point_code,
+            mastery_score=float(latest.get("mastery_score", 0.0)),
+            mastery_level=str(latest.get("mastery_level", "未接触")),
+            evidence_count=int(latest.get("evidence_count", 0)),
+            negative_evidence_count=int(latest.get("negative_evidence_count", 0)),
+            review_required=bool(latest.get("review_required", False)),
+            last_updated_at=str(latest.get("last_updated_at", "")),
+            last_evidence_id=str(latest.get("last_evidence_id", "")),
         )
 
     def _append_jsonl(self, filename: str, payload: dict) -> None:

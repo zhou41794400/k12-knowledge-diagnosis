@@ -3,14 +3,14 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "edu-tracker-local"
-version = "0.1.0"
-description = "K12 教育知识点掌握程度跟踪系统的本地原型"
+name = "qizhi-tracker-local"
+version = "0.1.2"
+description = "启智知踪 K12 智能学习诊断系统的本地原型"
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "Proprietary" }
 authors = [
-  { name = "Codex", email = "noreply@example.com" }
+  { name = "周冰", email = "41794400@qq.com" }
 ]
 
 [project.scripts]
@@ -21,4 +21,3 @@ include-package-data = true
 
 [tool.setuptools.packages.find]
 include = ["edu_tracker*", "services*"]
-

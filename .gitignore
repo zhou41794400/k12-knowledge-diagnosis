@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 教育智能体/logs/
 dist/
+.env
+node_modules/
+.npm/
+.bin/

@@ -1,0 +1,73 @@
+---
+title: 英语-pri-g3-READ-001-简单句子阅读
+tags:
+  - knowledge-point
+  - subject/英语
+  - stage/小学
+subject: 英语
+subject_code: ENG
+stage: 小学
+stage_code: PRI
+grade: 三年级
+topic: 阅读
+topic_code: READ
+point_code: ENG-PRI-G3-READ-001
+standard_version: 2022
+source_type: 国家课标
+tracking_mode: MIXED
+mastery_granularity: knowledge_point
+prerequisites:
+  - "[[英语/小学/三年级/语音/英语-pri-g3-PHO-001-字母发音与简单拼读]]"
+  - "[[英语/小学/三年级/词汇/英语-pri-g3-VOC-001-核心词汇认读]]"
+related_points:
+  - "[[英语/小学/四年级/阅读/英语-pri-g4-READ-001-段落理解]]"
+  - "[[英语/小学/五年级/阅读/英语-pri-g5-READ-001-短文理解与推理]]"
+  - "[[英语/小学/六年级/阅读/英语-pri-g6-READ-001-语篇综合理解]]"
+  - "[[英语/初中/七年级/阅读/七年级英语-阅读]]"
+  - "[[英语/初中/七年级/阅读/英语-初中-七年级-READ-001-短文关键信息提取]]"
+evidence_type: "[]"
+review_required: false
+status: draft
+updated: 2026-06-10
+---
+# 简单句子阅读
+
+## 定义
+
+> [!info] 核心定义
+> 能阅读由核心词汇和句型组成的简单句子和对话。
+
+## 适用范围
+
+> [!example] 适用范围
+> - 学段：小学
+> - 年级：三年级
+> - 常见题型：客观题、选择题
+
+## 前置知识
+
+> [!note] 前置依赖
+> - 无
+
+## 关键能力表现
+
+> [!tip] 学生应能
+> - 能认读简单句子
+> - 能理解句子含义
+> - 能根据句子完成匹配任务
+
+## 证据规则
+
+> [!important] 证据规则
+> - 正向证据：理解正确；关键词不认识导致的误解
+
+## 追踪说明
+
+> [!info] 追踪方式
+> - 当前追踪方式：`MIXED`
+> - 原因：需综合判断
+
+## 课标依据
+
+> [!cite] 课标来源
+> - 对应国家 2022 版英语课程标准相关要求

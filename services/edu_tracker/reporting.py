@@ -4,6 +4,7 @@ import json
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
+import re
 from typing import Dict, Iterable, List, Optional, Tuple
 
 from .knowledge_registry import registry
@@ -33,6 +34,71 @@ def point_catalog() -> Dict[str, dict]:
     return catalog
 
 
+def build_point_note_index(vault_root: Path) -> Dict[str, dict]:
+    tree_root = vault_root / "02-课标与知识体系" / "02-国家课标知识树"
+    index: Dict[str, dict] = {}
+    if not tree_root.exists():
+        return index
+    for path in tree_root.rglob("*.md"):
+        meta = read_frontmatter(path)
+        point_code = meta.get("point_code")
+        if not point_code:
+            continue
+        title = extract_first_heading(path) or str(meta.get("title") or path.stem)
+        index[point_code] = {
+            "path": path.relative_to(vault_root).as_posix(),
+            "abs_path": path,
+            "title": title,
+        }
+    return index
+
+
+def read_frontmatter(path: Path) -> Dict[str, str]:
+    text = path.read_text(encoding="utf-8")
+    lines = text.splitlines()
+    if not lines or lines[0].strip() != "---":
+        return {}
+    meta: Dict[str, str] = {}
+    for line in lines[1:]:
+        if line.strip() == "---":
+            break
+        match = re.match(r"^([A-Za-z0-9_]+):\s*(.*)$", line)
+        if not match:
+            continue
+        key = match.group(1).strip()
+        value = match.group(2).strip().strip('"').strip("'")
+        meta[key] = value
+    return meta
+
+
+def extract_first_heading(path: Path) -> Optional[str]:
+    text = path.read_text(encoding="utf-8")
+    lines = text.splitlines()
+    in_frontmatter = False
+    for line in lines:
+        if line.strip() == "---":
+            in_frontmatter = not in_frontmatter
+            continue
+        if in_frontmatter:
+            continue
+        stripped = line.strip()
+        if stripped.startswith("# "):
+            return stripped[2:].strip()
+    return None
+
+
+def wikilink(path: str, alias: Optional[str] = None) -> str:
+    return f"[[{path}|{alias}]]" if alias else f"[[{path}]]"
+
+
+def question_detail_relative_path(question_id: str) -> str:
+    return f"05-结果视图/题目详情/{question_id}.md"
+
+
+def student_report_relative_path(student_id: str) -> str:
+    return f"05-结果视图/学生端-{student_id}.md"
+
+
 def latest_mastery(rows: Iterable[dict]) -> Dict[Tuple[str, str], dict]:
     latest: Dict[Tuple[str, str], dict] = {}
     for row in rows:
@@ -47,13 +113,20 @@ def render_student_report(
     *,
     student_id: str,
     questions: List[dict],
+    evidence_rows: List[dict],
     mastery_rows: List[dict],
     ingest_rows: List[dict],
+    point_index: Dict[str, dict],
 ) -> str:
     catalog = point_catalog()
     student_questions = [row for row in questions if row.get("student_id") == student_id]
     student_mastery = [row for row in mastery_rows if row.get("student_id") == student_id]
     student_ingest = [row for row in ingest_rows if row.get("student_id") == student_id]
+    question_to_point = {
+        row.get("question_id", ""): row.get("point_code", "")
+        for row in evidence_rows
+        if row.get("question_id") and row.get("point_code")
+    }
     latest = latest_mastery(student_mastery)
 
     mastery_list = sorted(
@@ -98,28 +171,55 @@ def render_student_report(
     lines.append("## 短板清单")
     lines.append("")
     if shortboards:
-        lines.append("| 知识点 | 知识点名称 | 掌握度 | 等级 | 证据数 | 复核 |")
-        lines.append("| --- | --- | --- | --- | --- | --- |")
+        lines.append("| 知识点代码 | 知识点名称 | 知识点页面 | 掌握度 | 等级 | 证据数 | 复核 |")
+        lines.append("| --- | --- | --- | --- | --- | --- | --- |")
         for row in shortboards[:5]:
             point_code = row.get("point_code", "")
             point = catalog.get(point_code, {})
+            point_meta = point_index.get(point_code, {})
+            point_title = point_meta.get("title") or point.get("topic", point_code)
+            point_link = wikilink(point_meta["path"], point_meta["title"]) if point_meta else point_code
             lines.append(
-                f"| {point_code} | {point.get('topic', point_code)} | {row.get('mastery_score', 0.0)} | "
+                f"| {point_code} | {point_title} | {point_link} | {row.get('mastery_score', 0.0)} | "
                 f"{row.get('mastery_level', '')} | {row.get('evidence_count', 0)} | {('是' if row.get('review_required') else '否')} |"
             )
     else:
         lines.append("- 当前没有明显短板。")
     lines.append("")
+
+    linked_point_codes = []
+    seen_points = set()
+    for row in student_questions:
+        point_code = question_to_point.get(row.get("question_id", ""), "")
+        if not point_code or point_code in seen_points:
+            continue
+        seen_points.add(point_code)
+        linked_point_codes.append(point_code)
+    if linked_point_codes:
+        lines.append("## 关联知识点")
+        lines.append("")
+        for point_code in linked_point_codes:
+            point_meta = point_index.get(point_code, {})
+            if point_meta:
+                lines.append(f"- {wikilink(point_meta['path'], point_meta['title'])} `({point_code})`")
+            else:
+                lines.append(f"- `{point_code}`")
+        lines.append("")
+
     lines.append("## 最近题目")
     lines.append("")
     if recent_questions:
-        lines.append("| 时间 | 学科 | 年级 | 内容 | 结果 |")
-        lines.append("| --- | --- | --- | --- | --- |")
+        lines.append("| 时间 | 学科 | 年级 | 内容 | 关联知识点 | 题目详情 | 结果 |")
+        lines.append("| --- | --- | --- | --- | --- | --- | --- |")
         for row in recent_questions:
             result = "正确" if row.get("is_correct") is True else "错误" if row.get("is_correct") is False else "待判断"
+            point_code = question_to_point.get(row.get("question_id", ""), "")
+            point_meta = point_index.get(point_code, {})
+            point_link = wikilink(point_meta["path"], point_meta["title"]) if point_meta else point_code
+            detail_link = wikilink(question_detail_relative_path(row.get("question_id", "")), "查看")
             lines.append(
                 f"| {row.get('created_at', '')} | {row.get('subject', '')} | {row.get('grade', '')} | "
-                f"{row.get('text', '')} | {result} |"
+                f"{row.get('text', '')} | {point_link} | {detail_link} | {result} |"
             )
     else:
         lines.append("- 暂无最近题目。")
@@ -172,11 +272,19 @@ def generate_reports(project_root: Path, student_id: Optional[str] = None) -> Li
     vault_root = project_root / "教育智能体"
     log_dir = vault_root / "logs"
     output_dir = vault_root / "05-结果视图"
+    detail_dir = output_dir / "题目详情"
     output_dir.mkdir(parents=True, exist_ok=True)
+    detail_dir.mkdir(parents=True, exist_ok=True)
+    point_index = build_point_note_index(vault_root)
 
     questions = load_jsonl(log_dir / "questions.jsonl")
+    evidence_rows = load_jsonl(log_dir / "evidence.jsonl")
     mastery_rows = load_jsonl(log_dir / "mastery.jsonl")
+    audit_rows = load_jsonl(log_dir / "audit.jsonl")
     ingest_rows = load_jsonl(log_dir / "ingest.jsonl")
+    evidence_by_question = {row.get("question_id", ""): row for row in evidence_rows if row.get("question_id")}
+    audit_by_question = {row.get("target_id", ""): row for row in audit_rows if row.get("target_id")}
+    latest_mastery_by_point = latest_mastery(mastery_rows)
 
     if student_id:
         student_ids = [student_id]
@@ -186,11 +294,32 @@ def generate_reports(project_root: Path, student_id: Optional[str] = None) -> Li
     generated: List[Path] = []
     student_refs: List[Tuple[str, str]] = []
     for sid in student_ids:
+        student_questions = [row for row in questions if row.get("student_id") == sid]
+        for row in student_questions:
+            question_id = row.get("question_id", "")
+            point_code = evidence_by_question.get(question_id, {}).get("point_code", "")
+            point_meta = point_index.get(point_code, {})
+            mastery_snapshot = latest_mastery_by_point.get((sid, point_code), {})
+            detail_text = render_question_detail(
+                question=row,
+                point_code=point_code,
+                point_meta=point_meta,
+                point_index=point_index,
+                evidence_row=evidence_by_question.get(question_id, {}),
+                mastery_row=mastery_snapshot,
+                audit_row=audit_by_question.get(question_id, {}),
+                student_report_path=student_report_relative_path(sid),
+            )
+            detail_path = detail_dir / f"{question_id}.md"
+            detail_path.write_text(detail_text, encoding="utf-8")
+            generated.append(detail_path)
         report_text = render_student_report(
             student_id=sid,
             questions=questions,
+            evidence_rows=evidence_rows,
             mastery_rows=mastery_rows,
             ingest_rows=ingest_rows,
+            point_index=point_index,
         )
         relative_name = f"05-结果视图/学生端-{sid}.md"
         report_path = output_dir / f"学生端-{sid}.md"
@@ -203,3 +332,209 @@ def generate_reports(project_root: Path, student_id: Optional[str] = None) -> Li
     parent_path.write_text(parent_text, encoding="utf-8")
     generated.insert(0, parent_path)
     return generated
+
+
+def render_question_detail(
+    *,
+    question: dict,
+    point_code: str,
+    point_meta: Dict[str, dict],
+    point_index: Dict[str, dict],
+    evidence_row: dict,
+    mastery_row: dict,
+    audit_row: dict,
+    student_report_path: str,
+) -> str:
+    catalog = point_catalog()
+    point_data = catalog.get(point_code, {})
+    question_id = question.get("question_id", "")
+    point_link = ""
+    if point_meta:
+        point_link = wikilink(point_meta["path"], point_meta["title"])
+    elif point_code:
+        point_link = point_code
+    else:
+        point_link = "未识别"
+    answer = question.get("answer", "")
+    student_answer = question.get("student_answer", "")
+    result = "正确" if question.get("is_correct") is True else "错误" if question.get("is_correct") is False else "待判断"
+    review_required = "是" if question.get("review_required") else "否"
+    error_reason = infer_error_reason(question, point_data, evidence_row)
+    recommendation = build_recommendation(point_data, point_meta, question, evidence_row, mastery_row)
+    result_is_correct = question.get("is_correct") is True
+    result_is_wrong = question.get("is_correct") is False
+
+    lines: List[str] = []
+    lines.append("---")
+    lines.append(f"title: 题目详情-{question_id}")
+    lines.append("tags:")
+    lines.append("  - project/k12-tracking")
+    lines.append("  - result-view/question")
+    lines.append(f"question_id: {question_id}")
+    lines.append(f"student_id: {question.get('student_id', '')}")
+    lines.append(f"point_code: {point_code}")
+    lines.append(f"updated: {now_date()}")
+    lines.append("---")
+    lines.append("")
+    lines.append(f"# 题目详情 - {question_id}")
+    lines.append("")
+    lines.append("## 基本信息")
+    lines.append("")
+    lines.append(f"- 学生：{question.get('student_id', '')}")
+    lines.append(f"- 学科：{question.get('subject', '')}")
+    lines.append(f"- 年级：{question.get('grade', '')}")
+    lines.append(f"- 来源：{question.get('source_type', '')}")
+    lines.append(f"- 结果：{result}")
+    lines.append(f"- 复核：{review_required}")
+    lines.append(f"- 回到周报：[[{student_report_path}|学生周报]]")
+    lines.append("")
+    lines.append("## 原题")
+    lines.append("")
+    lines.append(question.get("text", "") or "无")
+    lines.append("")
+    lines.append("## 作答信息")
+    lines.append("")
+    lines.append(f"- 标准答案：{answer or '无'}")
+    lines.append(f"- 学生作答：{student_answer or '无'}")
+    lines.append(f"- 关联知识点：{point_link}")
+    lines.append("")
+    lines.append("## 证据与掌握")
+    lines.append("")
+    lines.append(f"- 证据强度：{evidence_row.get('evidence_strength', '未知')}")
+    lines.append(f"- 置信度：{evidence_row.get('confidence', '')}")
+    lines.append(f"- 掌握度：{mastery_row.get('mastery_score', '')}")
+    lines.append(f"- 掌握等级：{mastery_row.get('mastery_level', '')}")
+    lines.append(f"- 最近证据：{mastery_row.get('last_evidence_id', '')}")
+    lines.append(f"- 复核建议：{('需要' if mastery_row.get('review_required') else '不需要')}")
+    lines.append(f"- 错因判断：{error_reason}")
+    lines.append("")
+    if result_is_correct:
+        lines.append("## 本题结论")
+        lines.append("")
+        lines.append("- 本题作答正确。")
+        lines.append("- 这类题可作为正向证据，但仍要结合整体掌握度判断是否继续巩固。")
+        lines.append("")
+    elif result_is_wrong:
+        lines.append("## 错题分析")
+        lines.append("")
+        lines.append("- 本题作答错误。")
+        lines.append(f"- 主要错因：{error_reason}")
+        lines.append("")
+        lines.append("## 纠错重点")
+        lines.append("")
+        lines.append("- 先复核题干、标准答案和学生作答。")
+        lines.append("- 再回到对应知识点的前置知识与基础题重新练习。")
+        lines.append("")
+        lines.append("## 下次复习")
+        lines.append("")
+        lines.append(f"- {recommendation}")
+        lines.append("")
+    else:
+        lines.append("## 本题结论")
+        lines.append("")
+        lines.append("- 当前无法明确判断对错。")
+        lines.append(f"- 建议：{recommendation}")
+        lines.append("")
+    lines.append("## 前置知识")
+    lines.append("")
+    prerequisites = extract_section_bullets(
+        Path(point_meta["abs_path"]) if point_meta and point_meta.get("abs_path") else None,
+        "## 前置知识",
+    )
+    if not prerequisites:
+        prerequisites = point_data.get("prerequisites", []) or []
+    if prerequisites:
+        for item in prerequisites:
+            lines.append(f"- {item}")
+    else:
+        lines.append("- 暂无前置知识记录。")
+    lines.append("")
+    lines.append("## 复习建议")
+    lines.append("")
+    if result_is_wrong:
+        lines.append("- 错题优先补基础，再做同类变式题。")
+    elif result_is_correct:
+        lines.append("- 正确题可做少量同类巩固题，保持熟练度。")
+    else:
+        lines.append(f"- {recommendation}")
+    lines.append("")
+    lines.append("## 审计记录")
+    lines.append("")
+    if audit_row:
+        lines.append(f"- 审计类型：{audit_row.get('event_type', '')}")
+        lines.append(f"- 审计原因：{audit_row.get('reason', '')}")
+    else:
+        lines.append("- 暂无审计记录。")
+    lines.append("")
+    lines.append("## 关联知识点")
+    lines.append("")
+    if point_code and point_meta:
+        lines.append(f"- {wikilink(point_meta['path'], point_meta['title'])}")
+        lines.append(f"- 关联知识点代码：`{point_code}`")
+    elif point_code:
+        lines.append(f"- `{point_code}`")
+    else:
+        lines.append("- 暂未识别出知识点。")
+    lines.append("")
+    lines.append("## 反向追踪")
+    lines.append("")
+    lines.append("- 题目详情页可通过知识点页的反向链接被检索到。")
+    lines.append("- 周报页也会链接到本页，便于在 Obsidian 中往返查看。")
+    return "\n".join(lines) + "\n"
+
+
+def infer_error_reason(question: dict, point_data: dict, evidence_row: dict) -> str:
+    if question.get("is_correct") is True:
+        return "本题作答正确，暂未发现明显错因。"
+    if question.get("is_correct") is None:
+        return "答案信息不足，暂无法判断错因。"
+    if evidence_row.get("evidence_strength") == "弱":
+        return "证据较弱，建议先复核题干与答案，再判断是否为知识点错误。"
+    topic = str(point_data.get("topic", ""))
+    topic_code = str(point_data.get("topic_code", ""))
+    if topic_code == "NS" or "数与代数" in topic:
+        return "更像是计算步骤或口诀调用不稳定。"
+    if topic_code == "READ" or "阅读" in topic:
+        return "更像是关键信息提取或理解偏差。"
+    if topic_code == "GRM" or "语法" in topic:
+        return "更像是规则应用不稳定或句型转换失误。"
+    return "更像是知识点理解不足或题目迁移能力不足。"
+
+
+def build_recommendation(
+    point_data: dict,
+    point_meta: dict,
+    question: dict,
+    evidence_row: dict,
+    mastery_row: dict,
+) -> str:
+    point_code = str(point_data.get("point_code", ""))
+    topic = str(point_meta.get("title") or point_data.get("topic", ""))
+    if question.get("review_required") or evidence_row.get("evidence_strength") == "弱":
+        return "先人工复核题目与答案，再重新判断是否需要更新掌握度。"
+    if mastery_row.get("mastery_score", 0.0) < 0.45:
+        return f"优先回到 {topic or point_code} 的基础练习题，做 3 到 5 道同类题巩固。"
+    if mastery_row.get("mastery_score", 0.0) < 0.75:
+        return f"继续做 {topic or point_code} 的变式题，重点检查步骤是否稳定。"
+    return f"保持复习节奏，围绕 {topic or point_code} 做少量巩固题即可。"
+
+
+def extract_section_bullets(path: Optional[Path], heading: str) -> List[str]:
+    if path is None or not path.exists():
+        return []
+    lines = path.read_text(encoding="utf-8").splitlines()
+    target_index: Optional[int] = None
+    for i, line in enumerate(lines):
+        if line.strip() == heading:
+            target_index = i
+            break
+    if target_index is None:
+        return []
+    bullets: List[str] = []
+    for line in lines[target_index + 1 :]:
+        stripped = line.strip()
+        if stripped.startswith("## "):
+            break
+        if stripped.startswith("- "):
+            bullets.append(stripped[2:].strip())
+    return bullets

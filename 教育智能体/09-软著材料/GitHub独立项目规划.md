@@ -17,8 +17,8 @@ updated: 2026-06-10
 
 ## 建议仓库名
 
-- `k12-knowledge-tracking`
-- 或 `edu-k12-tracker`
+- `k12-knowledge-diagnosis`
+- 或 `qizhi-tracker-v1`
 
 ## 建议仓库内容
 
@@ -71,13 +71,16 @@ updated: 2026-06-10
 
 ## 迁移与发布参考
 
-- [[../../docs/独立仓库迁移清单|独立仓库迁移清单]]
-- [[../../docs/发布标签策略|发布标签策略]]
-- [[../../docs/首版切分规则|首版切分规则]]
+- [[参考文档/独立仓库迁移清单|独立仓库迁移清单]]
+- [[参考文档/发布标签策略|发布标签策略]]
+- [[参考文档/首版切分规则|首版切分规则]]
 
 ## 当前状态
 
-- 规划已完成。
-- 代码尚未拆分到独立 GitHub 仓库。
-- 当前先以本地仓库持续迭代，待网络与账号流程确认后再正式拆分。
-- 本地初始化脚本已可生成独立仓库初始目录。
+- ✅ **已创建独立仓库**：`zhou41794400/k12-knowledge-diagnosis` (public)
+- ✅ **远程已绑定**：`origin → https://github.com/zhou41794400/k12-knowledge-diagnosis.git`
+- ✅ **代码已推送**：main 分支已包含全部代码、文档和 vault
+- ✅ **Git 标签已推送**：`v0.1.1`
+- ✅ **Release 已创建**：[v0.1.1](https://github.com/zhou41794400/k12-knowledge-diagnosis/releases/tag/v0.1.1)
+- ✅ **CI 骨架已推送**：`.github/workflows/verify.yml` 已就位
+- ✅ **软著材料齐全**：`教育智能体/09-软著材料/生成稿/` 含 PDF+DOCX 双格式

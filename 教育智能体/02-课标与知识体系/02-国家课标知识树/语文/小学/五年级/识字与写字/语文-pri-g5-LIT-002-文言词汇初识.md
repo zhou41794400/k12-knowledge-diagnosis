@@ -1,0 +1,74 @@
+---
+title: 语文-pri-g5-LIT-002-文言词汇初识
+tags:
+  - knowledge-point
+  - subject/语文
+  - stage/小学
+subject: 语文
+subject_code: CHN
+stage: 小学
+stage_code: PRI
+grade: 五年级
+topic: 识字与写字
+topic_code: LIT
+point_code: CHN-PRI-G5-LIT-002
+standard_version: 2022
+source_type: 国家课标
+tracking_mode: MIXED
+mastery_granularity: knowledge_point
+prerequisites:
+  - "[[语文/小学/四年级/识字与写字/语文-pri-g4-LIT-002-成语与固定搭配]]"
+  - "[[语文/小学/五年级/识字与写字/语文-pri-g5-LIT-001-汉字深度理解]]"
+related_points:
+  - "[[语文/小学/一年级/识字与写字/语文-pri-g1-LIT-001-常用汉字认读]]"
+  - "[[语文/小学/一年级/识字与写字/语文-pri-g1-LIT-002-拼音拼读与运用]]"
+  - "[[语文/小学/一年级/识字与写字/语文-pri-g1-LIT-003-基本笔画书写]]"
+  - "[[语文/小学/一年级/识字与写字/语文-pri-g1-LIT-004-偏旁部首认识]]"
+  - "[[语文/小学/二年级/识字与写字/二年级语文-识字与写字]]"
+evidence_type:
+review_required: false
+status: draft
+updated: 2026-06-10
+---
+# 文言词汇初识
+
+## 定义
+
+> [!info] 核心定义
+> 接触并理解简单的文言词汇，感受文言与现代汉语的差异。
+
+## 适用范围
+
+> [!example] 适用范围
+> - 学段：小学
+> - 年级：五年级
+> - 常见题型：客观题、应用题
+
+## 前置知识
+
+> [!note] 前置依赖
+> - 无
+
+## 关键能力表现
+
+> [!tip] 学生应能
+> - 能理解常见文言实词
+> - 能理解简单的文言句式
+> - 能借助注释理解文言短文
+
+## 证据规则
+
+> [!important] 证据规则
+> - 正向证据：正向证据：释义正确
+> - 负向证据：负向证据：古今词义混淆
+
+## 追踪说明
+
+> [!info] 追踪方式
+> - 当前追踪方式：`MIXED`
+> - 原因：需结合量化得分与规则综合判断
+
+## 课标依据
+
+> [!cite] 课标来源
+> - 对应国家 2022 版语文课程标准识字与写字相关要求
