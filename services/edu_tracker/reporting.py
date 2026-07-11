@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -8,6 +9,10 @@ import re
 from typing import Dict, Iterable, List, Optional, Tuple
 
 from .knowledge_registry import registry
+from .storage import SQLiteStore
+
+
+CURRENT_MODEL_VERSION = "rule-v2"
 
 
 def now_date() -> str:
@@ -96,7 +101,23 @@ def question_detail_relative_path(question_id: str) -> str:
 
 
 def student_report_relative_path(student_id: str) -> str:
-    return f"05-结果视图/学生端-{student_id}.md"
+    return f"05-结果视图/学生端-{safe_filename_component(student_id)}.md"
+
+
+def safe_filename_component(value: str) -> str:
+    normalized = re.sub(r"[^0-9A-Za-z\u4e00-\u9fff_-]+", "-", value.strip()).strip("-._")
+    if normalized == value and normalized:
+        return normalized
+    digest = hashlib.sha256(value.encode("utf-8")).hexdigest()[:8]
+    return f"{normalized or '学生'}-{digest}"
+
+
+def yaml_string(value: object) -> str:
+    return json.dumps(str(value), ensure_ascii=False)
+
+
+def markdown_inline(value: object) -> str:
+    return str(value).replace("\r", " ").replace("\n", " ").replace("|", "\\|")
 
 
 def latest_mastery(rows: Iterable[dict]) -> Dict[Tuple[str, str], dict]:
@@ -115,13 +136,18 @@ def render_student_report(
     questions: List[dict],
     evidence_rows: List[dict],
     mastery_rows: List[dict],
+    mastery_history: List[dict],
     ingest_rows: List[dict],
     point_index: Dict[str, dict],
+    legacy_question_ids: set[str],
+    review_tasks: List[dict],
 ) -> str:
     catalog = point_catalog()
     student_questions = [row for row in questions if row.get("student_id") == student_id]
     student_mastery = [row for row in mastery_rows if row.get("student_id") == student_id]
+    student_history = [row for row in mastery_history if row.get("student_id") == student_id]
     student_ingest = [row for row in ingest_rows if row.get("student_id") == student_id]
+    student_reviews = [row for row in review_tasks if row.get("student_id") == student_id]
     question_to_point = {
         row.get("question_id", ""): row.get("point_code", "")
         for row in evidence_rows
@@ -141,22 +167,49 @@ def render_student_report(
 
     lines: List[str] = []
     lines.append(f"---")
-    lines.append(f"title: 学生端周报-{student_id}")
+    lines.append(f"title: {yaml_string(f'学生端周报-{student_id}')}")
     lines.append(f"tags:")
     lines.append(f"  - project/k12-tracking")
     lines.append(f"  - result-view/student")
-    lines.append(f"student_id: {student_id}")
+    lines.append(f"student_id: {yaml_string(student_id)}")
     lines.append(f"updated: {now_date()}")
     lines.append(f"---")
     lines.append("")
-    lines.append(f"# 学生端周报 - {student_id}")
+
+    lines.append(f"# 学生端周报 - {markdown_inline(student_id)}")
     lines.append("")
     lines.append("## 总览")
     lines.append("")
-    lines.append(f"- 本周录入题目数：{len(student_questions)}")
-    lines.append(f"- 本周覆盖学科数：{len(subject_counter)}")
-    lines.append(f"- 本周照片导入数：{len(student_ingest)}")
-    lines.append(f"- 需要复核的记录数：{sum(1 for row in mastery_list if row.get('review_required'))}")
+    lines.append(f"- 累计录入题目数：{len(student_questions)}")
+    lines.append(f"- 当前模型有效证据数：{sum(1 for row in evidence_rows if row.get('question_id') in {q.get('question_id') for q in student_questions})}")
+    lines.append(f"- 待重新分析的历史样例数：{sum(1 for row in student_questions if row.get('question_id') in legacy_question_ids)}")
+    lines.append(f"- 累计覆盖学科数：{len(subject_counter)}")
+    lines.append(f"- 累计照片导入数：{len(student_ingest)}")
+    lines.append(f"- 需要复核的记录数：{len(student_reviews)}")
+    lines.append("")
+    lines.append("## 掌握度变化")
+    lines.append("")
+    history_by_point: Dict[str, List[dict]] = defaultdict(list)
+    for row in student_history:
+        history_by_point[str(row.get("point_code", ""))].append(row)
+    trend_rows = []
+    for point_code, rows in history_by_point.items():
+        ordered = sorted(rows, key=lambda row: row.get("last_updated_at", ""))
+        if len(ordered) < 2:
+            continue
+        change = round(float(ordered[-1].get("mastery_score", 0)) - float(ordered[-2].get("mastery_score", 0)), 3)
+        trend_rows.append((point_code, change, ordered[-1]))
+    if trend_rows:
+        lines.append("| 知识点 | 上次 | 当前 | 变化 |")
+        lines.append("| --- | --- | --- | --- |")
+        for point_code, change, current in sorted(trend_rows, key=lambda item: item[1])[:5]:
+            rows = sorted(history_by_point[point_code], key=lambda row: row.get("last_updated_at", ""))
+            point_meta = point_index.get(point_code, {})
+            name = point_meta.get("title") or catalog.get(point_code, {}).get("topic") or point_code
+            direction = f"+{change}" if change > 0 else str(change)
+            lines.append(f"| {name} | {rows[-2].get('mastery_score', 0)} | {current.get('mastery_score', 0)} | {direction} |")
+    else:
+        lines.append("- 需要至少两次有效证据后才能展示变化。")
     lines.append("")
     lines.append("## 学科分布")
     lines.append("")
@@ -187,6 +240,18 @@ def render_student_report(
         lines.append("- 当前没有明显短板。")
     lines.append("")
 
+    lines.append("## 本周复习任务")
+    lines.append("")
+    if shortboards:
+        for index, row in enumerate(shortboards[:3], start=1):
+            point_code = row.get("point_code", "")
+            point_meta = point_index.get(point_code, {})
+            point_name = point_meta.get("title") or catalog.get(point_code, {}).get("topic") or point_code
+            lines.append(f"- [ ] 任务 {index}：围绕 {point_name} 完成 3 至 5 道基础或变式题。")
+    else:
+        lines.append("- [ ] 本周保持正常复习节奏。")
+    lines.append("")
+
     linked_point_codes = []
     seen_points = set()
     for row in student_questions:
@@ -212,30 +277,39 @@ def render_student_report(
         lines.append("| 时间 | 学科 | 年级 | 内容 | 关联知识点 | 题目详情 | 结果 |")
         lines.append("| --- | --- | --- | --- | --- | --- | --- |")
         for row in recent_questions:
-            result = "正确" if row.get("is_correct") is True else "错误" if row.get("is_correct") is False else "待判断"
+            is_legacy = row.get("question_id") in legacy_question_ids
+            result = "历史样例，待重新分析" if is_legacy else "正确" if row.get("is_correct") is True else "错误" if row.get("is_correct") is False else "待判断"
             point_code = question_to_point.get(row.get("question_id", ""), "")
             point_meta = point_index.get(point_code, {})
             point_link = wikilink(point_meta["path"], point_meta["title"]) if point_meta else point_code
             detail_link = wikilink(question_detail_relative_path(row.get("question_id", "")), "查看")
             lines.append(
-                f"| {row.get('created_at', '')} | {row.get('subject', '')} | {row.get('grade', '')} | "
-                f"{row.get('text', '')} | {point_link} | {detail_link} | {result} |"
+                f"| {markdown_inline(row.get('created_at', ''))} | {markdown_inline(row.get('subject', ''))} | "
+                f"{markdown_inline(row.get('grade', ''))} | {markdown_inline(row.get('text', ''))} | "
+                f"{point_link} | {detail_link} | {result} |"
             )
     else:
         lines.append("- 暂无最近题目。")
     lines.append("")
-    lines.append("## 本周提醒")
+    lines.append("## 当前提醒")
     lines.append("")
-    if review_counter.get("待解析", 0) or review_counter.get("待复核", 0):
+    if student_reviews or review_counter.get("待解析", 0) or review_counter.get("待复核", 0) or review_counter.get("待确认", 0) or review_counter.get("OCR失败", 0):
         lines.append("- 有待处理的导入或复核记录，建议先清理。")
     if shortboards:
         lines.append("- 优先复习短板清单中的前 3 个知识点。")
     if not shortboards and not recent_questions:
         lines.append("- 当前暂无可展示的学习记录。")
-    return "\n".join(lines) + "\n"
+    return "\n".join(lines).rstrip() + "\n"
 
 
-def render_parent_overview(student_reports: List[Tuple[str, str]], total_questions: int, total_students: int) -> str:
+def render_parent_overview(
+    student_reports: List[Tuple[str, str]],
+    total_questions: int,
+    total_students: int,
+    current_evidence_count: int,
+    legacy_question_count: int,
+    pending_review_count: int,
+) -> str:
     lines: List[str] = []
     lines.append("---")
     lines.append("title: 家长端总览")
@@ -251,12 +325,15 @@ def render_parent_overview(student_reports: List[Tuple[str, str]], total_questio
     lines.append("")
     lines.append(f"- 覆盖学生数：{total_students}")
     lines.append(f"- 已记录题目数：{total_questions}")
+    lines.append(f"- 当前模型有效证据数：{current_evidence_count}")
+    lines.append(f"- 待重新分析的历史样例数：{legacy_question_count}")
+    lines.append(f"- 待处理复核任务数：{pending_review_count}")
     lines.append("")
     lines.append("## 学生周报")
     lines.append("")
     if student_reports:
         for student_id, relative_path in student_reports:
-            lines.append(f"- [[{relative_path}|{student_id} 周报]]")
+            lines.append(f"- [[{relative_path}|{markdown_inline(student_id).replace(']', '')} 周报]]")
     else:
         lines.append("- 暂无学生周报。")
     lines.append("")
@@ -265,7 +342,7 @@ def render_parent_overview(student_reports: List[Tuple[str, str]], total_questio
     lines.append("- 优先查看短板清单前 3 项。")
     lines.append("- 关注带有复核标记的记录，避免直接下结论。")
     lines.append("- 结果页只展示中文摘要和必要证据，不展开内部实现细节。")
-    return "\n".join(lines) + "\n"
+    return "\n".join(lines).rstrip() + "\n"
 
 
 def generate_reports(project_root: Path, student_id: Optional[str] = None) -> List[Path]:
@@ -277,19 +354,37 @@ def generate_reports(project_root: Path, student_id: Optional[str] = None) -> Li
     detail_dir.mkdir(parents=True, exist_ok=True)
     point_index = build_point_note_index(vault_root)
 
-    questions = load_jsonl(log_dir / "questions.jsonl")
-    evidence_rows = load_jsonl(log_dir / "evidence.jsonl")
-    mastery_rows = load_jsonl(log_dir / "mastery.jsonl")
-    audit_rows = load_jsonl(log_dir / "audit.jsonl")
-    ingest_rows = load_jsonl(log_dir / "ingest.jsonl")
+    store = SQLiteStore(log_dir / "edu_tracker.sqlite3")
+    questions = _merge_records(store.load_records("questions"), load_jsonl(log_dir / "questions.jsonl"), "question_id")
+    all_evidence_rows = _merge_records(store.load_records("evidence"), load_jsonl(log_dir / "evidence.jsonl"), "event_id")
+    evidence_rows = [row for row in all_evidence_rows if row.get("model_version") == CURRENT_MODEL_VERSION]
+    legacy_question_ids = {
+        str(row.get("question_id"))
+        for row in all_evidence_rows
+        if row.get("question_id") and row.get("model_version") != CURRENT_MODEL_VERSION
+    }
+    mastery_rows = store.load_current_mastery()
+    mastery_history = store.load_records("mastery")
+    audit_rows = _merge_records(store.load_records("audit"), load_jsonl(log_dir / "audit.jsonl"), "audit_id")
+    ingest_rows = _merge_records(store.load_records("ingest"), load_jsonl(log_dir / "ingest.jsonl"), "ingest_id")
+    review_tasks = store.load_review_tasks()
     evidence_by_question = {row.get("question_id", ""): row for row in evidence_rows if row.get("question_id")}
+    current_evidence_ids = {row.get("event_id") for row in evidence_rows if row.get("event_id")}
+    mastery_rows = [row for row in mastery_rows if row.get("last_evidence_id") in current_evidence_ids]
     audit_by_question = {row.get("target_id", ""): row for row in audit_rows if row.get("target_id")}
     latest_mastery_by_point = latest_mastery(mastery_rows)
 
     if student_id:
         student_ids = [student_id]
     else:
-        student_ids = sorted({row.get("student_id", "") for row in questions if row.get("student_id")})
+        student_ids = sorted(
+            {
+                str(row.get("student_id", ""))
+                for rows in (questions, mastery_rows, ingest_rows, review_tasks)
+                for row in rows
+                if row.get("student_id")
+            }
+        )
 
     generated: List[Path] = []
     student_refs: List[Tuple[str, str]] = []
@@ -309,6 +404,7 @@ def generate_reports(project_root: Path, student_id: Optional[str] = None) -> Li
                 mastery_row=mastery_snapshot,
                 audit_row=audit_by_question.get(question_id, {}),
                 student_report_path=student_report_relative_path(sid),
+                legacy_evidence=question_id in legacy_question_ids,
             )
             detail_path = detail_dir / f"{question_id}.md"
             detail_path.write_text(detail_text, encoding="utf-8")
@@ -318,20 +414,38 @@ def generate_reports(project_root: Path, student_id: Optional[str] = None) -> Li
             questions=questions,
             evidence_rows=evidence_rows,
             mastery_rows=mastery_rows,
+            mastery_history=mastery_history,
             ingest_rows=ingest_rows,
             point_index=point_index,
+            legacy_question_ids=legacy_question_ids,
+            review_tasks=review_tasks,
         )
-        relative_name = f"05-结果视图/学生端-{sid}.md"
-        report_path = output_dir / f"学生端-{sid}.md"
+        relative_name = student_report_relative_path(sid)
+        report_path = vault_root / relative_name
         report_path.write_text(report_text, encoding="utf-8")
         generated.append(report_path)
         student_refs.append((sid, relative_name))
 
+    selected_questions = [row for row in questions if row.get("student_id") in student_ids]
     parent_path = output_dir / "家长端总览.md"
-    parent_text = render_parent_overview(student_refs, len(questions), len(student_ids))
+    selected_question_ids = {row.get("question_id") for row in selected_questions}
+    parent_text = render_parent_overview(
+        student_refs,
+        len(selected_questions),
+        len(student_ids),
+        sum(1 for row in evidence_rows if row.get("question_id") in selected_question_ids),
+        sum(1 for question_id in legacy_question_ids if question_id in selected_question_ids),
+        sum(1 for row in review_tasks if row.get("student_id") in student_ids),
+    )
     parent_path.write_text(parent_text, encoding="utf-8")
     generated.insert(0, parent_path)
     return generated
+
+
+def _merge_records(current: List[dict], legacy: List[dict], id_field: str) -> List[dict]:
+    merged = {str(row.get(id_field)): row for row in legacy if row.get(id_field)}
+    merged.update({str(row.get(id_field)): row for row in current if row.get(id_field)})
+    return sorted(merged.values(), key=lambda row: (row.get("created_at", ""), str(row.get(id_field, ""))))
 
 
 def render_question_detail(
@@ -344,12 +458,15 @@ def render_question_detail(
     mastery_row: dict,
     audit_row: dict,
     student_report_path: str,
+    legacy_evidence: bool,
 ) -> str:
     catalog = point_catalog()
     point_data = catalog.get(point_code, {})
     question_id = question.get("question_id", "")
     point_link = ""
-    if point_meta:
+    if legacy_evidence:
+        point_link = "未识别（旧模型映射已隔离）"
+    elif point_meta:
         point_link = wikilink(point_meta["path"], point_meta["title"])
     elif point_code:
         point_link = point_code
@@ -358,7 +475,7 @@ def render_question_detail(
     answer = question.get("answer", "")
     student_answer = question.get("student_answer", "")
     result = "正确" if question.get("is_correct") is True else "错误" if question.get("is_correct") is False else "待判断"
-    review_required = "是" if question.get("review_required") else "否"
+    review_required = "是" if legacy_evidence or question.get("review_required") else "否"
     error_reason = infer_error_reason(question, point_data, evidence_row)
     recommendation = build_recommendation(point_data, point_meta, question, evidence_row, mastery_row)
     result_is_correct = question.get("is_correct") is True
@@ -371,13 +488,17 @@ def render_question_detail(
     lines.append("  - project/k12-tracking")
     lines.append("  - result-view/question")
     lines.append(f"question_id: {question_id}")
-    lines.append(f"student_id: {question.get('student_id', '')}")
-    lines.append(f"point_code: {point_code}")
+    lines.append(f"student_id: {yaml_string(question.get('student_id', ''))}")
+    lines.append(f'point_code: "{point_code}"')
     lines.append(f"updated: {now_date()}")
     lines.append("---")
     lines.append("")
     lines.append(f"# 题目详情 - {question_id}")
     lines.append("")
+    if legacy_evidence:
+        lines.append("> [!warning] 历史样例，待重新分析")
+        lines.append("> 本题原由 `rule-v1` 处理，旧知识点映射和掌握度已从当前报告隔离。原题与作答仅用于审计回溯，不能作为当前诊断结论。")
+        lines.append("")
     lines.append("## 基本信息")
     lines.append("")
     lines.append(f"- 学生：{question.get('student_id', '')}")
@@ -405,10 +526,16 @@ def render_question_detail(
     lines.append(f"- 掌握度：{mastery_row.get('mastery_score', '')}")
     lines.append(f"- 掌握等级：{mastery_row.get('mastery_level', '')}")
     lines.append(f"- 最近证据：{mastery_row.get('last_evidence_id', '')}")
-    lines.append(f"- 复核建议：{('需要' if mastery_row.get('review_required') else '不需要')}")
-    lines.append(f"- 错因判断：{error_reason}")
+    lines.append(f"- 复核建议：{('需要' if legacy_evidence or mastery_row.get('review_required') else '不需要')}")
+    lines.append(f"- 错因判断：{('旧模型结果已隔离，待重新分析。' if legacy_evidence else error_reason)}")
     lines.append("")
-    if result_is_correct:
+    if legacy_evidence:
+        lines.append("## 本题结论")
+        lines.append("")
+        lines.append("- 本题尚未经过当前模型重新分析。")
+        lines.append("- 不生成知识点、掌握度或复习建议。")
+        lines.append("")
+    elif result_is_correct:
         lines.append("## 本题结论")
         lines.append("")
         lines.append("- 本题作答正确。")
@@ -437,7 +564,7 @@ def render_question_detail(
         lines.append("")
     lines.append("## 前置知识")
     lines.append("")
-    prerequisites = extract_section_bullets(
+    prerequisites = [] if legacy_evidence else extract_section_bullets(
         Path(point_meta["abs_path"]) if point_meta and point_meta.get("abs_path") else None,
         "## 前置知识",
     )
@@ -451,7 +578,9 @@ def render_question_detail(
     lines.append("")
     lines.append("## 复习建议")
     lines.append("")
-    if result_is_wrong:
+    if legacy_evidence:
+        lines.append("- 待当前模型重新分析后再生成建议。")
+    elif result_is_wrong:
         lines.append("- 错题优先补基础，再做同类变式题。")
     elif result_is_correct:
         lines.append("- 正确题可做少量同类巩固题，保持熟练度。")
@@ -468,7 +597,9 @@ def render_question_detail(
     lines.append("")
     lines.append("## 关联知识点")
     lines.append("")
-    if point_code and point_meta:
+    if legacy_evidence:
+        lines.append("- 旧模型关联已隔离，当前无有效知识点。")
+    elif point_code and point_meta:
         lines.append(f"- {wikilink(point_meta['path'], point_meta['title'])}")
         lines.append(f"- 关联知识点代码：`{point_code}`")
     elif point_code:
@@ -480,7 +611,7 @@ def render_question_detail(
     lines.append("")
     lines.append("- 题目详情页可通过知识点页的反向链接被检索到。")
     lines.append("- 周报页也会链接到本页，便于在 Obsidian 中往返查看。")
-    return "\n".join(lines) + "\n"
+    return "\n".join(lines).rstrip() + "\n"
 
 
 def infer_error_reason(question: dict, point_data: dict, evidence_row: dict) -> str:
