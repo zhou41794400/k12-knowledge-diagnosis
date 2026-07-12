@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 三角形
+  - 三角形内角和
+  - 三角形三边关系
 prerequisites:
   - "[[数学/小学/六年级/图形与几何/数学-pri-g6-GG-002-圆柱与圆锥]]"
   - "[[数学/初中/七年级/图形与几何/数学-jun-g7-GG-001-图形认识初步]]"
@@ -29,7 +33,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 三角形基础
 
@@ -67,6 +71,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 利用桥梁或屋架示意图判断三角形构成条件，并计算未知角。
 
 ## 课标依据
 

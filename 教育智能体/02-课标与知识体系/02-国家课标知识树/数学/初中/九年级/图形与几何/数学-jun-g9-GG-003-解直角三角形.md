@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 解直角三角形
+  - 锐角三角函数
+  - 仰角俯角
 prerequisites:
   - "[[数学/初中/八年级/图形与几何/数学-jun-g8-GG-004-一次函数]]"
   - "[[数学/初中/九年级/图形与几何/数学-jun-g9-GG-001-旋转与圆]]"
@@ -30,7 +34,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 解直角三角形
 
@@ -69,6 +73,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 根据观测点到建筑物的距离和仰角，计算建筑物高度并说明测量误差。
 
 ## 课标依据
 

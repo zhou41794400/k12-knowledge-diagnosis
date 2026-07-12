@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 二次根式
+  - 根式化简
+  - 二次根式运算
 prerequisites:
   - "[[数学/初中/七年级/数与代数/数学-jun-g7-NS-005-不等式与不等式组]]"
   - "[[数学/初中/八年级/数与代数/数学-jun-g8-NS-001-整式乘除与因式分解]]"
@@ -29,7 +33,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 二次根式
 
@@ -67,6 +71,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 根据正方形广场或矩形展板的面积求边长，并化简二次根式。
 
 ## 课标依据
 

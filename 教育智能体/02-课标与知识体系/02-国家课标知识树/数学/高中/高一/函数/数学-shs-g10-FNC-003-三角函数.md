@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 三角函数
+  - 诱导公式
+  - 正弦型函数
 prerequisites:
   - "[[数学/高中/高一/函数/数学-shs-g10-FNC-001-函数的概念与性质]]"
   - "[[数学/高中/高一/函数/数学-shs-g10-FNC-002-幂函数、指数函数与对数函数]]"
@@ -29,7 +33,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 三角函数
 
@@ -68,6 +72,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 用季节性日照时长或周期运动建立三角函数模型，分析周期和最值。
 
 ## 课标依据
 

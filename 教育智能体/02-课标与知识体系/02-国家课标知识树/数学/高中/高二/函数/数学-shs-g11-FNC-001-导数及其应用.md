@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 导数
+  - 导数几何意义
+  - 导数求最值
 prerequisites:
   - "[[数学/高中/高一/函数/数学-shs-g10-FNC-003-三角函数]]"
 related_points:
@@ -27,7 +31,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 导数及其应用
 
@@ -65,6 +69,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 建立成本或包装材料用量函数，用导数分析单调区间并优化方案。
 
 ## 课标依据
 

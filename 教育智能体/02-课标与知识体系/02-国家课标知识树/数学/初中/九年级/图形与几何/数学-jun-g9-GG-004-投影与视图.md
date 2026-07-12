@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 三视图
+  - 投影
+  - 由视图判断几何体
 prerequisites:
   - "[[数学/初中/八年级/图形与几何/数学-jun-g8-GG-004-一次函数]]"
   - "[[数学/初中/九年级/图形与几何/数学-jun-g9-GG-001-旋转与圆]]"
@@ -31,7 +35,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 投影与视图
 
@@ -69,6 +73,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`MIXED`
 > - 原因：需综合判断
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 根据正投影绘制石雕或建筑模型的主视图、俯视图和左视图。
 
 ## 课标依据
 

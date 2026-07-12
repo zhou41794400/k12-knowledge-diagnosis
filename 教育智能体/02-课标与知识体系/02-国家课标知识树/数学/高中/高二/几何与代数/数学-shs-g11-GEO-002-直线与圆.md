@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 直线方程
+  - 圆的方程
+  - 直线与圆位置关系
 prerequisites:
   - "[[数学/高中/高一/几何与代数/数学-shs-g10-GEO-001-平面向量]]"
   - "[[数学/高中/高二/几何与代数/数学-shs-g11-GEO-001-空间向量与立体几何]]"
@@ -27,7 +31,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 直线与圆
 
@@ -65,6 +69,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 把城市道路和圆形场地抽象为直线与圆，判断相交、相切或相离。
 
 ## 课标依据
 

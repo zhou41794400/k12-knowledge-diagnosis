@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 二次函数
+  - 抛物线
+  - 二次函数最值
 prerequisites:
   - "[[数学/初中/八年级/数与代数/数学-jun-g8-NS-004-一元二次方程]]"
 related_points:
@@ -27,7 +31,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 二次函数
 
@@ -66,6 +70,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`MIXED`
 > - 原因：需综合判断
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 把拱桥轮廓或喷泉水柱近似为抛物线，分析顶点、对称轴和高度。
 
 ## 课标依据
 

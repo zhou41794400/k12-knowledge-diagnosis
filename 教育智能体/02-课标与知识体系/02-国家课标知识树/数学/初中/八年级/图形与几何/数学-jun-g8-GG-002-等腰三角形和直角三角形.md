@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 等腰三角形
+  - 直角三角形
+  - 勾股定理
 prerequisites:
   - "[[数学/初中/七年级/图形与几何/数学-jun-g7-GG-002-三角形基础]]"
   - "[[数学/初中/八年级/图形与几何/数学-jun-g8-GG-001-全等三角形]]"
@@ -29,7 +33,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 等腰三角形和直角三角形
 
@@ -67,6 +71,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`MIXED`
 > - 原因：需综合判断
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 根据建筑斜撑或道路里程示意图，运用等腰三角形性质或勾股定理求长度。
 
 ## 课标依据
 

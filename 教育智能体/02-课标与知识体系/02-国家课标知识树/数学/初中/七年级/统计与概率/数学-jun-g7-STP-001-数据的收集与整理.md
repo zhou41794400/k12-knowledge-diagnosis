@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 数据收集
+  - 频数分布
+  - 抽样调查
 prerequisites:
   - "[[数学/小学/六年级/统计与概率/数学-pri-g6-STP-001-扇形统计图]]"
   - "[[数学/初中/七年级/图形与几何/数学-jun-g7-GG-002-三角形基础]]"
@@ -29,7 +33,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 数据的收集与整理
 
@@ -67,6 +71,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`RULE`
 > - 原因：规则型技能
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 调查班级学生通勤方式，设计抽样、整理频数并选择合适统计图。
 
 ## 课标依据
 

@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 函数综合
+  - 导数应用
+  - 参数讨论
 prerequisites:
   - "[[数学/高中/高二/函数/数学-shs-g11-FNC-002-数列]]"
 related_points:
@@ -27,7 +31,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 函数综合与导数应用
 
@@ -65,6 +69,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`MIXED`
 > - 原因：综合判断
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 综合成本、流量或变化率模型，用导数和分类讨论解决最值及参数问题。
 
 ## 课标依据
 

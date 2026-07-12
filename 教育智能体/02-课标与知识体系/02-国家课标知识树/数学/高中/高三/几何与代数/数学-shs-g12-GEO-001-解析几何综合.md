@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 解析几何综合
+  - 轨迹方程
+  - 定点定值
 prerequisites:
   - "[[数学/高中/高二/几何与代数/数学-shs-g11-GEO-003-圆锥曲线]]"
   - "[[数学/高中/高三/函数/数学-shs-g12-FNC-001-函数综合与导数应用]]"
@@ -27,7 +31,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 解析几何综合
 
@@ -65,6 +69,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`MIXED`
 > - 原因：综合判断
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 把道路、场馆边界等抽象为曲线，综合研究交点、轨迹和定值问题。
 
 ## 课标依据
 

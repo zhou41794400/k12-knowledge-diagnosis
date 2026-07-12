@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 全等三角形
+  - 全等判定
+  - 全等三角形性质
 prerequisites:
   - "[[数学/初中/七年级/图形与几何/数学-jun-g7-GG-002-三角形基础]]"
   - "[[数学/初中/八年级/数与代数/数学-jun-g8-NS-004-一元二次方程]]"
@@ -28,7 +32,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 全等三角形
 
@@ -66,6 +70,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 在桥梁支架或对称屋架图中寻找全等三角形，并说明判定依据。
 
 ## 课标依据
 

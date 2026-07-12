@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 空间向量
+  - 立体几何
+  - 空间角与距离
 prerequisites:
   - "[[数学/高中/高一/几何与代数/数学-shs-g10-GEO-001-平面向量]]"
   - "[[数学/高中/高二/函数/数学-shs-g11-FNC-002-数列]]"
@@ -26,7 +30,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 空间向量与立体几何
 
@@ -64,6 +68,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`MIXED`
 > - 原因：综合判断
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 在建筑或场馆模型中建立空间坐标系，用空间向量求线面角和距离。
 
 ## 课标依据
 
