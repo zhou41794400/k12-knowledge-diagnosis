@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 简单信息分类
+  - 信息分类
+  - 信息整理与探究
+assessment_mode: rubric_human_review
 prerequisites:
   - "[[语文/小学/一年级/表达与交流/语文-pri-g1-EXP-002-看图说话]]"
   - "[[语文/小学/一年级/阅读与鉴赏/语文-pri-g1-READ-002-提取文本基本信息]]"
@@ -27,9 +32,9 @@ related_points:
   - "[[语文/小学/五年级/梳理与探究/语文-pri-g5-INQ-001-多源信息整合]]"
   - "[[语文/小学/五年级/梳理与探究/语文-pri-g5-INQ-002-主题研究报告]]"
 evidence_type:
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 简单信息分类
 
@@ -62,6 +67,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：正向证据：分类正确
 > - 负向证据：负向证据：分类标准不一致
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 采用内容、结构、语言、证据和交流效果等维度量规，由人工确认后形成证据；单次总分不得直接等同于某个知识点已掌握。
 
 ## 追踪说明
 

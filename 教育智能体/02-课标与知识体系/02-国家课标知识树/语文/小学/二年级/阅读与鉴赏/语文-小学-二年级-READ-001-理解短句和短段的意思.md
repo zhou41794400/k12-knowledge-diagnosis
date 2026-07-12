@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 理解短句和短段的意思
+  - 理解短句
+  - 短段
+  - 意思
+assessment_mode: reading_mixed
 prerequisites:
   - "[[语文/小学/一年级/阅读与鉴赏/语文-pri-g1-READ-002-提取文本基本信息]]"
   - "[[语文/小学/二年级/阅读与鉴赏/二年级语文-阅读与鉴赏]]"
@@ -29,7 +35,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 理解短句和短段的意思
 
@@ -63,6 +69,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：理解正确、回答准确
 > - 负向证据：只看字面、忽略上下文
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 信息提取、文意判断等客观任务可作为规则证据；主旨阐释、人物评价和审美鉴赏等开放题应按题目层级量规评分，不能只用最终对错更新掌握度。
 
 ## 追踪说明
 

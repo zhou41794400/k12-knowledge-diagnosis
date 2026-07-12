@@ -1,4 +1,4 @@
-.PHONY: compile test validate simulate check report materials knowledge-audit knowledge-enrich-primary-math knowledge-enrich-secondary-math web health backup bundle init-repo release tag all
+.PHONY: compile test validate simulate check report materials knowledge-audit knowledge-enrich-primary-math knowledge-enrich-secondary-math knowledge-enrich-chinese web health backup bundle init-repo release tag all
 
 PYTHON := PYTHONPYCACHEPREFIX=/private/tmp/pycache python3
 
@@ -31,6 +31,10 @@ knowledge-enrich-primary-math:
 
 knowledge-enrich-secondary-math:
 	$(PYTHON) scripts/enrich_secondary_math.py
+	$(PYTHON) scripts/audit_knowledge_content.py
+
+knowledge-enrich-chinese:
+	$(PYTHON) scripts/enrich_chinese.py
 	$(PYTHON) scripts/audit_knowledge_content.py
 
 web:

@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 语言文字综合运用
+  - 语言文字
+  - 语言文字运用
+assessment_mode: objective_rule
 prerequisites:
   - "[[语文/高中/高二/语言积累与运用/语文-shs-g11-LNG-001-文言实词与虚词综合]]"
 related_points:
@@ -26,7 +31,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 语言文字综合运用
 
@@ -58,6 +63,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：答题准确；审题失误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 字音、字形、词义、语病或规范书写等边界明确的任务可形成结构化证据；涉及语境效果、书写质量和开放表达时，必须保留人工复核。
 
 ## 追踪说明
 

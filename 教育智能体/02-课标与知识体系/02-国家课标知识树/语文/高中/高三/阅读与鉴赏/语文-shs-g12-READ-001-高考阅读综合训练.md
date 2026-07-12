@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 高考阅读综合训练
+  - 高考阅读
+  - 阅读理解与鉴赏
+assessment_mode: reading_mixed
 prerequisites:
   - "[[语文/高中/高二/阅读与鉴赏/语文-shs-g11-READ-002-文言文阅读与断句]]"
   - "[[语文/高中/高三/语言积累与运用/语文-shs-g12-LNG-001-语言文字综合运用]]"
@@ -28,7 +33,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 高考阅读综合训练
 
@@ -60,6 +65,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：正确率高；答题不规范
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 信息提取、文意判断等客观任务可作为规则证据；主旨阐释、人物评价和审美鉴赏等开放题应按题目层级量规评分，不能只用最终对错更新掌握度。
 
 ## 追踪说明
 

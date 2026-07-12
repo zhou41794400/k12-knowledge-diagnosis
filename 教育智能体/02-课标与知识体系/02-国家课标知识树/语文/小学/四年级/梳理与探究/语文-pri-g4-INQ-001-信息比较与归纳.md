@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 信息比较与归纳
+  - 信息比较
+  - 归纳
+  - 信息整理与探究
+assessment_mode: rubric_human_review
 prerequisites:
   - "[[语文/小学/一年级/梳理与探究/语文-pri-g1-INQ-002-观察记录]]"
   - "[[语文/小学/四年级/表达与交流/语文-pri-g4-EXP-003-话题讨论与辩论]]"
@@ -28,9 +34,9 @@ related_points:
   - "[[语文/小学/五年级/梳理与探究/语文-pri-g5-INQ-001-多源信息整合]]"
   - "[[语文/小学/五年级/梳理与探究/语文-pri-g5-INQ-002-主题研究报告]]"
 evidence_type:
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 信息比较与归纳
 
@@ -63,6 +69,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：正向证据：归纳合理
 > - 负向证据：负向证据：信息遗漏、归类错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 采用内容、结构、语言、证据和交流效果等维度量规，由人工确认后形成证据；单次总分不得直接等同于某个知识点已掌握。
 
 ## 追踪说明
 

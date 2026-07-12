@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 常用汉字认读
+  - 字音字形词义
+  - 常用汉字认读评价
+assessment_mode: objective_rule
 prerequisites: []
 related_points:
   - "[[语文/小学/一年级/阅读与鉴赏/语文-pri-g1-READ-001-拼音读物朗读]]"
@@ -26,7 +31,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 常用汉字认读
 
@@ -59,6 +64,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：正向证据：听写正确
 > - 负向证据：负向证据：笔画顺序错误、字形混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 字音、字形、词义、语病或规范书写等边界明确的任务可形成结构化证据；涉及语境效果、书写质量和开放表达时，必须保留人工复核。
 
 ## 追踪说明
 

@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 提取文本基本信息
+  - 阅读理解与鉴赏
+  - 提取文本基本信息评价
+assessment_mode: reading_mixed
 prerequisites:
   - "[[语文/小学/一年级/阅读与鉴赏/语文-pri-g1-READ-001-拼音读物朗读]]"
   - "[[语文/小学/一年级/识字与写字/语文-pri-g1-LIT-004-偏旁部首认识]]"
@@ -28,7 +33,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 提取文本基本信息
 
@@ -61,6 +66,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：正向证据：信息提取准确
 > - 负向证据：负向证据：信息混淆或遗漏
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 信息提取、文意判断等客观任务可作为规则证据；主旨阐释、人物评价和审美鉴赏等开放题应按题目层级量规评分，不能只用最终对错更新掌握度。
 
 ## 追踪说明
 

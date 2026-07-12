@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 汉字深度理解
+  - 汉字
+  - 理解
+  - 字音字形词义
+assessment_mode: objective_rule
 prerequisites:
   - "[[语文/小学/四年级/识字与写字/语文-pri-g4-LIT-002-成语与固定搭配]]"
 related_points:
@@ -27,7 +33,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 汉字深度理解
 
@@ -60,6 +66,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：正向证据：字义理解正确
 > - 负向证据：负向证据：根据偏旁错误推断
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 字音、字形、词义、语病或规范书写等边界明确的任务可形成结构化证据；涉及语境效果、书写质量和开放表达时，必须保留人工复核。
 
 ## 追踪说明
 
