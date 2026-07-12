@@ -5,6 +5,7 @@ from http.server import ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
+from urllib.error import HTTPError
 
 from services.edu_tracker.web import build_handler
 from tests.helpers import write_point
@@ -34,6 +35,10 @@ class WebTests(unittest.TestCase):
                 exported = urlopen(base + "/data-export?student_id=s1", timeout=5)
                 self.assertEqual(exported.headers.get_content_type(), "application/zip")
                 self.assertGreater(len(exported.read()), 0)
+                self.assertEqual(urlopen(base + "/favicon.ico", timeout=5).status, 204)
+                with self.assertRaises(HTTPError) as error:
+                    urlopen(base + "/missing", timeout=5)
+                self.assertEqual(error.exception.code, 404)
             finally:
                 server.shutdown()
                 server.server_close()

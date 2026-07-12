@@ -51,8 +51,11 @@ def build_handler(project_root: Path):
                 self._report()
             elif parsed.path == "/data-export":
                 self._download_export(_field(parse_qs(parsed.query), "student_id"))
+            elif parsed.path == "/favicon.ico":
+                self.send_response(204)
+                self.end_headers()
             else:
-                self.send_error(404, "页面不存在")
+                self.send_error(404, "Not Found")
 
         def do_POST(self) -> None:
             parsed = urlparse(self.path)
@@ -104,7 +107,7 @@ def build_handler(project_root: Path):
             except (OSError, ValueError, KeyError) as exc:
                 self._redirect(f"操作失败：{exc}")
                 return
-            self.send_error(404, "接口不存在")
+            self.send_error(404, "Not Found")
 
         def _urlencoded(self) -> dict[str, list[str]]:
             length = int(self.headers.get("Content-Length", "0"))
