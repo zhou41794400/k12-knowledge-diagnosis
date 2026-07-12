@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 条形统计图
+  - 统计图读数
+  - 数据比较
 prerequisites:
   - "[[数学/小学/三年级/统计与概率/数学-小学-三年级-NS-008-平均数的直观理解]]"
   - "[[数学/小学/四年级/图形与几何/数学-pri-g4-GG-003-位置与方向]]"
@@ -29,7 +33,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 条形统计图
 
@@ -68,6 +72,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`RULE`
 > - 原因：规则型技能，适合基于规则的追踪
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 根据一周空气质量等级或校园运动项目人数绘制条形统计图并回答问题。
 
 ## 课标依据
 

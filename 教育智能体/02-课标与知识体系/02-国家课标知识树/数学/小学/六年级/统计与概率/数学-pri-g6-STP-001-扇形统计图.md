@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 扇形统计图
+  - 部分占总体
+  - 百分比读图
 prerequisites:
   - "[[数学/小学/五年级/统计与概率/数学-pri-g5-STP-002-折线统计图]]"
   - "[[数学/小学/六年级/图形与几何/数学-pri-g6-GG-002-圆柱与圆锥]]"
@@ -29,7 +33,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 扇形统计图
 
@@ -68,6 +72,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`RULE`
 > - 原因：规则型技能，适合基于规则的追踪
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 用扇形统计图表示家庭一周支出或班级运动项目选择比例，并计算对应数量。
 
 ## 课标依据
 

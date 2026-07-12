@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 长方体正方体
+  - 表面积
+  - 体积
 prerequisites:
   - "[[数学/小学/四年级/图形与几何/数学-pri-g4-GG-003-位置与方向]]"
   - "[[数学/小学/五年级/图形与几何/数学-pri-g5-GG-001-多边形的面积]]"
@@ -29,7 +33,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 正方体与长方体
 
@@ -68,6 +72,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰，适合追踪
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 用快递纸箱或牛奶包装盒测量长宽高，计算表面积或容积并比较包装方案。
 
 ## 课标依据
 

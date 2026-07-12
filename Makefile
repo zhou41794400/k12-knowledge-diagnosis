@@ -1,4 +1,4 @@
-.PHONY: compile test validate simulate check report materials knowledge-audit web health backup bundle init-repo release tag all
+.PHONY: compile test validate simulate check report materials knowledge-audit knowledge-enrich-primary-math web health backup bundle init-repo release tag all
 
 PYTHON := PYTHONPYCACHEPREFIX=/private/tmp/pycache python3
 
@@ -23,6 +23,10 @@ materials:
 	$(PYTHON) -m edu_tracker materials
 
 knowledge-audit:
+	$(PYTHON) scripts/audit_knowledge_content.py
+
+knowledge-enrich-primary-math:
+	$(PYTHON) scripts/enrich_primary_math.py
 	$(PYTHON) scripts/audit_knowledge_content.py
 
 web:

@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 简易方程
+  - 用字母表示数
+  - 解方程
 prerequisites:
   - "[[数学/小学/四年级/数与代数/数学-pri-g4-NS-005-小数初步认识]]"
   - "[[数学/小学/五年级/数与代数/数学-pri-g5-NS-001-小数乘法]]"
@@ -29,7 +33,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 简易方程
 
@@ -68,6 +72,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰，适合追踪
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 根据公交票价、人数和总费用之间的关系列简易方程并求未知数。
 
 ## 课标依据
 

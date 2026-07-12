@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 位置与方向
+  - 方向和距离
+  - 路线描述
 prerequisites:
   - "[[数学/小学/三年级/图形与几何/数学-小学-三年级-GG-006-图形的分类与比较]]"
   - "[[数学/小学/四年级/图形与几何/数学-pri-g4-GG-001-角的度量]]"
@@ -30,7 +34,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 位置与方向
 
@@ -69,6 +73,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰，适合追踪
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 以学校为观测点，根据方向和距离描述图书馆、体育馆或公交站的位置。
 
 ## 课标依据
 

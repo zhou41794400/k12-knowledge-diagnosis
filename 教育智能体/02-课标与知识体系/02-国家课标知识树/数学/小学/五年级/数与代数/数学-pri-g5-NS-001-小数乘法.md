@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 小数乘法
+  - 小数乘整数
+  - 积的小数位数
 prerequisites:
   - "[[数学/小学/四年级/数与代数/数学-pri-g4-NS-005-小数初步认识]]"
 related_points:
@@ -27,7 +31,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 小数乘法
 
@@ -66,6 +70,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰，适合追踪
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 根据苹果或鸭梨的每千克单价和质量，计算购买总价并检查小数点位置。
 
 ## 课标依据
 

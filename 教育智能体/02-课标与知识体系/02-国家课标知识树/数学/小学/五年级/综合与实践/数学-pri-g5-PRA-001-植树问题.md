@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 植树问题
+  - 间隔数
+  - 两端是否植树
 prerequisites:
   - "[[数学/小学/四年级/综合与实践/数学-pri-g4-PRA-002-田忌赛马与策略]]"
   - "[[数学/小学/五年级/统计与概率/数学-pri-g5-STP-002-折线统计图]]"
@@ -30,7 +34,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 植树问题
 
@@ -69,6 +73,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰，适合追踪
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 为校园道路或社区绿化带安排树木，区分两端都栽、只栽一端和封闭路线。
 
 ## 课标依据
 

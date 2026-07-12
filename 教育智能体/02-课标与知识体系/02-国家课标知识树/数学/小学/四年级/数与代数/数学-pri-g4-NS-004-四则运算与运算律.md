@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 四则运算
+  - 运算律
+  - 简便计算
 prerequisites:
   - "[[数学/小学/三年级/数与代数/数学-小学-三年级-NS-006-有余数除法的初步理解]]"
   - "[[数学/小学/四年级/数与代数/数学-pri-g4-NS-001-大数的认识]]"
@@ -30,7 +34,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 四则运算与运算律
 
@@ -69,6 +73,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰，适合追踪
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 计算社区采购多种物资的总价，选择交换律、结合律或分配律进行简便计算。
 
 ## 课标依据
 
