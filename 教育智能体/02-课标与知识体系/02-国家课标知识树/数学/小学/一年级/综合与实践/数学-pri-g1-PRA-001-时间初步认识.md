@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 认识钟表
+  - 整时半时
+  - 时针分针
 prerequisites:
   - "[[数学/小学/一年级/统计与概率/数学-pri-g1-STP-002-简单统计表]]"
   - "[[数学/小学/一年级/图形与几何/数学-pri-g1-GG-002-位置与顺序]]"
@@ -68,6 +72,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰，适合追踪
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 根据上学、升旗、放学等校园作息钟面认读整时和半时，并判断活动发生的先后顺序。
 
 ## 课标依据
 

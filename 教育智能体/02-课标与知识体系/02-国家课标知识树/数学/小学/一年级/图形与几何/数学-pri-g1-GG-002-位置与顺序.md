@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 上下前后
+  - 左右位置
+  - 第几个
 prerequisites:
   - "[[数学/小学/一年级/图形与几何/数学-pri-g1-GG-001-立体图形认识]]"
   - "[[数学/小学/一年级/数与代数/数学-pri-g1-NS-004-20以内退位减法]]"
@@ -67,6 +71,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰，适合追踪
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 结合校园升旗队列或公交站排队情境，描述同学的前后、左右位置以及从指定方向数第几个。
 
 ## 课标依据
 

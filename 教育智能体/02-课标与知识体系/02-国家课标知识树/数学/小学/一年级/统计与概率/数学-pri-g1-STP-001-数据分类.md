@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 分类整理
+  - 分类标准
+  - 分类计数
 prerequisites:
   - "[[数学/小学/一年级/图形与几何/数学-pri-g1-GG-002-位置与顺序]]"
   - "[[数学/小学/一年级/数与代数/数学-pri-g1-NS-004-20以内退位减法]]"
@@ -67,6 +71,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`RULE`
 > - 原因：规则型技能，适合基于规则的追踪
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 将苹果、鸭梨、红枣等图片按种类或颜色分类，记录每类数量，并说明采用的分类标准。
 
 ## 课标依据
 

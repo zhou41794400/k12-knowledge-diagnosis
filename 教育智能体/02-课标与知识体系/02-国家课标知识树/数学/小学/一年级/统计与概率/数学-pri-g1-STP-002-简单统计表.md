@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 简单统计表
+  - 数据整理
+  - 数量比较
 prerequisites:
   - "[[数学/小学/一年级/统计与概率/数学-pri-g1-STP-001-数据分类]]"
   - "[[数学/小学/一年级/图形与几何/数学-pri-g1-GG-002-位置与顺序]]"
@@ -68,6 +72,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`RULE`
 > - 原因：规则型技能，适合基于规则的追踪
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 调查班级同学喜欢的河北特色运动或课间活动，把人数填入简单统计表并比较数量多少。
 
 ## 课标依据
 

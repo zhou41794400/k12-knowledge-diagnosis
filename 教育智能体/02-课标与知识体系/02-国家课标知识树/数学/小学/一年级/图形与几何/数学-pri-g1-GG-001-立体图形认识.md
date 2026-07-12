@@ -16,6 +16,10 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 立体图形
+  - 长方体正方体
+  - 圆柱和球
 prerequisites:
   - "[[数学/小学/一年级/数与代数/数学-pri-g1-NS-004-20以内退位减法]]"
 related_points:
@@ -66,6 +70,11 @@ updated: 2026-06-10
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰，适合追踪
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 观察快递纸箱、积木、易拉罐和篮球，辨认长方体、正方体、圆柱和球，并说明分类依据。
 
 ## 课标依据
 
