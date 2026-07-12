@@ -3,8 +3,8 @@ title: GitHub独立项目规划
 tags:
   - project/k12-tracking
   - copyright/github
-status: active
-updated: 2026-06-10
+status: implemented-with-draft-pr
+updated: 2026-07-12
 ---
 
 # GitHub 独立项目规划
@@ -79,8 +79,11 @@ updated: 2026-06-10
 
 - ✅ **已创建独立仓库**：`zhou41794400/k12-knowledge-diagnosis` (public)
 - ✅ **远程已绑定**：`origin → https://github.com/zhou41794400/k12-knowledge-diagnosis.git`
-- ✅ **代码已推送**：main 分支已包含全部代码、文档和 vault
+- ✅ **安全分支已推送**：`codex/local-pilot-safe`，提交 `e3a0d26`
+- ✅ **Draft PR 已创建**：[PR #1](https://github.com/zhou41794400/k12-knowledge-diagnosis/pull/1)，目标分支 `main`
+- ✅ **隐私边界已收紧**：学生周报、家长汇总、题目详情、日志、SQLite、上传图片、备份和导出包不进入 Git
 - ✅ **Git 标签已推送**：`v0.1.1`
 - ✅ **Release 已创建**：[v0.1.1](https://github.com/zhou41794400/k12-knowledge-diagnosis/releases/tag/v0.1.1)
 - ✅ **CI 骨架已推送**：`.github/workflows/verify.yml` 已就位
-- ✅ **软著材料齐全**：`教育智能体/09-软著材料/生成稿/` 含 PDF+DOCX 双格式
+- ✅ **软著 Markdown 生成稿已更新**：`教育智能体/09-软著材料/生成稿/`
+- ⏳ **待完成**：审查/合并 PR #1，申报前输出并人工校对正式 PDF/Word 材料
