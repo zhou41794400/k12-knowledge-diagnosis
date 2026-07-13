@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 数据处理与分析
+  - 数据处理
+  - 分析
+  - 数据与信息处理
+assessment_mode: operation_task
 prerequisites:
   - "[[信息科技/小学/六年级/数据与信息/信息科技-pri-g6-DAT-001-数据处理与分析]]"
   - "[[信息科技/初中/八年级/算法与编程/信息科技-jun-g8-ALG-002-算法基础]]"
@@ -25,9 +31,9 @@ related_points:
   - "[[信息科技/初中/八年级/算法与编程/信息科技-jun-g8-ALG-001-函数与模块化编程]]"
   - "[[信息科技/初中/八年级/人工智能/信息科技-jun-g8-AI-001-机器学习初步]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 数据处理与分析
 
@@ -59,6 +65,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：分析正确；可视化不当
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 操作任务须同时核对步骤、工具使用、过程记录和结果有效性；仅凭最终文件或单次自动判定不能确认掌握，必须由人工复核。
 
 ## 追踪说明
 

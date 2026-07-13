@@ -16,13 +16,19 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 基本律动
+  - 律动
+  - 舞蹈动作表现
+  - 舞蹈表现评价
+assessment_mode: art_performance_rubric
 prerequisites:
   - "[[艺术/小学/二年级/造型·美术/艺术-pri-g2-ART-001-简单绘画创作]]"
 related_points: []
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 基本律动
 
@@ -54,6 +60,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：律动协调；动作僵硬
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 依据感知理解、技能运用、表现完整性、合作参与和反思改进等维度量规评价，并保留过程记录；单题对错不得直接判定艺术表现能力已经掌握。
 
 ## 追踪说明
 

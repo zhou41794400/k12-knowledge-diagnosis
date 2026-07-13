@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 打扫卫生
+  - 日常劳动实践
+  - 日常生活劳动评价
+  - 打扫卫生任务
+assessment_mode: labor_process_rubric
 prerequisites:
   - "[[劳动/小学/一年级/日常生活劳动/劳动-pri-g1-DLL-002-穿脱衣物]]"
 related_points:
@@ -25,9 +31,9 @@ related_points:
   - "[[劳动/小学/四年级/日常生活劳动/劳动-pri-g4-DLL-001-简单缝补]]"
   - "[[劳动/小学/四年级/日常生活劳动/劳动-pri-g4-DLL-002-清洁工具使用]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 打扫卫生
 
@@ -59,6 +65,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：清洁到位；敷衍了事
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 依据任务规划、规范操作、安全卫生、协作责任、问题解决和反思改进等过程量规，结合连续观察形成证据；单题对错不得直接判定劳动实践能力已经掌握。
 
 ## 追踪说明
 

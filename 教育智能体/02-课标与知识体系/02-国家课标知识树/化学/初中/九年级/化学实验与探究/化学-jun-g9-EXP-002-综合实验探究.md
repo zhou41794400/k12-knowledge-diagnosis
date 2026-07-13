@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 综合实验探究
+  - 化学实验与探究
+  - 综合实验探究核心知识
+  - 实验探究与证据推理
+assessment_mode: experimental_evidence
 prerequisites:
   - "[[化学/初中/九年级/化学实验与探究/化学-jun-g9-EXP-001-基本实验操作]]"
   - "[[化学/初中/九年级/化学计算/化学-jun-g9-CAL-002-化学方程式计算]]"
@@ -24,9 +30,9 @@ prerequisites:
 related_points:
   - "[[化学/初中/九年级/化学计算/化学-jun-g9-CAL-001-化学式计算]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 综合实验探究
 
@@ -58,6 +64,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：探究完整；变量控制不当
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 实验安全、变量控制、操作顺序、现象记录、数据分析和结论推断应整体评价；探究方案与开放证据必须经人工复核后形成掌握证据。
 
 ## 追踪说明
 

@@ -16,6 +16,7 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+assessment_mode: modeling_rubric
 matching_keywords:
   - 高考数学综合
   - 数学建模
@@ -26,7 +27,7 @@ prerequisites:
   - "[[数学/高中/高三/函数/数学-shs-g12-FNC-001-函数综合与导数应用]]"
 related_points: []
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
 updated: 2026-07-13
 ---
@@ -60,6 +61,11 @@ updated: 2026-07-13
 
 > [!important] 证据规则
 > - 正向证据：综合能力强；思维定势
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 按问题理解、变量假设、模型建立、求解检验和结果解释等维度评价，由人工确认后形成证据。
 
 ## 追踪说明
 

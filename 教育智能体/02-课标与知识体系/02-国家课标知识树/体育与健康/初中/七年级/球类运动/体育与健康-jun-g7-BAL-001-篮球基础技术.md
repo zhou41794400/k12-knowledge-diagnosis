@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 篮球基础技术
+  - 篮球
+  - 技术
+  - 球类运动表现
+assessment_mode: sport_performance_rubric
 prerequisites:
   - "[[体育与健康/初中/七年级/田径类运动/体育与健康-jun-g7-TRA-001-短跑与中长跑]]"
 related_points:
@@ -25,9 +31,9 @@ related_points:
   - "[[体育与健康/高中/高一/球类运动/体育与健康-shs-g10-BAL-001-球类选项学习]]"
   - "[[体育与健康/高中/高二/球类运动/体育与健康-shs-g11-BAL-001-球类专项提高]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 篮球基础技术
 
@@ -59,6 +65,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：技术动作规范；动作不规范
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 依据动作规范、安全意识、完成质量、体能变化和合作表现等维度量规，结合多次课堂观察形成证据；单次测试成绩或单题对错不得直接判定动作技能已经掌握。
 
 ## 追踪说明
 

@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 运动损伤处理
+  - 健康知识与行为
+  - 健康知识评价
+  - 运动损伤处理任务
+assessment_mode: health_process_rubric
 prerequisites:
   - "[[体育与健康/初中/七年级/健康知识/体育与健康-jun-g7-HEA-001-运动与营养]]"
   - "[[体育与健康/初中/八年级/民族传统体育/体育与健康-jun-g8-MTR-001-武术套路]]"
@@ -28,9 +34,9 @@ related_points:
   - "[[体育与健康/小学/五年级/健康知识/体育与健康-pri-g5-HEA-001-运动损伤预防]]"
   - "[[体育与健康/小学/六年级/健康知识/体育与健康-pri-g6-HEA-001-健康生活方式]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 运动损伤处理
 
@@ -62,6 +68,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：处理规范；处理不当
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 健康概念客观题只能证明知识理解；习惯养成、风险处置和健康行为应结合情境任务、行为记录与过程量规，经人工复核后形成证据。
 
 ## 追踪说明
 

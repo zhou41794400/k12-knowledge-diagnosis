@@ -16,6 +16,7 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+assessment_mode: modeling_rubric
 matching_keywords:
   - 植树问题
   - 间隔数
@@ -32,7 +33,7 @@ related_points:
   - "[[数学/小学/五年级/统计与概率/数学-pri-g5-STP-001-可能性与概率]]"
   - "[[数学/小学/六年级/综合与实践/数学-pri-g6-PRA-001-鸽巢原理]]"
 evidence_type:
-review_required: false
+review_required: true
 status: draft
 updated: 2026-07-13
 ---
@@ -67,6 +68,11 @@ updated: 2026-07-13
 > [!important] 证据规则
 > - 正向证据：正向证据：计算正确
 > - 负向证据：负向证据：三种情况混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 按问题理解、变量假设、模型建立、求解检验和结果解释等维度评价，由人工确认后形成证据。
 
 ## 追踪说明
 

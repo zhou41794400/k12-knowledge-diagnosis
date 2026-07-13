@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 违法与犯罪
+  - 违法
+  - 犯罪
+  - 法治教育
+assessment_mode: concept_rule
 prerequisites:
   - "[[道德与法治/初中/七年级/法治教育/道德与法治-jun-g7-LAW-001-法律的特征与作用]]"
   - "[[道德与法治/初中/八年级/法治教育/道德与法治-jun-g8-LAW-001-宪法与国家制度]]"
@@ -30,7 +36,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 违法与犯罪
 
@@ -63,6 +69,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：区分正确
 > - 负向证据：违法犯罪概念混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 概念含义、法律规范和权利义务边界明确的任务可形成结构化证据；会复述规则不等同于能够在真实情境中作出合理选择。
 
 ## 追踪说明
 

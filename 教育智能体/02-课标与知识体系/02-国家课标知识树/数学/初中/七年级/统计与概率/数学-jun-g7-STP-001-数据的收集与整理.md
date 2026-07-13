@@ -16,6 +16,7 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+assessment_mode: data_reasoning_mixed
 matching_keywords:
   - 数据收集
   - 频数分布
@@ -65,6 +66,11 @@ updated: 2026-07-13
 
 > [!important] 证据规则
 > - 正向证据：整理规范；图表绘制错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 读图、计算和明确概率结论可形成规则证据；抽样合理性、统计解释和决策建议必须保留推断过程。
 
 ## 追踪说明
 

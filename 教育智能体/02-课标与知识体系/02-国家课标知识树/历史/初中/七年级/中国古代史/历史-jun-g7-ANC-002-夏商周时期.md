@@ -16,13 +16,19 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 夏商周时期
+  - 中国古代史
+  - 历史事件与阶段特征
+  - 夏商周时期考查
+assessment_mode: fact_location
 prerequisites:
   - "[[历史/初中/七年级/中国古代史/历史-jun-g7-ANC-001-史前时期]]"
 related_points: []
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 夏商周时期
 
@@ -55,6 +61,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：理解正确
 > - 负向证据：制度混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 年代、人物、事件、制度和史实对应等边界明确的事实定位任务可形成结构化证据；孤立记忆正确不等同于已经理解历史因果和阶段特征。
 
 ## 追踪说明
 

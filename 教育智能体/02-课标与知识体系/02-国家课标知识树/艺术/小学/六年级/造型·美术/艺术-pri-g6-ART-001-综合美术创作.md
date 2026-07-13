@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 综合美术创作
+  - 美术创作
+  - 美术创作作品
+  - 造型·美术评价
+assessment_mode: artwork_rubric
 prerequisites:
   - "[[艺术/小学/五年级/造型·美术/艺术-pri-g5-ART-001-素描初步]]"
 related_points:
@@ -25,9 +31,9 @@ related_points:
   - "[[艺术/小学/四年级/造型·美术/艺术-pri-g4-ART-001-构图基本原则]]"
   - "[[艺术/初中/七年级/造型·美术/艺术-jun-g7-ART-001-绘画基础]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 综合美术创作
 
@@ -59,6 +65,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：作品完整；技法粗糙
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 结合创作过程、材料与技法、主题表达、作品完成度和自评互评等证据进行作品量规评价；不得仅凭知识题对错或单件作品总分直接判定掌握。
 
 ## 追踪说明
 

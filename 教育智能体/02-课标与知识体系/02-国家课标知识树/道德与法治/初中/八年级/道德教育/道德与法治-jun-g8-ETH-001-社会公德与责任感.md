@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 社会公德与责任感
+  - 社会公德
+  - 责任感
+  - 道德教育
+assessment_mode: open_value_judgment
 prerequisites:
   - "[[道德与法治/初中/七年级/道德教育/道德与法治-jun-g7-ETH-002-友谊与交往]]"
 related_points:
@@ -25,9 +31,9 @@ related_points:
   - "[[道德与法治/小学/二年级/道德教育/道德与法治-pri-g2-ETH-002-珍惜劳动成果]]"
   - "[[道德与法治/小学/三年级/道德教育/道德与法治-pri-g3-ETH-001-尊重与包容]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 社会公德与责任感
 
@@ -59,6 +65,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：公德意识良好；公德缺失
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 价值判断应结合具体情境，按立场合理性、理由充分性、责任意识和行动可行性进行开放评价；必须由人工复核，不得把单一标准表述作为唯一正确答案。
 
 ## 追踪说明
 

@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 职业初探
+  - 职业体验过程
+  - 职业体验评价
+  - 职业初探任务
+assessment_mode: labor_process_rubric
 prerequisites:
   - "[[劳动/初中/七年级/生产劳动/劳动-jun-g7-PRL-001-种植与养殖]]"
   - "[[劳动/初中/七年级/日常生活劳动/劳动-jun-g7-DLL-001-个人空间整理]]"
@@ -24,9 +30,9 @@ related_points:
   - "[[劳动/高中/高二/职业体验/劳动-shs-g11-CAR-001-职业体验与探索]]"
   - "[[劳动/高中/高三/职业体验/劳动-shs-g12-CAR-001-高考志愿与生涯规划]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 职业初探
 
@@ -58,6 +64,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：体验积极；参与被动
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 依据任务规划、规范操作、安全卫生、协作责任、问题解决和反思改进等过程量规，结合连续观察形成证据；单题对错不得直接判定劳动实践能力已经掌握。
 
 ## 追踪说明
 

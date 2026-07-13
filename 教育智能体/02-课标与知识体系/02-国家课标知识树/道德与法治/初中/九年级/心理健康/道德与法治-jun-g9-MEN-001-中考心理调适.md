@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 中考心理调适
+  - 心理健康
+  - 道德法治情境分析
+  - 中考心理调适考查
+assessment_mode: open_value_judgment
 prerequisites:
   - "[[道德与法治/初中/七年级/心理健康/道德与法治-jun-g7-MEN-001-情绪调节与压力管理]]"
   - "[[道德与法治/初中/九年级/道德教育/道德与法治-jun-g9-ETH-001-文明与家园]]"
@@ -25,9 +31,9 @@ related_points:
   - "[[道德与法治/小学/三年级/心理健康/道德与法治-pri-g3-MEN-001-情绪管理]]"
   - "[[道德与法治/小学/六年级/心理健康/道德与法治-pri-g6-MEN-001-青春期的心理准备]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 中考心理调适
 
@@ -59,6 +65,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：心理状态稳定；过度焦虑
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 价值判断应结合具体情境，按立场合理性、理由充分性、责任意识和行动可行性进行开放评价；必须由人工复核，不得把单一标准表述作为唯一正确答案。
 
 ## 追踪说明
 

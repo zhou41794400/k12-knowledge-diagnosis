@@ -16,6 +16,7 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+assessment_mode: calculation_rule
 matching_keywords:
   - 分数除法
   - 分数除以整数
@@ -65,6 +66,11 @@ updated: 2026-07-13
 > [!important] 证据规则
 > - 正向证据：正向证据：计算正确
 > - 负向证据：负向证据：倒数概念不清
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 计算结果、步骤和概念辨析可形成结构化证据；开放解释、方法比较和真实建模不能只按最终答案判定。
 
 ## 追踪说明
 

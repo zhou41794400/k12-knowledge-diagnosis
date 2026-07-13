@@ -1,4 +1,4 @@
-.PHONY: compile test validate simulate check report materials knowledge-audit knowledge-enrich-primary-math knowledge-enrich-secondary-math knowledge-enrich-chinese knowledge-enrich-english web health backup bundle init-repo release tag all
+.PHONY: compile test validate simulate check report materials knowledge-audit knowledge-enrich-primary-math knowledge-enrich-secondary-math knowledge-enrich-math-assessment knowledge-enrich-chinese knowledge-enrich-english knowledge-enrich-stem-sciences knowledge-enrich-social-studies knowledge-enrich-science-technology knowledge-enrich-practical-arts knowledge-enrich-all web health backup bundle init-repo release tag all
 
 PYTHON := PYTHONPYCACHEPREFIX=/private/tmp/pycache python3
 
@@ -33,12 +33,44 @@ knowledge-enrich-secondary-math:
 	$(PYTHON) scripts/enrich_secondary_math.py
 	$(PYTHON) scripts/audit_knowledge_content.py
 
+knowledge-enrich-math-assessment:
+	$(PYTHON) scripts/enrich_math_assessment.py
+	$(PYTHON) scripts/audit_knowledge_content.py
+
 knowledge-enrich-chinese:
 	$(PYTHON) scripts/enrich_chinese.py
 	$(PYTHON) scripts/audit_knowledge_content.py
 
 knowledge-enrich-english:
 	$(PYTHON) scripts/enrich_english.py
+	$(PYTHON) scripts/audit_knowledge_content.py
+
+knowledge-enrich-stem-sciences:
+	$(PYTHON) scripts/enrich_stem_sciences.py
+	$(PYTHON) scripts/audit_knowledge_content.py
+
+knowledge-enrich-social-studies:
+	$(PYTHON) scripts/enrich_social_studies.py
+	$(PYTHON) scripts/audit_knowledge_content.py
+
+knowledge-enrich-science-technology:
+	$(PYTHON) scripts/enrich_science_technology.py
+	$(PYTHON) scripts/audit_knowledge_content.py
+
+knowledge-enrich-practical-arts:
+	$(PYTHON) scripts/enrich_practical_arts.py
+	$(PYTHON) scripts/audit_knowledge_content.py
+
+knowledge-enrich-all:
+	$(PYTHON) scripts/enrich_primary_math.py
+	$(PYTHON) scripts/enrich_secondary_math.py
+	$(PYTHON) scripts/enrich_math_assessment.py
+	$(PYTHON) scripts/enrich_chinese.py
+	$(PYTHON) scripts/enrich_english.py
+	$(PYTHON) scripts/enrich_stem_sciences.py
+	$(PYTHON) scripts/enrich_social_studies.py
+	$(PYTHON) scripts/enrich_science_technology.py
+	$(PYTHON) scripts/enrich_practical_arts.py
 	$(PYTHON) scripts/audit_knowledge_content.py
 
 web:

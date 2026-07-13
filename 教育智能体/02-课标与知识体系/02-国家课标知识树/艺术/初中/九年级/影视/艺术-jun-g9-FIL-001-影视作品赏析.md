@@ -16,14 +16,20 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 影视作品赏析
+  - 影视作品鉴赏
+  - 影视评价
+  - 影视作品赏析任务
+assessment_mode: art_appreciation_rubric
 prerequisites:
   - "[[艺术/初中/九年级/音乐/艺术-jun-g9-MUS-001-综合音乐实践]]"
   - "[[艺术/初中/九年级/造型·美术/艺术-jun-g9-ART-001-美术创作与评价]]"
 related_points: []
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 影视作品赏析
 
@@ -55,6 +61,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：分析有深度；表面理解
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 事实性识别只作为辅助证据，重点依据观察描述、审美阐释、比较分析和证据表达等维度量规；开放性艺术理解须经人工复核，不能以单题对错判定掌握。
 
 ## 追踪说明
 

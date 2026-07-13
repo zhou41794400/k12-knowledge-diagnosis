@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 浏览器基本使用
+  - 浏览器
+  - 网络安全与数字责任
+  - 操作过程与任务结果
+assessment_mode: operation_task
 prerequisites:
   - "[[信息科技/小学/三年级/网络与安全/信息科技-pri-g3-NET-001-信息道德初步]]"
   - "[[信息科技/小学/四年级/数据与信息/信息科技-pri-g4-DAT-001-数据的收集与整理]]"
@@ -26,9 +32,9 @@ related_points:
   - "[[信息科技/初中/七年级/网络与安全/信息科技-jun-g7-NET-001-互联网与信息获取]]"
   - "[[信息科技/初中/九年级/网络与安全/信息科技-jun-g9-NET-001-网络安全与伦理]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 浏览器基本使用
 
@@ -60,6 +66,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：操作正确；网址输入错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 操作任务须同时核对步骤、工具使用、过程记录和结果有效性；仅凭最终文件或单次自动判定不能确认掌握，必须由人工复核。
 
 ## 追踪说明
 

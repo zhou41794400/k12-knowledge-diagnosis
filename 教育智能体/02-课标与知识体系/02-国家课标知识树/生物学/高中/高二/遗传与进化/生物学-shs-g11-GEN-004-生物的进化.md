@@ -16,6 +16,13 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 生物的进化
+  - 遗传与进化
+  - 生物的进化核心知识
+  - 实验探究与证据推理
+  - 生物
+assessment_mode: experimental_evidence
 prerequisites:
   - "[[生物学/初中/八年级/遗传与进化/生物学-jun-g8-GEN-002-生物的进化]]"
   - "[[生物学/高中/高二/遗传与进化/生物学-shs-g11-GEN-001-遗传的细胞基础]]"
@@ -26,9 +33,9 @@ related_points:
   - "[[生物学/高中/高二/稳态与调节/生物学-shs-g11-HOM-001-植物激素调节]]"
   - "[[生物学/高中/高二/稳态与调节/生物学-shs-g11-HOM-002-动物生命活动调节]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 生物的进化
 
@@ -61,6 +68,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：理解正确
 > - 负向证据：进化机制混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 观察或实验中的问题、假设、变量、对照、样本、数据与结论应按完整证据链评价；涉及健康、生态、进化或工程方案的开放推理必须经人工复核。
 
 ## 追踪说明
 

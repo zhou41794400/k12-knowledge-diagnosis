@@ -60,6 +60,9 @@ def audit() -> tuple[list[dict[str, object]], list[str]]:
             "status": str(metadata.get("status", "draft")),
             "point_code": str(metadata.get("point_code", "")),
             "keywords": keywords,
+            "assessment_mode": str(metadata.get("assessment_mode", "")),
+            "has_assessment_boundary": "## 学科评价边界" in body,
+            "review_required": str(metadata.get("review_required", "false")).lower() == "true",
             "missing_sections": missing_sections,
         }
         cards.append(card)
@@ -73,12 +76,21 @@ def audit() -> tuple[list[dict[str, object]], list[str]]:
 def render(cards: list[dict[str, object]], issues: list[str]) -> str:
     by_subject: dict[str, Counter[str]] = defaultdict(Counter)
     statuses = Counter(str(card["status"]) for card in cards)
-    without_keywords = Counter()
+    insufficient_keywords = Counter()
+    without_assessment_mode = Counter()
+    without_assessment_boundary = Counter()
+    review_required = Counter()
     for card in cards:
         subject = str(card["subject"])
         by_subject[subject][str(card["grade"])] += 1
-        if not card["keywords"]:
-            without_keywords[subject] += 1
+        if len(card["keywords"]) < 3:
+            insufficient_keywords[subject] += 1
+        if not card["assessment_mode"]:
+            without_assessment_mode[subject] += 1
+        if not card["has_assessment_boundary"]:
+            without_assessment_boundary[subject] += 1
+        if card["review_required"]:
+            review_required[subject] += 1
 
     lines = [
         "---",
@@ -101,18 +113,23 @@ def render(cards: list[dict[str, object]], issues: list[str]) -> str:
         f"- 草稿：**{statuses.get('draft', 0)}** 张",
         f"- 已发布：**{statuses.get('published', 0)}** 张",
         f"- 其他状态：**{len(cards) - statuses.get('draft', 0) - statuses.get('published', 0)}** 张",
-        f"- 缺少题目匹配关键词：**{sum(without_keywords.values())}** 张",
+        f"- 题目匹配关键词少于 3 个：**{sum(insufficient_keywords.values())}** 张",
+        f"- 缺少学科评价方式：**{sum(without_assessment_mode.values())}** 张",
+        f"- 缺少学科评价边界：**{sum(without_assessment_boundary.values())}** 张",
         f"- 结构问题：**{len(issues)}** 项",
         "",
         "## 学科与年级覆盖",
         "",
-        "| 学科 | 知识卡 | 已覆盖年级 | 缺关键词 |",
-        "| --- | ---: | --- | ---: |",
+        "| 学科 | 知识卡 | 已覆盖年级 | 关键词不足 3 个 | 缺评价方式 | 缺评价边界 | 强制复核 |",
+        "| --- | ---: | --- | ---: | ---: | ---: | ---: |",
     ]
     for subject in sorted(by_subject):
         counts = by_subject[subject]
         grades = "、".join(f"{grade}（{counts[grade]}）" for grade in GRADE_ORDER if counts.get(grade))
-        lines.append(f"| {subject} | {sum(counts.values())} | {grades} | {without_keywords[subject]} |")
+        lines.append(
+            f"| {subject} | {sum(counts.values())} | {grades} | {insufficient_keywords[subject]} | "
+            f"{without_assessment_mode[subject]} | {without_assessment_boundary[subject]} | {review_required[subject]} |"
+        )
 
     lines.extend([
         "",
@@ -123,11 +140,11 @@ def render(cards: list[dict[str, object]], issues: list[str]) -> str:
         "",
         "## 待完善批次",
         "",
-        "1. 小学数学一年级及四至六年级：课标复核、冀教版例题、匹配关键词和验收题。",
-        "2. 初高中数学：课标复核、知识边界、匹配关键词和验收题。",
-        "3. 语文与英语：按识字阅读表达、听说读写等证据类型独立建模。",
-        "4. 物理、化学、生物学、历史、地理、道德与法治、思想政治：按学科证据特征建立验收集。",
-        "5. 科学、信息科技、体育与健康、艺术、劳动：补过程性、作品性和表现性证据规则。",
+        "1. 数学：逐卡校核 2022 版课标依据与冀教版适配内容，按年级建设计算、推理、数据和建模验收题。",
+        "2. 语文与英语：逐卡校核课标依据，分别建设客观任务、阅读混合任务和表现性任务验收集。",
+        "3. 理化生、史地政法：逐卡校核课标依据，建设计算实验、概念解释、材料分析和论证评价验收集。",
+        "4. 科学、信息科技、体育与健康、艺术、劳动：逐卡校核课标依据，建设过程性、操作性、作品性和表现性任务验收集。",
+        "5. 所有学科完成真实题盲测、人工复核与版本留痕后，再按批次将知识卡从 `draft` 改为 `published`。",
         "",
         "## 结构问题",
         "",

@@ -16,12 +16,18 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 当代国际政治与经济
+  - 当代国际政治
+  - 经济
+  - 思想政治材料分析
+assessment_mode: material_argumentation
 prerequisites: []
 related_points: []
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 
 # 当代国际政治与经济
@@ -55,6 +61,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：理解深刻
 > - 负向证据：概念混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 必须评价观点、材料依据、原理调用和论证结构，由人工复核后形成证据；只匹配术语或结论方向正确不能直接判定掌握。
 
 ## 追踪说明
 

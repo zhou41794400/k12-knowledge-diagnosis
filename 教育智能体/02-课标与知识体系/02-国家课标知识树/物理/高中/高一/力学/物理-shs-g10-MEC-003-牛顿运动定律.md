@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 牛顿运动定律
+  - 力学
+  - 牛顿运动定律核心知识
+  - 数量关系与规范计算
+assessment_mode: quantitative_calculation
 prerequisites:
   - "[[物理/高中/高一/力学/物理-shs-g10-MEC-001-运动的描述]]"
   - "[[物理/高中/高一/力学/物理-shs-g10-MEC-002-相互作用与力]]"
@@ -26,7 +32,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 牛顿运动定律
 
@@ -58,6 +64,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：分析正确；整体隔离法应用错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 应同时核验物理量、公式条件、单位、运算过程和结果合理性；单个最终数值不能独立证明掌握，复杂情境中的建模过程需单独评价。
 
 ## 追踪说明
 

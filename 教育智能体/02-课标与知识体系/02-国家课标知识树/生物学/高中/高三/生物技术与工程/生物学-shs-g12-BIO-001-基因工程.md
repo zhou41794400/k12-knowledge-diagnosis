@@ -16,14 +16,20 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 基因工程
+  - 生物技术与工程
+  - 基因工程核心知识
+  - 实验探究与证据推理
+assessment_mode: experimental_evidence
 prerequisites:
   - "[[生物学/高中/高三/稳态与调节/生物学-shs-g12-HOM-002-生态系统稳定性]]"
 related_points:
   - "[[生物学/高中/高三/稳态与调节/生物学-shs-g12-HOM-001-免疫调节]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 基因工程
 
@@ -56,6 +62,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：理解正确
 > - 负向证据：工具功能混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 观察或实验中的问题、假设、变量、对照、样本、数据与结论应按完整证据链评价；涉及健康、生态、进化或工程方案的开放推理必须经人工复核。
 
 ## 追踪说明
 

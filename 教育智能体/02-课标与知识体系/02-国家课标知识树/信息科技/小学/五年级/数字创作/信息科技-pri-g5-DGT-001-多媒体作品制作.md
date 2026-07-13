@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 多媒体作品制作
+  - 多媒体作品
+  - 数字作品设计与创作
+  - 项目过程与作品量规
+assessment_mode: project_artifact
 prerequisites:
   - "[[信息科技/小学/三年级/数字创作/信息科技-pri-g3-DGT-001-画图工具运用]]"
   - "[[信息科技/小学/五年级/网络与安全/信息科技-pri-g5-NET-001-网络安全基础]]"
@@ -25,9 +31,9 @@ related_points:
   - "[[信息科技/小学/六年级/数字创作/信息科技-pri-g6-DGT-001-展示汇报作品]]"
   - "[[信息科技/初中/九年级/数字创作/信息科技-jun-g9-DGT-001-综合创新作品]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 多媒体作品制作
 
@@ -59,6 +65,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：作品完整；媒体格式错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 项目作品应按需求理解、方案设计、实现过程、功能效果、表达规范和迭代反思等维度评价；必须由人工依据量规复核，不得用单一总分替代知识点证据。
 
 ## 追踪说明
 

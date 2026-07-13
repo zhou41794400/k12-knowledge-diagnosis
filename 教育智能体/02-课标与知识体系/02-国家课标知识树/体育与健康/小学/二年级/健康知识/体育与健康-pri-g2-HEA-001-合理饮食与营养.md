@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 合理饮食与营养
+  - 合理饮食
+  - 营养
+  - 健康知识与行为
+assessment_mode: health_knowledge_objective
 prerequisites:
   - "[[体育与健康/小学/一年级/健康知识/体育与健康-pri-g1-HEA-001-个人卫生习惯]]"
 related_points:
@@ -27,7 +33,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 合理饮食与营养
 
@@ -59,6 +65,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：健康饮食选择；偏食挑食
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 仅边界明确的健康知识识记、分类和判断题可形成规则证据；涉及行为养成、方案制定或实际处置时，必须转为过程性评价并人工复核。
 
 ## 追踪说明
 

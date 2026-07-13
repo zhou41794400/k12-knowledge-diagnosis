@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 化学反应原理综合
+  - 化学反应原理
+  - 化学反应原理综合核心知识
+  - 数量关系与规范计算
+assessment_mode: quantitative_calculation
 prerequisites:
   - "[[化学/高中/高二/化学反应原理/化学-shs-g11-REA-003-电解质溶液]]"
 related_points:
@@ -26,7 +32,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 化学反应原理综合
 
@@ -58,6 +64,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：分析完整；平衡原理应用不当
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 应同时核验化学式或方程式、数量关系、单位、计算步骤和结果合理性；只答对最终数值不足以证明计算链条已经掌握。
 
 ## 追踪说明
 

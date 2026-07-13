@@ -16,15 +16,21 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 人民当家作主
+  - 政治与法治
+  - 思想政治材料分析
+  - 人民当家作主考查
+assessment_mode: material_argumentation
 prerequisites:
   - "[[思想政治/高中/高二/政治与法治/思想政治-shs-g11-POL-001-中国共产党的领导]]"
 related_points:
   - "[[思想政治/高中/高二/哲学与文化/思想政治-shs-g11-PHI-001-唯物论与辩证法]]"
   - "[[思想政治/高中/高二/哲学与文化/思想政治-shs-g11-PHI-002-认识论与价值观]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 人民当家作主
 
@@ -57,6 +63,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：理解正确
 > - 负向证据：制度关系混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 必须评价观点、材料依据、原理调用和论证结构，由人工复核后形成证据；只匹配术语或结论方向正确不能直接判定掌握。
 
 ## 追踪说明
 

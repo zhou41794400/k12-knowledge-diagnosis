@@ -16,13 +16,19 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 逻辑思维与辩证思维
+  - 逻辑思维
+  - 辩证思维
+  - 逻辑与思维
+assessment_mode: concept_rule
 prerequisites:
   - "[[思想政治/高中/高三/哲学与文化/思想政治-shs-g12-PHI-001-文化传承与创新]]"
 related_points: []
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 逻辑思维与辩证思维
 
@@ -55,6 +61,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：分析正确
 > - 负向证据：推理规则混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 核心概念、基本原理和逻辑规则等边界明确的任务可形成结构化证据；概念复述正确不等同于能够迁移到复杂社会情境。
 
 ## 追踪说明
 

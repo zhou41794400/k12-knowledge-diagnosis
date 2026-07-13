@@ -16,13 +16,19 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 新中国的成立与巩固
+  - 新中国
+  - 成立
+  - 巩固
+assessment_mode: material_interpretation
 prerequisites: []
 related_points:
   - "[[历史/初中/九年级/世界古代史/历史-jun-g9-WAN-001-古代亚非文明]]"
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 新中国的成立与巩固
 
@@ -55,6 +61,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：理解正确
 > - 负向证据：政策混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 史料信息提取与出处判断可记录分步证据；史料立场、因果解释和历史结论必须依据材料逐项评价，不能只用最终答案更新掌握度。
 
 ## 追踪说明
 

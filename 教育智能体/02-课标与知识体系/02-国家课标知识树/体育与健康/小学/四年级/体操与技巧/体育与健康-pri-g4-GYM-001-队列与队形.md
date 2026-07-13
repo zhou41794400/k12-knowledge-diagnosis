@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 队列与队形
+  - 队列
+  - 队形
+  - 体操技巧表现
+assessment_mode: sport_performance_rubric
 prerequisites:
   - "[[体育与健康/小学/三年级/体操与技巧/体育与健康-pri-g3-GYM-001-前滚翻]]"
 related_points:
@@ -24,9 +30,9 @@ related_points:
   - "[[体育与健康/初中/七年级/体操与技巧/体育与健康-jun-g7-GYM-001-队列与广播体操]]"
   - "[[体育与健康/高中/高二/体操与技巧/体育与健康-shs-g11-GYM-001-体操与健美操]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 队列与队形
 
@@ -58,6 +64,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：队列整齐；动作迟缓
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 依据动作规范、安全意识、完成质量、体能变化和合作表现等维度量规，结合多次课堂观察形成证据；单次测试成绩或单题对错不得直接判定动作技能已经掌握。
 
 ## 追踪说明
 

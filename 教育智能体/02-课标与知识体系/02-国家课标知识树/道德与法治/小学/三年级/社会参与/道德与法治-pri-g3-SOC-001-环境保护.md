@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 环境保护
+  - 社会参与
+  - 道德法治情境分析
+  - 环境保护考查
+assessment_mode: material_argumentation
 prerequisites:
   - "[[道德与法治/小学/二年级/社会参与/道德与法治-pri-g2-SOC-001-邻里关系]]"
   - "[[道德与法治/小学/三年级/国情教育/道德与法治-pri-g3-NAT-001-家乡与祖国]]"
@@ -29,9 +35,9 @@ related_points:
   - "[[道德与法治/小学/六年级/社会参与/道德与法治-pri-g6-SOC-001-社会责任感]]"
   - "[[道德与法治/初中/八年级/社会参与/道德与法治-jun-g8-SOC-001-服务社会与公益]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 环境保护
 
@@ -63,6 +69,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：环保行为养成；破坏环境行为
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 必须评价观点、材料依据、规则调用和论证结构，由人工复核后形成证据；只出现结论关键词或立场正确不能直接判定掌握。
 
 ## 追踪说明
 

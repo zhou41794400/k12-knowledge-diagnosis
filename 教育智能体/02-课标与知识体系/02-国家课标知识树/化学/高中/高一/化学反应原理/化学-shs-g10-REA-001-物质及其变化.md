@@ -16,6 +16,13 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 物质及其变化
+  - 化学反应原理
+  - 物质及其变化核心知识
+  - 核心概念与规律辨析
+  - 物质
+assessment_mode: concept_rule
 prerequisites: []
 related_points:
   - "[[化学/高中/高一/物质结构与性质/化学-shs-g10-STR-001-原子结构与元素周期律]]"
@@ -26,7 +33,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 物质及其变化
 
@@ -58,6 +65,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：判断正确；化合价分析错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 概念、符号、物质性质和反应规律等边界明确的任务可形成结构化证据；宏观现象、微观解释与符号表达应相互印证，开放解释不能只按结论关键词判定。
 
 ## 追踪说明
 

@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 画图工具运用
+  - 数字作品设计与创作
+  - 项目过程与作品量规
+assessment_mode: project_artifact
 prerequisites:
   - "[[信息科技/小学/三年级/网络与安全/信息科技-pri-g3-NET-001-信息道德初步]]"
   - "[[信息科技/小学/三年级/算法与编程/信息科技-pri-g3-ALG-001-顺序结构初步]]"
@@ -25,9 +30,9 @@ related_points:
   - "[[信息科技/小学/六年级/数字创作/信息科技-pri-g6-DGT-001-展示汇报作品]]"
   - "[[信息科技/初中/九年级/数字创作/信息科技-jun-g9-DGT-001-综合创新作品]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 画图工具运用
 
@@ -59,6 +64,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：作品完整；工具使用不当
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 项目作品应按需求理解、方案设计、实现过程、功能效果、表达规范和迭代反思等维度评价；必须由人工依据量规复核，不得用单一总分替代知识点证据。
 
 ## 追踪说明
 

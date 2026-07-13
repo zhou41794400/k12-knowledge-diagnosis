@@ -16,6 +16,7 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+assessment_mode: reasoning_mixed
 matching_keywords:
   - 立体图形
   - 长方体正方体
@@ -31,7 +32,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 立体图形认识
 
@@ -64,6 +65,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：正向证据：辨认正确
 > - 负向证据：负向证据：立体与平面混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 基础识图与结论判断可形成规则证据；推理、证明、参数讨论和多步综合必须按过程分层评价。
 
 ## 追踪说明
 

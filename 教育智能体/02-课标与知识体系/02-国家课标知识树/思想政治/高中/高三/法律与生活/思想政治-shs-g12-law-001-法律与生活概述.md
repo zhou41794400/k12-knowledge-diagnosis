@@ -16,12 +16,18 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 法律与生活概述
+  - 法律
+  - 生活
+  - 法律与生活
+assessment_mode: concept_rule
 prerequisites: []
 related_points: []
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 
 # 法律与生活概述
@@ -55,6 +61,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：理解深刻
 > - 负向证据：概念混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 核心概念、基本原理和逻辑规则等边界明确的任务可形成结构化证据；概念复述正确不等同于能够迁移到复杂社会情境。
 
 ## 追踪说明
 

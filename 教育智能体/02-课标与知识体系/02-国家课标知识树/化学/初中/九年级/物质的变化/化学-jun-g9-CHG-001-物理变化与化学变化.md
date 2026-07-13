@@ -16,6 +16,13 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 物理变化与化学变化
+  - 物质的变化
+  - 物理变化与化学变化核心知识
+  - 核心概念与规律辨析
+  - 物理变化
+assessment_mode: concept_rule
 prerequisites: []
 related_points:
   - "[[化学/初中/九年级/元素与化合物/化学-jun-g9-ELE-001-空气与氧气]]"
@@ -26,7 +33,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 物理变化与化学变化
 
@@ -59,6 +66,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：区分正确
 > - 负向证据：变化类型混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 概念、符号、物质性质和反应规律等边界明确的任务可形成结构化证据；宏观现象、微观解释与符号表达应相互印证，开放解释不能只按结论关键词判定。
 
 ## 追踪说明
 

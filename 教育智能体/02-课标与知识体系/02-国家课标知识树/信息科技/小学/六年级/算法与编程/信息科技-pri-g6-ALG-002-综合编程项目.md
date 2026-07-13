@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 综合编程项目
+  - 编程项目
+  - 算法与编程实践
+  - 项目过程与作品量规
+assessment_mode: project_artifact
 prerequisites:
   - "[[信息科技/小学/五年级/算法与编程/信息科技-pri-g5-ALG-002-变量与数据存储]]"
   - "[[信息科技/小学/六年级/算法与编程/信息科技-pri-g6-ALG-001-函数与模块化]]"
@@ -26,9 +32,9 @@ related_points:
   - "[[信息科技/小学/五年级/算法与编程/信息科技-pri-g5-ALG-001-多条件分支]]"
   - "[[信息科技/小学/六年级/数据与信息/信息科技-pri-g6-DAT-001-数据处理与分析]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 综合编程项目
 
@@ -60,6 +66,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：项目运行正确；功能缺失
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 项目作品应按需求理解、方案设计、实现过程、功能效果、表达规范和迭代反思等维度评价；必须由人工依据量规复核，不得用单一总分替代知识点证据。
 
 ## 追踪说明
 

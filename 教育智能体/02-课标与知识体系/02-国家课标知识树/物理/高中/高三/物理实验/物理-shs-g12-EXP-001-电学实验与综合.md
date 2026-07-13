@@ -16,6 +16,13 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 电学实验与综合
+  - 物理实验
+  - 电学实验与综合核心知识
+  - 实验探究与证据推理
+  - 电学实验
+assessment_mode: experimental_evidence
 prerequisites:
   - "[[物理/高中/高一/物理实验/物理-shs-g10-EXP-001-力学实验]]"
   - "[[物理/高中/高三/近代物理/物理-shs-g12-MOD-001-量子论与相对论初步]]"
@@ -23,9 +30,9 @@ prerequisites:
   - "[[物理/高中/高三/力学/物理-shs-g12-MEC-001-力学综合]]"
 related_points: []
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 电学实验与综合
 
@@ -57,6 +64,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：设计合理；电路连接错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 实验设计、仪器操作、变量控制、数据处理、误差分析和结论解释应按证据链评价；实验探究结论必须经人工复核后形成掌握证据。
 
 ## 追踪说明
 

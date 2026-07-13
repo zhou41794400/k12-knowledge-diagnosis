@@ -16,12 +16,17 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 我们自己
+  - 生命现象与结构
+  - 概念辨识与观察记录
+assessment_mode: concept_observation
 prerequisites: []
 related_points: []
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 
 # 我们自己
@@ -55,6 +60,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：观察描述准确
 > - 负向证据：概念混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 概念辨识、特征比较和连续观察记录可形成结构化证据；仅凭一次观察或单道选择题，不得直接认定学生已能在新情境中稳定运用概念。
 
 ## 追踪说明
 

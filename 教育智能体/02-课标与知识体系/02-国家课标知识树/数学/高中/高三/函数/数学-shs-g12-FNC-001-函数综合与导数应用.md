@@ -16,6 +16,7 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+assessment_mode: reasoning_mixed
 matching_keywords:
   - 函数综合
   - 导数应用
@@ -63,6 +64,11 @@ updated: 2026-07-13
 
 > [!important] 证据规则
 > - 正向证据：分析全面；分类讨论遗漏
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 基础识图与结论判断可形成规则证据；推理、证明、参数讨论和多步综合必须按过程分层评价。
 
 ## 追踪说明
 

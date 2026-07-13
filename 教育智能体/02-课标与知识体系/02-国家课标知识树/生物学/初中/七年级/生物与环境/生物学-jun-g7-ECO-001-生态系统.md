@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 生态系统
+  - 生物与环境
+  - 生态系统核心知识
+  - 实验探究与证据推理
+assessment_mode: experimental_evidence
 prerequisites:
   - "[[生物学/初中/七年级/细胞与生物体/生物学-jun-g7-CEL-004-生物体的结构层次]]"
 related_points:
@@ -25,9 +31,9 @@ related_points:
   - "[[生物学/初中/七年级/生物多样性/生物学-jun-g7-DIV-001-生物分类]]"
   - "[[生物学/初中/七年级/生物多样性/生物学-jun-g7-DIV-002-植物类群]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 生态系统
 
@@ -59,6 +65,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：概念正确；食物链方向错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 观察或实验中的问题、假设、变量、对照、样本、数据与结论应按完整证据链评价；涉及健康、生态、进化或工程方案的开放推理必须经人工复核。
 
 ## 追踪说明
 

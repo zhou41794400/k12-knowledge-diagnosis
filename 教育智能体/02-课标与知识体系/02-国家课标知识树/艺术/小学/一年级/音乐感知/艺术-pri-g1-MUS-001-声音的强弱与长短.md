@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 声音的强弱与长短
+  - 声音
+  - 强弱
+  - 长短
+assessment_mode: art_performance_rubric
 prerequisites:
   - "[[艺术/小学/一年级/艺术欣赏/艺术-pri-g1-APR-001-色彩感知]]"
   - "[[艺术/小学/一年级/造型·美术/艺术-pri-g1-ART-001-基本形状与线条]]"
@@ -26,9 +32,9 @@ related_points:
   - "[[艺术/小学/五年级/音乐感知/艺术-pri-g5-MUS-001-简易乐器演奏]]"
   - "[[艺术/小学/六年级/音乐感知/艺术-pri-g6-MUS-001-音乐综合表现]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 声音的强弱与长短
 
@@ -60,6 +66,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：感知准确；节奏感不足
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 依据感知理解、技能运用、表现完整性、合作参与和反思改进等维度量规评价，并保留过程记录；单题对错不得直接判定艺术表现能力已经掌握。
 
 ## 追踪说明
 

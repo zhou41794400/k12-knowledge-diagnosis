@@ -16,13 +16,19 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 遥感、GIS与GPS
+  - 遥感
+  - GIS
+  - GPS
+assessment_mode: material_interpretation
 prerequisites:
   - "[[地理/高中/高三/区域发展/地理-shs-g12-REG-001-不同尺度的区域发展]]"
 related_points: []
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 遥感、GIS与GPS
 
@@ -55,6 +61,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：理解正确
 > - 负向证据：应用场景混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 地图、统计图表、遥感影像和文字材料的信息提取可记录分步证据；关系解释必须标明材料依据，不能只按结论关键词判定。
 
 ## 追踪说明
 

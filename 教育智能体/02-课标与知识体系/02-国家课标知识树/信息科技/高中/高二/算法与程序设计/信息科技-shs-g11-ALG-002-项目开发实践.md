@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 项目开发实践
+  - 项目开发
+  - 算法设计与程序实现
+  - 项目过程与作品量规
+assessment_mode: project_artifact
 prerequisites:
   - "[[信息科技/高中/高一/算法与程序设计/信息科技-shs-g10-ALG-001-算法设计与效率]]"
   - "[[信息科技/高中/高二/算法与程序设计/信息科技-shs-g11-ALG-001-数据结构进阶]]"
@@ -23,9 +29,9 @@ prerequisites:
   - "[[信息科技/高中/高二/数据与计算/信息科技-shs-g11-DAT-001-数据处理与分析]]"
 related_points: []
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 项目开发实践
 
@@ -57,6 +63,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：项目完整；功能不完善
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 项目作品应按需求理解、方案设计、实现过程、功能效果、表达规范和迭代反思等维度评价；必须由人工依据量规复核，不得用单一总分替代知识点证据。
 
 ## 追踪说明
 

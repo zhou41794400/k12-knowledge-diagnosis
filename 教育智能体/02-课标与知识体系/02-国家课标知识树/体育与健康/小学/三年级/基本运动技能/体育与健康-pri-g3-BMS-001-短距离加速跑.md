@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 短距离加速跑
+  - 基本运动技能表现
+  - 基本运动技能评价
+  - 短距离加速跑任务
+assessment_mode: sport_performance_rubric
 prerequisites:
   - "[[体育与健康/小学/二年级/基本运动技能/体育与健康-pri-g2-BMS-001-跑跳组合技能]]"
   - "[[体育与健康/小学/三年级/球类活动/体育与健康-pri-g3-BAL-001-小篮球对抗练习]]"
@@ -26,9 +32,9 @@ related_points:
   - "[[体育与健康/小学/一年级/基本运动技能/体育与健康-pri-g1-BMS-002-跳跃与攀爬]]"
   - "[[体育与健康/小学/四年级/基本运动技能/体育与健康-pri-g4-BMS-001-耐力跑]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 短距离加速跑
 
@@ -60,6 +66,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：跑步技术正确；起跑姿势错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 依据动作规范、安全意识、完成质量、体能变化和合作表现等维度量规，结合多次课堂观察形成证据；单次测试成绩或单题对错不得直接判定动作技能已经掌握。
 
 ## 追踪说明
 

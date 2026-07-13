@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 地图的阅读
+  - 地图
+  - 阅读
+  - 地球与地图
+assessment_mode: fact_location
 prerequisites:
   - "[[地理/初中/七年级/地球与地图/地理-jun-g7-MAP-001-地球的形状和大小]]"
 related_points:
@@ -27,7 +33,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 地图的阅读
 
@@ -59,6 +65,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：读图正确；比例尺计算错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 地名、位置、分布和地图要素等边界明确的定位任务可形成结构化证据；名称识记正确不等同于能够解释区域差异。
 
 ## 追踪说明
 

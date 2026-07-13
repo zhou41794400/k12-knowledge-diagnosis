@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 小篮球游戏
+  - 球类活动表现
+  - 球类活动评价
+  - 小篮球游戏任务
+assessment_mode: sport_performance_rubric
 prerequisites:
   - "[[体育与健康/小学/二年级/体能发展/体育与健康-pri-g2-FIT-001-协调性发展]]"
   - "[[体育与健康/小学/二年级/健康知识/体育与健康-pri-g2-HEA-001-合理饮食与营养]]"
@@ -25,9 +31,9 @@ related_points:
   - "[[体育与健康/小学/五年级/球类活动/体育与健康-pri-g5-BAL-001-排球垫球]]"
   - "[[体育与健康/小学/六年级/球类活动/体育与健康-pri-g6-BAL-001-综合运动能力]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 小篮球游戏
 
@@ -59,6 +65,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：球感良好；无法控球
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 依据动作规范、安全意识、完成质量、体能变化和合作表现等维度量规，结合多次课堂观察形成证据；单次测试成绩或单题对错不得直接判定动作技能已经掌握。
 
 ## 追踪说明
 

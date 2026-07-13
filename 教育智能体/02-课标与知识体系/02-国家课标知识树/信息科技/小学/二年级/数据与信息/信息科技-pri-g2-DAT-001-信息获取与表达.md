@@ -16,12 +16,18 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 信息获取与表达
+  - 信息获取
+  - 表达
+  - 数据与信息处理
+assessment_mode: operation_task
 prerequisites: []
 related_points: []
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 
 # 信息获取与表达
@@ -55,6 +61,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：理解正确
 > - 负向证据：概念混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 操作任务须同时核对步骤、工具使用、过程记录和结果有效性；仅凭最终文件或单次自动判定不能确认掌握，必须由人工复核。
 
 ## 追踪说明
 

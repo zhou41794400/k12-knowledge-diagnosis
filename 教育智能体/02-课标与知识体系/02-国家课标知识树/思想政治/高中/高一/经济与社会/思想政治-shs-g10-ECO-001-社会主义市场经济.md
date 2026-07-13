@@ -16,14 +16,20 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 社会主义市场经济
+  - 经济与社会
+  - 思想政治材料分析
+  - 社会主义市场经济考查
+assessment_mode: material_argumentation
 prerequisites:
   - "[[思想政治/高中/高一/中国特色社会主义/思想政治-shs-g10-SOC-002-中国的发展道路]]"
 related_points:
   - "[[思想政治/高中/高一/中国特色社会主义/思想政治-shs-g10-SOC-001-社会主义从空想到科学]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 社会主义市场经济
 
@@ -55,6 +61,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：理解正确；市场缺陷认识不清
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 必须评价观点、材料依据、原理调用和论证结构，由人工复核后形成证据；只匹配术语或结论方向正确不能直接判定掌握。
 
 ## 追踪说明
 

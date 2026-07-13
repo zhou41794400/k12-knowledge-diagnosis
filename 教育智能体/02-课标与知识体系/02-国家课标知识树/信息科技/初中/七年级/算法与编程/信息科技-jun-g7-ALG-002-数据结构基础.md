@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 数据结构基础
+  - 数据结构
+  - 算法与编程实践
+  - 知识规则与概念判断
+assessment_mode: knowledge_rule
 prerequisites:
   - "[[信息科技/小学/六年级/算法与编程/信息科技-pri-g6-ALG-002-综合编程项目]]"
   - "[[信息科技/初中/七年级/算法与编程/信息科技-jun-g7-ALG-001-Python入门]]"
@@ -29,7 +35,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 数据结构基础
 
@@ -61,6 +67,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：使用正确；索引越界
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 术语、规则、结构和安全规范等边界明确的任务可形成结构化证据；涉及真实情境取舍、数字伦理或综合方案判断时，应保留人工复核。
 
 ## 追踪说明
 

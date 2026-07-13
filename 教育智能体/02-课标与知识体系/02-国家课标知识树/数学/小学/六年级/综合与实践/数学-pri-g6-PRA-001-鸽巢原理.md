@@ -16,6 +16,7 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+assessment_mode: modeling_rubric
 matching_keywords:
   - 鸽巢原理
   - 抽屉原理
@@ -32,7 +33,7 @@ related_points:
   - "[[数学/小学/四年级/综合与实践/数学-pri-g4-PRA-002-田忌赛马与策略]]"
   - "[[数学/小学/五年级/综合与实践/数学-pri-g5-PRA-001-植树问题]]"
 evidence_type:
-review_required: false
+review_required: true
 status: draft
 updated: 2026-07-13
 ---
@@ -67,6 +68,11 @@ updated: 2026-07-13
 > [!important] 证据规则
 > - 正向证据：正向证据：推理正确
 > - 负向证据：负向证据：抽屉确定错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 按问题理解、变量假设、模型建立、求解检验和结果解释等维度评价，由人工确认后形成证据。
 
 ## 追踪说明
 

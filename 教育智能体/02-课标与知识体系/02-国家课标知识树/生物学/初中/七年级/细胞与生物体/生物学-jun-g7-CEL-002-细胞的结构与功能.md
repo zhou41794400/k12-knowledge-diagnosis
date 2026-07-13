@@ -16,6 +16,13 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 细胞的结构与功能
+  - 细胞与生物体
+  - 细胞的结构与功能核心知识
+  - 核心概念与规律辨析
+  - 细胞
+assessment_mode: concept_rule
 prerequisites:
   - "[[生物学/初中/七年级/细胞与生物体/生物学-jun-g7-CEL-001-认识生物]]"
 related_points:
@@ -24,7 +31,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 细胞的结构与功能
 
@@ -57,6 +64,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：识别正确
 > - 负向证据：结构与功能混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 结构名称、功能对应、生命过程和基本机制等边界明确的任务可形成结构化证据；跨层级机制解释不能仅凭术语命中或最终结论更新掌握度。
 
 ## 追踪说明
 

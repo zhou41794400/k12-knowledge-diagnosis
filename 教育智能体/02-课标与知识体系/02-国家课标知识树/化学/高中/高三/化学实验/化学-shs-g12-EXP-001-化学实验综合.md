@@ -16,14 +16,20 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 化学实验综合
+  - 化学实验
+  - 化学实验综合核心知识
+  - 实验探究与证据推理
+assessment_mode: experimental_evidence
 prerequisites:
   - "[[化学/高中/高三/有机化学/化学-shs-g12-ORG-001-有机化学综合]]"
   - "[[化学/高中/高三/化学反应原理/化学-shs-g12-REA-001-化学反应原理综合]]"
 related_points: []
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 化学实验综合
 
@@ -55,6 +61,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：设计合理；实验评价不充分
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 实验安全、变量控制、操作顺序、现象记录、数据分析和结论推断应整体评价；探究方案与开放证据必须经人工复核后形成掌握证据。
 
 ## 追踪说明
 

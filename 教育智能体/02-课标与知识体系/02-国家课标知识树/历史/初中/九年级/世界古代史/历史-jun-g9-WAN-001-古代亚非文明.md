@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 古代亚非文明
+  - 世界古代史
+  - 历史事件与阶段特征
+  - 古代亚非文明考查
+assessment_mode: fact_location
 prerequisites:
   - "[[历史/初中/九年级/中国现代史/历史-jun-g9-CON-003-改革开放]]"
 related_points:
@@ -26,7 +32,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 古代亚非文明
 
@@ -59,6 +65,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：知识正确
 > - 负向证据：文明特征混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 年代、人物、事件、制度和史实对应等边界明确的事实定位任务可形成结构化证据；孤立记忆正确不等同于已经理解历史因果和阶段特征。
 
 ## 追踪说明
 

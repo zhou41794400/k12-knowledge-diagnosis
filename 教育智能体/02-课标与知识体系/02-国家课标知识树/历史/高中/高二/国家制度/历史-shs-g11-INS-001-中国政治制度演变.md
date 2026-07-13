@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 中国政治制度演变
+  - 国家制度
+  - 历史事件与阶段特征
+  - 中国政治制度演变考查
+assessment_mode: spatiotemporal_synthesis
 prerequisites:
   - "[[历史/高中/高二/中外历史纲要/历史-shs-g11-OUT-002-西方近代化]]"
 related_points:
@@ -25,7 +31,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 中国政治制度演变
 
@@ -58,6 +64,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：理解清晰
 > - 负向证据：制度演变混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 应同时考查时间顺序、空间联系、阶段特征与历史因果；跨时期比较和综合解释需按证据链评价，单一史实命中不能替代时空综合能力。
 
 ## 追踪说明
 

@@ -16,6 +16,13 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 运动的描述
+  - 力学
+  - 运动的描述核心知识
+  - 数量关系与规范计算
+  - 运动
+assessment_mode: quantitative_calculation
 prerequisites: []
 related_points:
   - "[[物理/高中/高二/力学/物理-shs-g11-MEC-001-曲线运动与圆周运动]]"
@@ -24,7 +31,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 运动的描述
 
@@ -57,6 +64,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：计算正确
 > - 负向证据：位移和路程混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 应同时核验物理量、公式条件、单位、运算过程和结果合理性；单个最终数值不能独立证明掌握，复杂情境中的建模过程需单独评价。
 
 ## 追踪说明
 

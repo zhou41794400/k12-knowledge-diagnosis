@@ -16,12 +16,18 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 宇宙中的地球
+  - 宇宙中
+  - 地球
+  - 自然地理
+assessment_mode: spatiotemporal_synthesis
 prerequisites: []
 related_points: []
 evidence_type: []
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 
 # 宇宙中的地球
@@ -55,6 +61,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：概念正确
 > - 负向证据：天体系统层次混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 应综合位置、尺度、过程、时间变化和人地关系评价推理链；区域比较与成因分析需按步骤取证，单项数据正确不能直接等同于综合能力达标。
 
 ## 追踪说明
 

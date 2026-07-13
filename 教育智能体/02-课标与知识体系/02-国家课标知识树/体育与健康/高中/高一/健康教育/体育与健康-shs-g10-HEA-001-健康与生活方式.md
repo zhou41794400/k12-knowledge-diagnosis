@@ -16,15 +16,21 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 健康与生活方式
+  - 健康
+  - 生活方式
+  - 健康教育与实践
+assessment_mode: health_process_rubric
 prerequisites:
   - "[[体育与健康/高中/高一/球类运动/体育与健康-shs-g10-BAL-001-球类选项学习]]"
   - "[[体育与健康/高中/高一/体能训练/体育与健康-shs-g10-FIT-001-体能综合训练]]"
 related_points:
   - "[[体育与健康/高中/高三/健康教育/体育与健康-shs-g12-HEA-001-运动与心理健康]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 健康与生活方式
 
@@ -56,6 +62,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：健康意识强；不良习惯
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 健康概念客观题只能证明知识理解；习惯养成、风险处置和健康行为应结合情境任务、行为记录与过程量规，经人工复核后形成证据。
 
 ## 追踪说明
 

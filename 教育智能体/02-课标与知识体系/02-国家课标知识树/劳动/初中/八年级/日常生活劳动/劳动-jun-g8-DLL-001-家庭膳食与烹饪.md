@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 家庭膳食与烹饪
+  - 家庭膳食
+  - 烹饪
+  - 日常劳动实践
+assessment_mode: labor_process_rubric
 prerequisites:
   - "[[劳动/初中/七年级/日常生活劳动/劳动-jun-g7-DLL-001-个人空间整理]]"
 related_points:
@@ -25,9 +31,9 @@ related_points:
   - "[[劳动/小学/二年级/日常生活劳动/劳动-pri-g2-DLL-002-简单家务]]"
   - "[[劳动/小学/三年级/日常生活劳动/劳动-pri-g3-DLL-001-厨房安全与简单烹饪]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 家庭膳食与烹饪
 
@@ -59,6 +65,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：烹饪完成；操作安全
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 依据任务规划、规范操作、安全卫生、协作责任、问题解决和反思改进等过程量规，结合连续观察形成证据；单题对错不得直接判定劳动实践能力已经掌握。
 
 ## 追踪说明
 

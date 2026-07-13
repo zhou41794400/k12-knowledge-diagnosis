@@ -16,6 +16,7 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+assessment_mode: reasoning_mixed
 matching_keywords:
   - 位置与方向
   - 方向和距离
@@ -67,6 +68,11 @@ updated: 2026-07-13
 > [!important] 证据规则
 > - 正向证据：正向证据：位置确定正确
 > - 负向证据：负向证据：数对顺序颠倒
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 基础识图与结论判断可形成规则证据；推理、证明、参数讨论和多步综合必须按过程分层评价。
 
 ## 追踪说明
 
