@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 可数名词单复数
+  - 英语语法结构
+  - 可数名词单复数题型
+assessment_mode: language_form_rule
 prerequisites:
   - "[[英语/小学/三年级/语法/英语-pri-g3-GRM-001-be动词基本用法]]"
   - "[[英语/小学/三年级/词汇/英语-pri-g3-VOC-002-基础句型与日常用语]]"
@@ -30,7 +35,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 可数名词单复数
 
@@ -63,6 +68,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：复数变化正确
 > - 负向证据：不规则变化混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 词形、词义、拼读和语法结构等答案边界明确的任务可形成结构化证据；真实语境中的得体性、流利度和综合表达仍需单独评价。
 
 ## 追踪说明
 

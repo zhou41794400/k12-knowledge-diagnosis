@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 议论文写作
+  - 英语写作任务
+  - 议论文写作题型
+assessment_mode: performance_rubric
 prerequisites:
   - "[[英语/高中/高一/阅读理解/英语-shs-g10-READ-001-篇章结构分析]]"
   - "[[英语/高中/高一/听说能力/英语-shs-g10-LIS-001-听力理解与口语表达]]"
@@ -24,9 +29,9 @@ related_points:
   - "[[英语/高中/高二/写作表达/英语-shs-g11-WRI-001-应用文与读后续写]]"
   - "[[英语/高中/高三/写作表达/英语-shs-g12-WRI-001-高考写作提分]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 议论文写作
 
@@ -58,6 +63,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：结构清晰；论证不充分
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 写作与听说任务按内容完成度、语言准确性、连贯性、得体性及语音流利度等维度评分，由人工确认后形成证据。
 
 ## 追踪说明
 

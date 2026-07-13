@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 简单句子阅读
+  - 句子阅读
+  - 英语阅读理解
+assessment_mode: reading_mixed
 prerequisites:
   - "[[英语/小学/三年级/语音/英语-pri-g3-PHO-001-字母发音与简单拼读]]"
   - "[[英语/小学/三年级/词汇/英语-pri-g3-VOC-001-核心词汇认读]]"
@@ -28,7 +33,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 简单句子阅读
 
@@ -60,6 +65,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：理解正确；关键词不认识导致的误解
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 事实信息定位和明确推断可形成规则证据；篇章结构、作者意图和开放回应应按题目层级评价，不能只用整篇阅读总分更新单个知识点。
 
 ## 追踪说明
 

@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 高考语法综合
+  - 高考语法
+  - 词汇语法综合运用
+assessment_mode: language_form_rule
 prerequisites:
   - "[[英语/高中/高二/词汇与语法/英语-shs-g11-VGR-002-虚拟语气与倒装]]"
 related_points:
@@ -25,7 +30,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 高考语法综合
 
@@ -58,6 +63,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：正确率高
 > - 负向证据：时态语态混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 词形、词义、拼读和语法结构等答案边界明确的任务可形成结构化证据；真实语境中的得体性、流利度和综合表达仍需单独评价。
 
 ## 追踪说明
 

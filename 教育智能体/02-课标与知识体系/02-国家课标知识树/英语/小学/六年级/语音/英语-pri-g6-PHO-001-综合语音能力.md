@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 综合语音能力
+  - 语音
+  - 英语语音与拼读
+assessment_mode: language_form_rule
 prerequisites:
   - "[[英语/小学/五年级/语音/英语-pri-g5-PHO-001-重音与语调]]"
   - "[[英语/小学/六年级/词汇/英语-pri-g6-VOC-001-综合词汇应用]]"
@@ -25,7 +30,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 综合语音能力
 
@@ -57,6 +62,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：朗读流利；意群划分错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 词形、词义、拼读和语法结构等答案边界明确的任务可形成结构化证据；真实语境中的得体性、流利度和综合表达仍需单独评价。
 
 ## 追踪说明
 

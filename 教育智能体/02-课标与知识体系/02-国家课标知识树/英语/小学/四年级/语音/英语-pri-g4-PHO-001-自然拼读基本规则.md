@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 自然拼读基本规则
+  - 自然拼读
+  - 规则
+  - 英语语音与拼读
+assessment_mode: language_form_rule
 prerequisites:
   - "[[英语/小学/三年级/语音/英语-pri-g3-PHO-001-字母发音与简单拼读]]"
   - "[[英语/小学/四年级/词汇/英语-pri-g4-VOC-001-主题词汇扩展]]"
@@ -25,7 +31,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 自然拼读基本规则
 
@@ -58,6 +64,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：拼读正确
 > - 负向证据：组合发音混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 词形、词义、拼读和语法结构等答案边界明确的任务可形成结构化证据；真实语境中的得体性、流利度和综合表达仍需单独评价。
 
 ## 追踪说明
 

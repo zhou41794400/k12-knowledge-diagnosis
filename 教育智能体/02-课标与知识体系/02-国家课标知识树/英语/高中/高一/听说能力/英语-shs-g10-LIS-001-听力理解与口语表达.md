@@ -16,15 +16,21 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 听力理解与口语表达
+  - 听力
+  - 口语
+  - 英语听说交互
+assessment_mode: performance_rubric
 prerequisites:
   - "[[英语/高中/高一/词汇与语法/英语-shs-g10-VGR-002-非谓语动词]]"
 related_points:
   - "[[英语/高中/高一/词汇与语法/英语-shs-g10-VGR-001-3500词汇积累]]"
   - "[[英语/高中/高一/阅读理解/英语-shs-g10-READ-001-篇章结构分析]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 听力理解与口语表达
 
@@ -56,6 +62,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：听力准确；表达卡顿
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 写作与听说任务按内容完成度、语言准确性、连贯性、得体性及语音流利度等维度评分，由人工确认后形成证据。
 
 ## 追踪说明
 

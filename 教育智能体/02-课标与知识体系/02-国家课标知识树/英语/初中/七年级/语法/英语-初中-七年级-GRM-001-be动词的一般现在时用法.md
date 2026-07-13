@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - be动词的一般现在时用法
+  - be动词
+  - 一般现在时用法
+  - 英语语法结构
+assessment_mode: language_form_rule
 prerequisites:
   - "[[英语/小学/六年级/语法/英语-pri-g6-GRM-002-形容词比较级]]"
   - "[[英语/初中/七年级/语法/七年级英语-语法]]"
@@ -31,7 +37,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # be动词的一般现在时用法
 
@@ -66,6 +72,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：be 动词选择正确、句型转换正确
 > - 负向证据：主谓不一致、句型转换错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 词形、词义、拼读和语法结构等答案边界明确的任务可形成结构化证据；真实语境中的得体性、流利度和综合表达仍需单独评价。
 
 ## 追踪说明
 

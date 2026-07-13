@@ -16,12 +16,17 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 字母书写
+  - 英语词汇识别与运用
+  - 字母书写题型
+assessment_mode: language_form_rule
 prerequisites: []
 related_points: []
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 
 # 字母书写
@@ -55,6 +60,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：正确认读
 > - 负向证据：混淆遗忘
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 词形、词义、拼读和语法结构等答案边界明确的任务可形成结构化证据；真实语境中的得体性、流利度和综合表达仍需单独评价。
 
 ## 追踪说明
 
