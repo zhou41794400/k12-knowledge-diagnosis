@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 《红楼梦》整本书阅读
+  - 红楼梦》整本书阅读
+  - 整本书阅读任务
+assessment_mode: rubric_human_review
 prerequisites:
   - "[[语文/高中/高一/整本书阅读/语文-shs-g10-WHR-001-《乡土中国》整本书阅读]]"
   - "[[语文/高中/高三/表达与交流/语文-shs-g12-EXP-001-高考作文策略]]"
@@ -23,9 +28,9 @@ prerequisites:
   - "[[语文/高中/高三/语言积累与运用/语文-shs-g12-LNG-001-语言文字综合运用]]"
 related_points: []
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 《红楼梦》整本书阅读
 
@@ -57,6 +62,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：理解深入；只知情节
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 采用内容、结构、语言、证据和交流效果等维度量规，由人工确认后形成证据；单次总分不得直接等同于某个知识点已掌握。
 
 ## 追踪说明
 

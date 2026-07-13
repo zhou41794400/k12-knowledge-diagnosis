@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+assessment_mode: data_reasoning_mixed
+matching_keywords:
+  - 概率
+  - 列表法树状图
+  - 频率估计概率
 prerequisites:
   - "[[数学/初中/八年级/统计与概率/数学-jun-g8-STP-001-数据的分析]]"
   - "[[数学/初中/九年级/图形与几何/数学-jun-g9-GG-004-投影与视图]]"
@@ -29,7 +34,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 概率初步
 
@@ -62,11 +67,21 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：概率计算正确；列举遗漏
 
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 读图、计算和明确概率结论可形成规则证据；抽样合理性、统计解释和决策建议必须保留推断过程。
+
 ## 追踪说明
 
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 通过抽取不同颜色活动卡片或转盘试验，用列表法或树状图计算概率。
 
 ## 课标依据
 

@@ -16,6 +16,13 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 基因与性状
+  - 遗传与进化
+  - 基因与性状核心知识
+  - 核心概念与规律辨析
+  - 基因
+assessment_mode: concept_rule
 prerequisites:
   - "[[生物学/初中/八年级/人体生理与健康/生物学-jun-g8-PHY-006-免疫与健康]]"
   - "[[生物学/初中/八年级/生物多样性/生物学-jun-g8-DIV-001-保护生物多样性]]"
@@ -28,7 +35,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 基因与性状
 
@@ -60,6 +67,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：分析正确；显隐性判断错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 结构名称、功能对应、生命过程和基本机制等边界明确的任务可形成结构化证据；跨层级机制解释不能仅凭术语命中或最终结论更新掌握度。
 
 ## 追踪说明
 

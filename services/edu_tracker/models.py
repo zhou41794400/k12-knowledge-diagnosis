@@ -21,6 +21,10 @@ class KnowledgePoint:
     topic_code: str
     standard_version: str
     tracking_mode: str
+    title: str = ""
+    status: str = "draft"
+    matching_keywords: list[str] = field(default_factory=list)
+    source_path: str = ""
     prerequisites: list[str] = field(default_factory=list)
     related_points: list[str] = field(default_factory=list)
 
@@ -100,6 +104,8 @@ class IngestEvent:
     source_type: str
     image_path: str
     status: str
+    subject: str = ""
+    grade: str = ""
     ocr_text: str = ""
     ocr_confidence: float = 0.0
     created_at: str = field(default_factory=now_iso)

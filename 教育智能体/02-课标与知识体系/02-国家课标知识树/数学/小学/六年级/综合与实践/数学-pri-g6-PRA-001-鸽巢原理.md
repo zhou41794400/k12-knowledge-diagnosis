@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+assessment_mode: modeling_rubric
+matching_keywords:
+  - 鸽巢原理
+  - 抽屉原理
+  - 至少有几个
 prerequisites:
   - "[[数学/小学/五年级/综合与实践/数学-pri-g5-PRA-002-数学建模初步]]"
   - "[[数学/小学/六年级/统计与概率/数学-pri-g6-STP-001-扇形统计图]]"
@@ -28,9 +33,9 @@ related_points:
   - "[[数学/小学/四年级/综合与实践/数学-pri-g4-PRA-002-田忌赛马与策略]]"
   - "[[数学/小学/五年级/综合与实践/数学-pri-g5-PRA-001-植树问题]]"
 evidence_type:
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 鸽巢原理
 
@@ -64,11 +69,21 @@ updated: 2026-06-10
 > - 正向证据：正向证据：推理正确
 > - 负向证据：负向证据：抽屉确定错误
 
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 按问题理解、变量假设、模型建立、求解检验和结果解释等维度评价，由人工确认后形成证据。
+
 ## 追踪说明
 
 > [!info] 追踪方式
 > - 当前追踪方式：`RULE`
 > - 原因：规则型技能，适合基于规则的追踪
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 分析班级同学生日月份或书本存放格，判断至少有若干对象落入同一类。
 
 ## 课标依据
 

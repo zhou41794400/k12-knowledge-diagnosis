@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 文言实词与虚词综合
+  - 文言实词
+  - 虚词
+  - 语言文字运用
+assessment_mode: objective_rule
 prerequisites:
   - "[[语文/高中/高一/语言积累与运用/语文-shs-g10-LNG-002-病句辨析与修改]]"
 related_points:
@@ -26,7 +32,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 文言实词与虚词综合
 
@@ -58,6 +64,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：翻译准确；词类活用判断错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 字音、字形、词义、语病或规范书写等边界明确的任务可形成结构化证据；涉及语境效果、书写质量和开放表达时，必须保留人工复核。
 
 ## 追踪说明
 

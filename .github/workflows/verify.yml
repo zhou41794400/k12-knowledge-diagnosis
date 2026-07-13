@@ -16,6 +16,8 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Run checks
+      - name: Run compile and regression checks
         run: make check
 
+      - name: Run end-to-end simulation
+        run: make simulate

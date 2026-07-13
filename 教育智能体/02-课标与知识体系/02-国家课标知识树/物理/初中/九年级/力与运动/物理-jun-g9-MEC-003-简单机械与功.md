@@ -16,6 +16,13 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 简单机械与功
+  - 力与运动
+  - 简单机械与功核心知识
+  - 数量关系与规范计算
+  - 简单机械
+assessment_mode: quantitative_calculation
 prerequisites:
   - "[[物理/初中/八年级/力与运动/物理-jun-g8-MEC-003-牛顿第一定律与二力平衡]]"
   - "[[物理/初中/九年级/力与运动/物理-jun-g9-MEC-001-压强]]"
@@ -30,7 +37,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 简单机械与功
 
@@ -62,6 +69,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：分析正确；力臂识别错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 应同时核验物理量、公式条件、单位、运算过程和结果合理性；单个最终数值不能独立证明掌握，复杂情境中的建模过程需单独评价。
 
 ## 追踪说明
 

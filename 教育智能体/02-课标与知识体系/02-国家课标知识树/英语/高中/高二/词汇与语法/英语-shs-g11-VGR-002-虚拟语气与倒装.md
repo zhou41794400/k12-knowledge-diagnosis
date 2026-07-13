@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 虚拟语气与倒装
+  - 虚拟语气
+  - 倒装
+  - 词汇语法综合运用
+assessment_mode: language_form_rule
 prerequisites:
   - "[[英语/高中/高一/词汇与语法/英语-shs-g10-VGR-002-非谓语动词]]"
   - "[[英语/高中/高二/词汇与语法/英语-shs-g11-VGR-001-从句综合运用]]"
@@ -25,7 +31,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 虚拟语气与倒装
 
@@ -58,6 +64,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：用法正确
 > - 负向证据：时态倒退规则混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 词形、词义、拼读和语法结构等答案边界明确的任务可形成结构化证据；真实语境中的得体性、流利度和综合表达仍需单独评价。
 
 ## 追踪说明
 

@@ -16,13 +16,18 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 影视作品欣赏
+  - 影视艺术评价
+  - 影视作品欣赏任务
+assessment_mode: art_appreciation_rubric
 prerequisites:
   - "[[艺术/小学/五年级/造型·美术/艺术-pri-g5-ART-001-素描初步]]"
 related_points: []
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 影视作品欣赏
 
@@ -54,6 +59,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：理解合理；思考浅显
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 事实性识别只作为辅助证据，重点依据观察描述、审美阐释、比较分析和证据表达等维度量规；开放性艺术理解须经人工复核，不能以单题对错判定掌握。
 
 ## 追踪说明
 

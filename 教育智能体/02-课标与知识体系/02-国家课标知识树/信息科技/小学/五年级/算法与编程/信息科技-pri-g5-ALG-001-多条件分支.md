@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 多条件分支
+  - 算法与编程实践
+  - 操作过程与任务结果
+assessment_mode: operation_task
 prerequisites:
   - "[[信息科技/小学/四年级/算法与编程/信息科技-pri-g4-ALG-002-分支结构初步]]"
 related_points:
@@ -25,9 +30,9 @@ related_points:
   - "[[信息科技/小学/六年级/算法与编程/信息科技-pri-g6-ALG-001-函数与模块化]]"
   - "[[信息科技/小学/六年级/算法与编程/信息科技-pri-g6-ALG-002-综合编程项目]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 多条件分支
 
@@ -59,6 +64,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：逻辑正确；条件覆盖不完整
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 操作任务须同时核对步骤、工具使用、过程记录和结果有效性；仅凭最终文件或单次自动判定不能确认掌握，必须由人工复核。
 
 ## 追踪说明
 

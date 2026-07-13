@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 复杂文篇阅读
+  - 文篇阅读
+  - 阅读理解与鉴赏
+assessment_mode: reading_mixed
 prerequisites:
   - "[[语文/小学/四年级/阅读与鉴赏/语文-pri-g4-READ-004-简单文学鉴赏]]"
   - "[[语文/小学/五年级/识字与写字/语文-pri-g5-LIT-002-文言词汇初识]]"
@@ -28,7 +33,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 复杂文篇阅读
 
@@ -61,6 +66,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：正向证据：分析准确
 > - 负向证据：负向证据：只关注细节忽略整体
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 信息提取、文意判断等客观任务可作为规则证据；主旨阐释、人物评价和审美鉴赏等开放题应按题目层级量规评分，不能只用最终对错更新掌握度。
 
 ## 追踪说明
 

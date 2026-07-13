@@ -16,13 +16,19 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 中外音乐名作
+  - 音乐鉴赏阐释
+  - 音乐鉴赏评价
+  - 中外音乐名作任务
+assessment_mode: art_appreciation_rubric
 prerequisites:
   - "[[艺术/高中/高一/美术鉴赏/艺术-shs-g10-FAR-001-中外美术史概要]]"
 related_points: []
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 中外音乐名作
 
@@ -54,6 +60,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：感受表达；分析表面
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 事实性识别只作为辅助证据，重点依据观察描述、审美阐释、比较分析和证据表达等维度量规；开放性艺术理解须经人工复核，不能以单题对错判定掌握。
 
 ## 追踪说明
 

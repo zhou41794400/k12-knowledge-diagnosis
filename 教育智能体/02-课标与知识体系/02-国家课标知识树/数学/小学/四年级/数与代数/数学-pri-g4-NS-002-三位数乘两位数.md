@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+assessment_mode: calculation_rule
+matching_keywords:
+  - 三位数乘两位数
+  - 乘法竖式
+  - 积的估算
 prerequisites:
   - "[[数学/小学/三年级/数与代数/数学-小学-三年级-NS-006-有余数除法的初步理解]]"
   - "[[数学/小学/四年级/数与代数/数学-pri-g4-NS-001-大数的认识]]"
@@ -28,7 +33,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 三位数乘两位数
 
@@ -62,11 +67,21 @@ updated: 2026-06-10
 > - 正向证据：正向证据：计算正确
 > - 负向证据：负向证据：进位错误、数位对齐错误
 
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 计算结果、步骤和概念辨析可形成结构化证据；开放解释、方法比较和真实建模不能只按最终答案判定。
+
 ## 追踪说明
 
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰，适合追踪
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 按旅游大巴每车人数和车辆数量，估算并计算研学活动可容纳的总人数。
 
 ## 课标依据
 

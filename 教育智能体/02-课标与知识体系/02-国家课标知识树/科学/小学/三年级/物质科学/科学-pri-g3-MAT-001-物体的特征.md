@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 物体的特征
+  - 物体
+  - 特征
+  - 物质现象与规律
+assessment_mode: concept_observation
 prerequisites: []
 related_points:
   - "[[科学/小学/三年级/生命科学/科学-pri-g3-BIO-001-植物基本结构]]"
@@ -26,7 +32,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 物体的特征
 
@@ -58,6 +64,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：描述准确；特征遗漏
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 概念辨识、特征比较和连续观察记录可形成结构化证据；仅凭一次观察或单道选择题，不得直接认定学生已能在新情境中稳定运用概念。
 
 ## 追踪说明
 

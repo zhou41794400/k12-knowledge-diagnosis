@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 社区志愿服务
+  - 服务劳动过程
+  - 服务性劳动评价
+  - 社区志愿服务任务
+assessment_mode: labor_process_rubric
 prerequisites:
   - "[[劳动/小学/六年级/服务性劳动/劳动-pri-g6-SEL-001-社区志愿服务]]"
   - "[[劳动/初中/八年级/日常生活劳动/劳动-jun-g8-DLL-001-家庭膳食与烹饪]]"
@@ -24,9 +30,9 @@ related_points:
   - "[[劳动/初中/九年级/服务性劳动/劳动-jun-g9-SEL-001-公益项目策划]]"
   - "[[劳动/高中/高二/服务性劳动/劳动-shs-g11-SEL-001-志愿服务项目]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 社区志愿服务
 
@@ -58,6 +64,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：服务主动；消极应付
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 依据任务规划、规范操作、安全卫生、协作责任、问题解决和反思改进等过程量规，结合连续观察形成证据；单题对错不得直接判定劳动实践能力已经掌握。
 
 ## 追踪说明
 

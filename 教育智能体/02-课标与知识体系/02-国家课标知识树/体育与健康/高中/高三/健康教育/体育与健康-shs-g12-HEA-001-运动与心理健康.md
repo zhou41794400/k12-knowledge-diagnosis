@@ -16,14 +16,20 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 运动与心理健康
+  - 运动
+  - 心理健康
+  - 健康教育与实践
+assessment_mode: health_process_rubric
 prerequisites:
   - "[[体育与健康/高中/高一/健康教育/体育与健康-shs-g10-HEA-001-健康与生活方式]]"
   - "[[体育与健康/高中/高三/体能训练/体育与健康-shs-g12-FIT-001-体能保持与评价]]"
 related_points: []
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 运动与心理健康
 
@@ -55,6 +61,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：心理调适有效；运动依赖
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 健康概念客观题只能证明知识理解；习惯养成、风险处置和健康行为应结合情境任务、行为记录与过程量规，经人工复核后形成证据。
 
 ## 追踪说明
 

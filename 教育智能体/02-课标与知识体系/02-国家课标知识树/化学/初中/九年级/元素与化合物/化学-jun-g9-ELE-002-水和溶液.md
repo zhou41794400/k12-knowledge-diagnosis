@@ -16,6 +16,13 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 水和溶液
+  - 元素与化合物
+  - 水和溶液核心知识
+  - 核心概念与规律辨析
+  - 溶液
+assessment_mode: concept_rule
 prerequisites:
   - "[[化学/初中/九年级/元素与化合物/化学-jun-g9-ELE-001-空气与氧气]]"
   - "[[化学/初中/九年级/物质的变化/化学-jun-g9-CHG-002-质量守恒定律]]"
@@ -26,7 +33,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 水和溶液
 
@@ -58,6 +65,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：理解正确；溶液浓度计算错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 概念、符号、物质性质和反应规律等边界明确的任务可形成结构化证据；宏观现象、微观解释与符号表达应相互印证，开放解释不能只按结论关键词判定。
 
 ## 追踪说明
 

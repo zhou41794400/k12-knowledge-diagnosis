@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 物质的三种状态
+  - 物质
+  - 三种状态
+  - 物质现象与规律
+assessment_mode: experimental_inquiry
 prerequisites:
   - "[[科学/小学/三年级/物质科学/科学-pri-g3-MAT-001-物体的特征]]"
 related_points:
@@ -25,9 +31,9 @@ related_points:
   - "[[科学/小学/四年级/物质科学/科学-pri-g4-MAT-002-电路基本元件]]"
   - "[[科学/小学/五年级/物质科学/科学-pri-g5-MAT-001-光与影子]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 物质的三种状态
 
@@ -60,6 +66,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：分类正确
 > - 负向证据：状态混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 实验探究须核对问题提出、变量控制、操作过程、数据记录、结论和安全规范；自动检查只能辅助判断，必须经人工复核后才能更新掌握证据。
 
 ## 追踪说明
 

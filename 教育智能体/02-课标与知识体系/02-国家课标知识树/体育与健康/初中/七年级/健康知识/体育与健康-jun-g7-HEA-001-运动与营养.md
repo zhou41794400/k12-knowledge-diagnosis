@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 运动与营养
+  - 运动
+  - 营养
+  - 健康知识与行为
+assessment_mode: health_knowledge_objective
 prerequisites:
   - "[[体育与健康/小学/六年级/健康知识/体育与健康-pri-g6-HEA-001-健康生活方式]]"
   - "[[体育与健康/初中/七年级/体操与技巧/体育与健康-jun-g7-GYM-001-队列与广播体操]]"
@@ -30,7 +36,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 运动与营养
 
@@ -62,6 +68,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：计划合理；生活习惯不良
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 仅边界明确的健康知识识记、分类和判断题可形成规则证据；涉及行为养成、方案制定或实际处置时，必须转为过程性评价并人工复核。
 
 ## 追踪说明
 

@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 保护生物多样性
+  - 生物多样性
+  - 保护生物多样性核心知识
+  - 实验探究与证据推理
+assessment_mode: experimental_evidence
 prerequisites:
   - "[[生物学/初中/七年级/生物多样性/生物学-jun-g7-DIV-002-植物类群]]"
 related_points:
@@ -25,9 +31,9 @@ related_points:
   - "[[生物学/初中/八年级/人体生理与健康/生物学-jun-g8-PHY-003-血液循环系统]]"
   - "[[生物学/初中/八年级/人体生理与健康/生物学-jun-g8-PHY-004-泌尿系统与排泄]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 保护生物多样性
 
@@ -60,6 +66,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：理解正确
 > - 负向证据：层次混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 观察或实验中的问题、假设、变量、对照、样本、数据与结论应按完整证据链评价；涉及健康、生态、进化或工程方案的开放推理必须经人工复核。
 
 ## 追踪说明
 

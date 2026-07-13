@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+assessment_mode: reasoning_mixed
+matching_keywords:
+  - 平行四边形
+  - 矩形菱形正方形
+  - 特殊平行四边形判定
 prerequisites:
   - "[[数学/初中/七年级/图形与几何/数学-jun-g7-GG-002-三角形基础]]"
   - "[[数学/初中/八年级/图形与几何/数学-jun-g8-GG-001-全等三角形]]"
@@ -30,7 +35,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 平行四边形与特殊平行四边形
 
@@ -64,11 +69,21 @@ updated: 2026-06-10
 > - 正向证据：性质应用正确
 > - 负向证据：判定混淆
 
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 基础识图与结论判断可形成规则证据；推理、证明、参数讨论和多步综合必须按过程分层评价。
+
 ## 追踪说明
 
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 从伸缩门、窗框和地砖图案中辨认特殊平行四边形并完成判定。
 
 ## 课标依据
 

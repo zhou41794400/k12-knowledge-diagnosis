@@ -16,6 +16,13 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 光的折射与透镜
+  - 声光热
+  - 光的折射与透镜核心知识
+  - 数量关系与规范计算
+  - 折射
+assessment_mode: quantitative_calculation
 prerequisites:
   - "[[物理/初中/八年级/声光热/物理-jun-g8-WAV-002-温度与物态变化]]"
   - "[[物理/初中/九年级/声光热/物理-jun-g9-WAV-001-光的直线传播与反射]]"
@@ -27,7 +34,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 光的折射与透镜
 
@@ -60,6 +67,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：成像规律理解正确
 > - 负向证据：u和v关系混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 应同时核验物理量、公式条件、单位、运算过程和结果合理性；单个最终数值不能独立证明掌握，复杂情境中的建模过程需单独评价。
 
 ## 追踪说明
 

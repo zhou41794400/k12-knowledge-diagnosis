@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 太阳系与宇宙探索
+  - 太阳系
+  - 宇宙探索
+  - 地球宇宙观察
+assessment_mode: evidence_explanation
 prerequisites:
   - "[[科学/小学/五年级/地球与宇宙/科学-pri-g5-GEO-001-地球的公转与自转]]"
   - "[[科学/小学/六年级/生命科学/科学-pri-g6-BIO-002-人体系统的协同]]"
@@ -28,7 +34,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 太阳系与宇宙探索
 
@@ -60,6 +66,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：知识正确；行星顺序错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 可结构化核对证据是否相关、结论是否有依据；涉及因果链、模型选择或多种合理解释时，应按证据质量评价，不能只按结论关键词判定。
 
 ## 追踪说明
 

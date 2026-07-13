@@ -16,6 +16,13 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 量子论与相对论初步
+  - 近代物理
+  - 量子论与相对论初步核心知识
+  - 核心概念与规律辨析
+  - 量子论
+assessment_mode: concept_rule
 prerequisites:
   - "[[物理/高中/高三/电磁学/物理-shs-g12-EM-001-电磁学综合]]"
   - "[[物理/高中/高三/力学/物理-shs-g12-MEC-001-力学综合]]"
@@ -24,7 +31,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 量子论与相对论初步
 
@@ -57,6 +64,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：概念清楚
 > - 负向证据：理论混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 概念定义、规律条件和典型现象判断可形成结构化证据；涉及多过程解释、模型选择或开放论证时，应结合推理链核验，不能只凭结论对错更新掌握度。
 
 ## 追踪说明
 

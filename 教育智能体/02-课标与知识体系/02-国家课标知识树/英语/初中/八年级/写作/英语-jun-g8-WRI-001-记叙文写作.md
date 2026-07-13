@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 记叙文写作
+  - 英语写作表达
+  - 记叙文写作题型
+assessment_mode: performance_rubric
 prerequisites:
   - "[[英语/初中/七年级/写作/英语-jun-g7-WRI-001-基础写作]]"
   - "[[英语/初中/八年级/语法/英语-初中-八年级-GRM-001-一般过去时的基本表达]]"
@@ -25,9 +30,9 @@ prerequisites:
 related_points:
   - "[[英语/初中/九年级/写作/英语-jun-g9-WRI-001-中考作文技巧]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 记叙文写作
 
@@ -59,6 +64,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：条理清晰；时态混用
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 写作与听说任务按内容完成度、语言准确性、连贯性、得体性及语音流利度等维度评分，由人工确认后形成证据。
 
 ## 追踪说明
 

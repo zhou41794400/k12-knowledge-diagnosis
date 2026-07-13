@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+assessment_mode: modeling_rubric
+matching_keywords:
+  - 数学建模
+  - 数量关系
+  - 方案比较
 prerequisites:
   - "[[数学/小学/四年级/综合与实践/数学-pri-g4-PRA-002-田忌赛马与策略]]"
   - "[[数学/小学/五年级/综合与实践/数学-pri-g5-PRA-001-植树问题]]"
@@ -29,9 +34,9 @@ related_points:
   - "[[数学/小学/五年级/统计与概率/数学-pri-g5-STP-001-可能性与概率]]"
   - "[[数学/小学/六年级/综合与实践/数学-pri-g6-PRA-001-鸽巢原理]]"
 evidence_type:
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 数学建模初步
 
@@ -65,11 +70,21 @@ updated: 2026-06-10
 > - 正向证据：正向证据：模型合理
 > - 负向证据：负向证据：模型与情境不匹配
 
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 按问题理解、变量假设、模型建立、求解检验和结果解释等维度评价，由人工确认后形成证据。
+
 ## 追踪说明
 
 > [!info] 追踪方式
 > - 当前追踪方式：`MIXED`
 > - 原因：需结合量化得分与规则综合判断
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 为班级研学活动建立人数、车辆和费用模型，比较不同包车方案。
 
 ## 课标依据
 

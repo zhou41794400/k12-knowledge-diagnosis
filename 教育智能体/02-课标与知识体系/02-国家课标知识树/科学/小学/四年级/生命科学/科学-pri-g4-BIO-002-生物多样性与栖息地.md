@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 生物多样性与栖息地
+  - 生物多样性
+  - 栖息地
+  - 生命现象与结构
+assessment_mode: evidence_explanation
 prerequisites:
   - "[[科学/小学/三年级/生命科学/科学-pri-g3-BIO-002-动物的分类]]"
   - "[[科学/小学/四年级/生命科学/科学-pri-g4-BIO-001-人的消化系统]]"
@@ -29,7 +35,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 生物多样性与栖息地
 
@@ -61,6 +67,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：描述准确；适应性分析不足
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 可结构化核对证据是否相关、结论是否有依据；涉及因果链、模型选择或多种合理解释时，应按证据质量评价，不能只按结论关键词判定。
 
 ## 追踪说明
 

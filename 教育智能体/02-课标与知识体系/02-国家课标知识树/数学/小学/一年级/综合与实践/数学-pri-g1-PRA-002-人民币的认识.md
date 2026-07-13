@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+assessment_mode: modeling_rubric
+matching_keywords:
+  - 人民币
+  - 元角分
+  - 人民币换算
 prerequisites:
   - "[[数学/小学/一年级/综合与实践/数学-pri-g1-PRA-001-时间初步认识]]"
   - "[[数学/小学/一年级/统计与概率/数学-pri-g1-STP-002-简单统计表]]"
@@ -28,9 +33,9 @@ related_points:
   - "[[数学/小学/五年级/综合与实践/数学-pri-g5-PRA-001-植树问题]]"
   - "[[数学/小学/五年级/综合与实践/数学-pri-g5-PRA-002-数学建模初步]]"
 evidence_type:
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 人民币的认识
 
@@ -64,11 +69,21 @@ updated: 2026-06-10
 > - 正向证据：正向证据：币值认识正确
 > - 负向证据：负向证据：面额混淆
 
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 按问题理解、变量假设、模型建立、求解检验和结果解释等维度评价，由人工确认后形成证据。
+
 ## 追踪说明
 
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰，适合追踪
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 模拟社区便利店购买文具或早餐，辨认人民币面值，用元、角、分表示价格并完成简单换算。
 
 ## 课标依据
 

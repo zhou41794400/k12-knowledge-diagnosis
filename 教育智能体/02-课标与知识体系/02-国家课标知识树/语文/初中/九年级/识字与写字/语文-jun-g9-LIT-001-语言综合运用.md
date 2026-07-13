@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 语言综合运用
+  - 语言
+  - 字音字形词义
+assessment_mode: objective_rule
 prerequisites:
   - "[[语文/初中/八年级/识字与写字/语文-jun-g8-LIT-002-文言虚词掌握]]"
 related_points:
@@ -27,7 +32,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 语言综合运用
 
@@ -59,6 +64,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：用词准确；语病频发
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 字音、字形、词义、语病或规范书写等边界明确的任务可形成结构化证据；涉及语境效果、书写质量和开放表达时，必须保留人工复核。
 
 ## 追踪说明
 

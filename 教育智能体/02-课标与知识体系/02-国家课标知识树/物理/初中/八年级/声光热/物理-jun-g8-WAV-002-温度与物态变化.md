@@ -16,6 +16,13 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 温度与物态变化
+  - 声光热
+  - 温度与物态变化核心知识
+  - 核心概念与规律辨析
+  - 温度
+assessment_mode: concept_rule
 prerequisites:
   - "[[物理/初中/八年级/声光热/物理-jun-g8-WAV-001-声现象]]"
   - "[[物理/初中/八年级/物质与测量/物理-jun-g8-MAT-002-质量与密度]]"
@@ -28,7 +35,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 温度与物态变化
 
@@ -61,6 +68,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：分析正确
 > - 负向证据：物态变化方向混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 概念定义、规律条件和典型现象判断可形成结构化证据；涉及多过程解释、模型选择或开放论证时，应结合推理链核验，不能只凭结论对错更新掌握度。
 
 ## 追踪说明
 

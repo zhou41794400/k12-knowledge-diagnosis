@@ -16,13 +16,19 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 社会主义从空想到科学
+  - 中国特色社会主义
+  - 思想政治材料分析
+  - 社会主义从空想到科学考查
+assessment_mode: concept_rule
 prerequisites: []
 related_points:
   - "[[思想政治/高中/高一/经济与社会/思想政治-shs-g10-ECO-001-社会主义市场经济]]"
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 社会主义从空想到科学
 
@@ -55,6 +61,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：理解深刻
 > - 负向证据：理论混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 核心概念、基本原理和逻辑规则等边界明确的任务可形成结构化证据；概念复述正确不等同于能够迁移到复杂社会情境。
 
 ## 追踪说明
 

@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 简易机械装置
+  - 工程设计与验证
+  - 实验探究与过程证据
+assessment_mode: experimental_inquiry
 prerequisites:
   - "[[科学/小学/四年级/技术与工程/科学-pri-g4-TEC-001-简单机械设计]]"
   - "[[科学/小学/五年级/地球与宇宙/科学-pri-g5-GEO-001-地球的公转与自转]]"
@@ -25,9 +30,9 @@ related_points:
   - "[[科学/小学/三年级/技术与工程/科学-pri-g3-TEC-001-简单工具的使用]]"
   - "[[科学/小学/六年级/技术与工程/科学-pri-g6-TEC-001-工程设计综合]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 简易机械装置
 
@@ -59,6 +64,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：运行正常；效率评估不准
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 实验探究须核对问题提出、变量控制、操作过程、数据记录、结论和安全规范；自动检查只能辅助判断，必须经人工复核后才能更新掌握证据。
 
 ## 追踪说明
 

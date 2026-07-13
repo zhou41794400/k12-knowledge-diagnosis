@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 算法基础
+  - 算法
+  - 算法与编程实践
+  - 知识规则与概念判断
+assessment_mode: knowledge_rule
 prerequisites:
   - "[[信息科技/初中/七年级/算法与编程/信息科技-jun-g7-ALG-002-数据结构基础]]"
   - "[[信息科技/初中/八年级/算法与编程/信息科技-jun-g8-ALG-001-函数与模块化编程]]"
@@ -28,7 +34,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 算法基础
 
@@ -60,6 +66,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：算法实现正确；复杂度分析错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 术语、规则、结构和安全规范等边界明确的任务可形成结构化证据；涉及真实情境取舍、数字伦理或综合方案判断时，应保留人工复核。
 
 ## 追踪说明
 

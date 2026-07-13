@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+assessment_mode: reasoning_mixed
+matching_keywords:
+  - 角的度量
+  - 量角器
+  - 角的度数
 prerequisites:
   - "[[数学/小学/三年级/图形与几何/数学-小学-三年级-GG-006-图形的分类与比较]]"
   - "[[数学/小学/四年级/数与代数/数学-pri-g4-NS-005-小数初步认识]]"
@@ -28,7 +33,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 角的度量
 
@@ -62,11 +67,21 @@ updated: 2026-06-10
 > - 正向证据：正向证据：测量准确
 > - 负向证据：负向证据：内外圈刻度混淆
 
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 基础识图与结论判断可形成规则证据；推理、证明、参数讨论和多步综合必须按过程分层评价。
+
 ## 追踪说明
 
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰，适合追踪
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 使用量角器测量校园道路转弯示意图中的角，并比较角的大小。
 
 ## 课标依据
 

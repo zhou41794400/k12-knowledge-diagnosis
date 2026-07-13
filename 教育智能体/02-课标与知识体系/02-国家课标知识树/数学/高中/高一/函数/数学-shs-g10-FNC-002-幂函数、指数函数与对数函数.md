@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+assessment_mode: reasoning_mixed
+matching_keywords:
+  - 指数函数
+  - 对数函数
+  - 幂函数
 prerequisites:
   - "[[数学/高中/高一/函数/数学-shs-g10-FNC-001-函数的概念与性质]]"
   - "[[数学/高中/高一/预备知识/数学-shs-g10-PRE-002-一元二次函数与不等式]]"
@@ -28,7 +33,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 幂函数、指数函数与对数函数
 
@@ -62,11 +67,21 @@ updated: 2026-06-10
 > - 正向证据：分析正确
 > - 负向证据：底数影响混淆
 
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 基础识图与结论判断可形成规则证据；推理、证明、参数讨论和多步综合必须按过程分层评价。
+
 ## 追踪说明
 
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 用人口增长、衰减或声音强度等情境比较幂、指数和对数模型。
 
 ## 课标依据
 

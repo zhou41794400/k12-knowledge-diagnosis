@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+assessment_mode: reasoning_mixed
+matching_keywords:
+  - 相似三角形
+  - 相似判定
+  - 相似比
 prerequisites:
   - "[[数学/初中/八年级/图形与几何/数学-jun-g8-GG-004-一次函数]]"
   - "[[数学/初中/九年级/图形与几何/数学-jun-g9-GG-001-旋转与圆]]"
@@ -29,7 +34,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 相似三角形
 
@@ -62,11 +67,21 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：判定正确；比例线段错误
 
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 基础识图与结论判断可形成规则证据；推理、证明、参数讨论和多步综合必须按过程分层评价。
+
 ## 追踪说明
 
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 利用同一时刻物体影长测量校园旗杆或古塔模型高度，建立相似比例。
 
 ## 课标依据
 

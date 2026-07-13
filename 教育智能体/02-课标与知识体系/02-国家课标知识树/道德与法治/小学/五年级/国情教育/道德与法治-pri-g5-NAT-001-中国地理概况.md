@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 中国地理概况
+  - 国情教育
+  - 道德法治情境分析
+  - 中国地理概况考查
+assessment_mode: material_argumentation
 prerequisites:
   - "[[道德与法治/小学/四年级/国情教育/道德与法治-pri-g4-NAT-001-中国的行政区域]]"
   - "[[道德与法治/小学/五年级/法治教育/道德与法治-pri-g5-LAW-001-宪法基础知识]]"
@@ -28,9 +34,9 @@ related_points:
   - "[[道德与法治/小学/六年级/国情教育/道德与法治-pri-g6-NAT-001-中国在世界中的地位]]"
   - "[[道德与法治/初中/七年级/国情教育/道德与法治-jun-g7-NAT-001-生命的思考]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 中国地理概况
 
@@ -63,6 +69,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：地理知识正确
 > - 负向证据：地形混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 必须评价观点、材料依据、规则调用和论证结构，由人工复核后形成证据；只出现结论关键词或立场正确不能直接判定掌握。
 
 ## 追踪说明
 

@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 睡眠与健康
+  - 睡眠
+  - 健康
+  - 健康知识与行为
+assessment_mode: health_knowledge_objective
 prerequisites:
   - "[[体育与健康/小学/二年级/健康知识/体育与健康-pri-g2-HEA-001-合理饮食与营养]]"
   - "[[体育与健康/小学/三年级/体操与技巧/体育与健康-pri-g3-GYM-001-前滚翻]]"
@@ -28,7 +34,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 睡眠与健康
 
@@ -60,6 +66,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：作息规律；熬夜
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 仅边界明确的健康知识识记、分类和判断题可形成规则证据；涉及行为养成、方案制定或实际处置时，必须转为过程性评价并人工复核。
 
 ## 追踪说明
 

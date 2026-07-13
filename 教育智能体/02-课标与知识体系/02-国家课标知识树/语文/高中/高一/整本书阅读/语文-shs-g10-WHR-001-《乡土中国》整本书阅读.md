@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 《乡土中国》整本书阅读
+  - 乡土中国》整本书阅读
+  - 整本书阅读任务
+assessment_mode: rubric_human_review
 prerequisites:
   - "[[语文/高中/高一/表达与交流/语文-shs-g10-EXP-001-复杂记叙文写作]]"
   - "[[语文/高中/高一/阅读与鉴赏/语文-shs-g10-READ-002-古诗词鉴赏基础]]"
@@ -23,9 +28,9 @@ prerequisites:
 related_points:
   - "[[语文/高中/高三/整本书阅读/语文-shs-g12-WHR-001-《红楼梦》整本书阅读]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 《乡土中国》整本书阅读
 
@@ -58,6 +63,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：理解深入
 > - 负向证据：概念混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 采用内容、结构、语言、证据和交流效果等维度量规，由人工确认后形成证据；单次总分不得直接等同于某个知识点已掌握。
 
 ## 追踪说明
 

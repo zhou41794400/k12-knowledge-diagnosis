@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 一般过去时
+  - 英语语法结构
+  - 一般过去时题型
+assessment_mode: language_form_rule
 prerequisites:
   - "[[英语/小学/五年级/语法/英语-pri-g5-GRM-002-There be句型]]"
   - "[[英语/小学/六年级/阅读/英语-pri-g6-READ-001-语篇综合理解]]"
@@ -30,7 +35,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 一般过去时
 
@@ -62,6 +67,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：时态使用正确；时态混用
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 词形、词义、拼读和语法结构等答案边界明确的任务可形成结构化证据；真实语境中的得体性、流利度和综合表达仍需单独评价。
 
 ## 追踪说明
 

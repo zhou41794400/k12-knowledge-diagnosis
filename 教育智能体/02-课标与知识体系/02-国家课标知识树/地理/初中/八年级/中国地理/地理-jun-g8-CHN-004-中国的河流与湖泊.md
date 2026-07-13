@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 中国的河流与湖泊
+  - 中国
+  - 河流
+  - 湖泊
+assessment_mode: fact_location
 prerequisites:
   - "[[地理/初中/八年级/中国地理/地理-jun-g8-CHN-001-中国的疆域与人口]]"
   - "[[地理/初中/八年级/中国地理/地理-jun-g8-CHN-002-中国的地形]]"
@@ -24,7 +30,7 @@ related_points: []
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 中国的河流与湖泊
 
@@ -57,6 +63,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：知识掌握
 > - 负向证据：河流特征混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 地名、位置、分布和地图要素等边界明确的定位任务可形成结构化证据；名称识记正确不等同于能够解释区域差异。
 
 ## 追踪说明
 

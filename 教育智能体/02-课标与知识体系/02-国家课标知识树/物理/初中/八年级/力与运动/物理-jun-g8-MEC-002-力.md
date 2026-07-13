@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 力
+  - 力与运动
+  - 力核心知识
+  - 核心概念与规律辨析
+assessment_mode: concept_rule
 prerequisites:
   - "[[物理/初中/八年级/力与运动/物理-jun-g8-MEC-001-运动的描述]]"
   - "[[物理/初中/八年级/声光热/物理-jun-g8-WAV-002-温度与物态变化]]"
@@ -28,7 +34,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 力
 
@@ -61,6 +67,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：作图规范
 > - 负向证据：力的概念混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 概念定义、规律条件和典型现象判断可形成结构化证据；涉及多过程解释、模型选择或开放论证时，应结合推理链核验，不能只凭结论对错更新掌握度。
 
 ## 追踪说明
 

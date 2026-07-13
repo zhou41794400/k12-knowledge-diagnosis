@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 磁场
+  - 电磁学
+  - 磁场核心知识
+  - 核心概念与规律辨析
+assessment_mode: concept_rule
 prerequisites:
   - "[[物理/高中/高一/电磁学/物理-shs-g10-EM-001-静电场]]"
   - "[[物理/高中/高二/电磁学/物理-shs-g11-EM-001-恒定电流]]"
@@ -26,7 +32,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 磁场
 
@@ -58,6 +64,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：判断正确；左手定则使用错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 概念定义、规律条件和典型现象判断可形成结构化证据；涉及多过程解释、模型选择或开放论证时，应结合推理链核验，不能只凭结论对错更新掌握度。
 
 ## 追踪说明
 

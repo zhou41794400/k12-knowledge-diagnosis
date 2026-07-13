@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 考场作文技巧
+  - 考场作文
+  - 写作与口语表达
+assessment_mode: rubric_human_review
 prerequisites:
   - "[[语文/初中/八年级/表达与交流/语文-jun-g8-EXP-002-演讲稿写作]]"
   - "[[语文/初中/九年级/表达与交流/语文-jun-g9-EXP-001-议论文写作]]"
@@ -28,9 +33,9 @@ related_points:
   - "[[语文/小学/二年级/表达与交流/语文-小学-二年级-EXP-001-看图说完整句子]]"
   - "[[语文/小学/二年级/表达与交流/语文-小学-二年级-EXP-002-按顺序讲述小故事]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 考场作文技巧
 
@@ -62,6 +67,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：作文完整规范；跑题
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 采用内容、结构、语言、证据和交流效果等维度量规，由人工确认后形成证据；单次总分不得直接等同于某个知识点已掌握。
 
 ## 追踪说明
 

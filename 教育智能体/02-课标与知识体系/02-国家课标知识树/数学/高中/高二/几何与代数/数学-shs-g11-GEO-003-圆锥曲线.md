@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+assessment_mode: reasoning_mixed
+matching_keywords:
+  - 椭圆
+  - 双曲线
+  - 抛物线
 prerequisites:
   - "[[数学/高中/高一/几何与代数/数学-shs-g10-GEO-001-平面向量]]"
   - "[[数学/高中/高二/几何与代数/数学-shs-g11-GEO-001-空间向量与立体几何]]"
@@ -28,7 +33,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 圆锥曲线
 
@@ -62,11 +67,21 @@ updated: 2026-06-10
 > - 正向证据：计算正确
 > - 负向证据：曲线类型混淆
 
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 基础识图与结论判断可形成规则证据；推理、证明、参数讨论和多步综合必须按过程分层评价。
+
 ## 追踪说明
 
 > [!info] 追踪方式
 > - 当前追踪方式：`MIXED`
 > - 原因：综合判断
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 从轨迹、反射或工程轮廓情境识别圆锥曲线，求标准方程和几何性质。
 
 ## 课标依据
 

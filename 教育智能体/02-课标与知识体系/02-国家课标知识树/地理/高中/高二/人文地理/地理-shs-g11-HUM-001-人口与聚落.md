@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 人口与聚落
+  - 人口
+  - 聚落
+  - 人文地理
+assessment_mode: material_interpretation
 prerequisites: []
 related_points:
   - "[[地理/高中/高二/区域发展/地理-shs-g11-REG-001-区域与区域发展]]"
@@ -23,7 +29,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 人口与聚落
 
@@ -56,6 +62,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：分析正确
 > - 负向证据：人口模式混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 地图、统计图表、遥感影像和文字材料的信息提取可记录分步证据；关系解释必须标明材料依据，不能只按结论关键词判定。
 
 ## 追踪说明
 

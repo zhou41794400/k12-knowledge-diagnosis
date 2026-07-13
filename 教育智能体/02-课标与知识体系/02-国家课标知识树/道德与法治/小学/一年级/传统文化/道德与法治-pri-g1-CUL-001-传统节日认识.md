@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 传统节日认识
+  - 传统节日
+  - 传统文化
+  - 道德法治情境分析
+assessment_mode: open_value_judgment
 prerequisites:
   - "[[道德与法治/小学/一年级/心理健康/道德与法治-pri-g1-MEN-001-认识自己的情绪]]"
   - "[[道德与法治/小学/一年级/道德教育/道德与法治-pri-g1-ETH-002-诚实守信]]"
@@ -26,9 +32,9 @@ related_points:
   - "[[道德与法治/小学/五年级/传统文化/道德与法治-pri-g5-CUL-001-中华传统美德]]"
   - "[[道德与法治/小学/六年级/传统文化/道德与法治-pri-g6-CUL-001-中国传统文化精髓]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 传统节日认识
 
@@ -61,6 +67,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：节日知识正确
 > - 负向证据：习俗混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 价值判断应结合具体情境，按立场合理性、理由充分性、责任意识和行动可行性进行开放评价；必须由人工复核，不得把单一标准表述作为唯一正确答案。
 
 ## 追踪说明
 

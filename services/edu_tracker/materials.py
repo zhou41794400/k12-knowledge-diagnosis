@@ -3,8 +3,10 @@ from __future__ import annotations
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import List
+import re
+from typing import List, Optional
 
+from .knowledge_registry import knowledge_stats
 from .reporting import load_jsonl
 
 
@@ -12,7 +14,13 @@ def now_date() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 
-def build_system_overview(code_dir: Path) -> str:
+def project_version(project_root: Path) -> str:
+    text = (project_root / "pyproject.toml").read_text(encoding="utf-8")
+    match = re.search(r'(?m)^version\s*=\s*"([^"]+)"', text)
+    return match.group(1) if match else "未标记"
+
+
+def build_system_overview(code_dir: Path, version: str) -> str:
     # Gather module stats
     modules = []
     for f in sorted(code_dir.rglob("*.py")):
@@ -38,7 +46,10 @@ updated: {now_date()}
 
 ## 一、软件名称
 
-启智知踪 K12 智能学习诊断系统 V1.0
+启智知踪 K12 智能学习诊断系统
+
+- 当前原型版本：`{version}`
+- 当前追踪模型：`rule-v2` 规则掌握度模型
 
 ## 二、软件用途
 
@@ -56,7 +67,7 @@ updated: {now_date()}
 
 ## 四、系统架构
 
-本系统采用 **本地优先（Local-First）** 架构，所有数据存储和分析均在用户本地 macOS 环境中完成，不依赖于任何云服务。
+本系统当前版本采用 **本地优先（Local-First）** 架构，录题、规则匹配、报告生成和数据存储均在用户本地 macOS 环境中完成，默认不调用外部云服务。
 
 ```
 ┌─────────────────────────────────────────────────┐
@@ -111,8 +122,8 @@ updated: {now_date()}
 - **知识点映射**：将题目文本与课标知识库进行匹配，确定所属学科、年级、知识点。
 - **对错分流**：根据学生答案与标准答案比对，判断正确/错误，生成两套不同的处理逻辑：
   - **正确题**：增加掌握置信度，降低该知识点的复习优先级。
-  - **错题**：记录为「待复核」，触发薄弱标记，降低掌握度。
-- **掌握度更新**：基于正确/错误历史，通过间隔重复和 BKT（贝叶斯知识追踪）混合策略更新知识点掌握状态。
+  - **错题**：唯一且可信的知识点映射会生成负向证据；未匹配、歧义或答案不足时进入人工复核，不更新掌握度。
+- **掌握度更新**：基于正确/错误历史和证据强度，通过可解释的规则模型更新知识点掌握状态。
 - **审计留痕**：每次操作生成审计事件，写入 `audit.jsonl`。
 
 ### 5.2 结果视图生成（reporting.py）
@@ -135,10 +146,11 @@ updated: {now_date()}
 
 ### 5.4 知识点注册（knowledge_registry.py）
 
-管理知识点注册表和学科配置：
+从 Obsidian frontmatter 动态加载知识点并执行候选匹配：
 
-- 支持按学科区分追踪策略：BKT（词汇/语法类记忆型学科）与 RULE（数学/科学类规则型学科）。
-- 提供知识点查找和学科列表查询接口。
+- 自动过滤学科、年级和发布状态。
+- 未匹配或存在歧义时进入人工复核，不强制写入掌握度。
+- 当前试点采用 `RULE`，尚未实现四参数 BKT。
 
 ### 5.5 CLI 入口（cli.py）
 
@@ -150,6 +162,7 @@ updated: {now_date()}
 | `photo` | 照片导入并处理 |
 | `report` | 生成结果视图 |
 | `materials` | 生成软著申报材料 |
+| `validate` | 运行数学映射研发验收题集 |
 
 ### 5.6 软著材料生成（materials.py）
 
@@ -168,7 +181,7 @@ updated: {now_date()}
 | :--- | :--- | :--- |
 | 语言 | Python 3.9+ | 跨平台，生态丰富 |
 | 命令行 | argparse | Python 标准库 |
-| 数据存储 | JSONL | 追加日志，适合本地场景 |
+| 数据存储 | SQLite + JSONL | SQLite 保存当前业务状态，JSONL 保留追加式审计与兼容输出 |
 | 文档输出 | Markdown | 易于阅读和版本管理 |
 | 知识库 | Obsidian Vault | 支持双向链接与图谱 |
 | 构建工具 | Makefile | 一键执行常见任务 |
@@ -181,7 +194,7 @@ updated: {now_date()}
 用户输入题目 → CLI 解析 → pipeline.manual_ingest()
   → 知识点映射 → 对错分流
   ├─ 正确题 → 增加掌握置信度
-  └─ 错题   → 标记待复核 → 降低掌握度
+  └─ 错题   → 唯一可信映射时生成负向证据；否则进入复核
   → 写入 questions.jsonl
   → 写入 mastery.jsonl
   → 写入 evidence.jsonl
@@ -210,8 +223,8 @@ updated: {now_date()}
 
 ## 八、安全与隐私
 
-- **本地优先**：所有数据存储在用户本地 macOS 中，不上传任何云端。
-- **无数据收集**：系统不收集用户使用行为数据。
+- **本地优先**：当前命令行版本的数据存储和分析在用户本地完成，默认不上传云端。
+- **无内置遥测**：当前代码未实现用户行为上报或第三方统计 SDK。
 - **审计可追溯**：所有数据变更通过 audit.jsonl 完整记录。
 
 ## 九、合规说明
@@ -313,12 +326,13 @@ python3 -m edu_tracker manual \\
 
 系统输出：
 - 题目记录写入 `logs/questions.jsonl`
-- 掌握度更新写入 `logs/mastery.jsonl`
-- 证据事件写入 `logs/evidence.jsonl`
+- 审计事件写入 `logs/audit.jsonl`
+- 仅在命中已发布知识点且答案可判断时，掌握度与证据分别写入 `logs/mastery.jsonl`、`logs/evidence.jsonl`
+- 未命中知识点时标记为待复核，不更新掌握度
 
 ### 2.3 照片导入
 
-照片导入适用于已经完成的纸质试卷或练习册。当前阶段支持旁路文本验证（OCR 文本由家长手动输入）。
+照片导入适用于已经完成的纸质试卷或练习册。系统使用本地 Tesseract 识别，首次识别只生成待确认记录，人工核对后才进入知识映射。
 
 **命令模板：**
 
@@ -338,7 +352,8 @@ python3 -m edu_tracker photo \\
 | 参数 | 必填 | 说明 | 示例 |
 | :--- | :---: | :--- | :--- |
 | `--image-path` | 是 | 试卷照片文件路径 | `/path/to/paper.jpg` |
-| `--ocr-text` | 是 | 题目文本（当前手动输入） | `"3 × 4 = ?"` |
+| `--ocr-text` | 确认时必填 | 人工核对或修正后的题目文本 | `"3 × 4 = ?"` |
+| `--ingest-id` | 确认时必填 | 首次 OCR 返回的导入编号 | `i_xxx` |
 
 **示例：**
 
@@ -353,7 +368,15 @@ python3 -m edu_tracker photo \\
   --student-answer "12"
 ```
 
-### 2.4 生成结果视图
+### 2.4 启动本地家长端
+
+```bash
+python3 -m edu_tracker web
+```
+
+浏览器打开 `http://127.0.0.1:8765`，可完成手动录题、图片上传、OCR 确认、复核处理、学生数据导出和删除。
+
+### 2.5 生成结果视图
 
 录完题目后，执行报告生成命令：
 
@@ -366,7 +389,7 @@ python3 -m edu_tracker report
 - `学生端-s001.md` — 面向学生的周报
 - `题目详情/q_xxxxxxxxxxxx.md` — 每道题的详细分析
 
-### 2.5 查看分析结果
+### 2.6 查看分析结果
 
 家长端总览包含：
 
@@ -375,7 +398,14 @@ python3 -m edu_tracker report
 3. **最近录入题目**：最近录入的题目列表，标注正确/错误状态。
 4. **待复核项**：判定为「边缘正确」或「答案有歧义」的题目，需家长人工确认。
 
-### 2.6 生成软著材料
+### 2.7 数据管理
+
+- `python3 -m edu_tracker health`：查看数据库版本、复核和 outbox 状态。
+- `python3 -m edu_tracker data-export --student-id s001`：导出学生数据。
+- `python3 -m edu_tracker data-delete --student-id s001 --confirm s001`：二次确认后删除。
+- `python3 -m edu_tracker backup`：创建完整备份。
+
+### 2.8 生成软著材料
 
 ```bash
 python3 -m edu_tracker materials
@@ -397,9 +427,9 @@ python3 -m edu_tracker materials
 
 ### 3.2 周报内容
 
-1. **本周掌握变化**：各知识点掌握度对比上周的变化。
+1. **当前掌握结果**：展示已产生有效证据的知识点掌握状态。
 2. **当前短板清单**：掌握度低于 60% 的知识点，按优先级排列。
-3. **推荐复习知识点**：系统根据遗忘曲线推荐的 3-5 个复习知识点。
+3. **复习建议**：根据当前规则分数和最近题目生成复习优先级提示。
 4. **原题回溯**：每个薄弱知识点可跳转到对应题目的详情页，查看原始题目内容。
 
 ## 四、常见问题
@@ -410,19 +440,19 @@ python3 -m edu_tracker materials
 
 ### 4.2 如何修改录错的题目？
 
-当前版本暂不支持直接编辑已录入的题目。建议重新录入正确的版本，系统会合并分析。
+自动映射未命中或出现歧义时，可在本地家长端复核区选择已发布知识点并确认对错。已生成的学生数据可先导出，再通过二次确认删除；不建议直接手改 JSONL。
 
 ### 4.3 支持哪些学科？
 
-系统基于 2022 版国家课程标准，涵盖 15 个学科，包括：语文、数学、英语、科学、道德与法治、体育与健康、艺术、劳动、信息科技、思想政治、历史、地理、物理、化学、生物。
+知识库已建立 15 个学科的课标骨架，但当前运行时仅发布小学二至三年级数学 9 个试点知识点。其他学科和尚未发布的数学知识卡不能作为自动诊断能力对外使用。
 
 ### 4.4 数据安全吗？
 
-所有数据存储在本地 macOS 中，不连接任何云端服务。系统不收集任何用户数据，审计日志供用户自行追溯。
+当前命令行版本默认在本地 macOS 中处理和保存数据，不调用外部云服务，也未内置遥测或第三方统计 SDK。用户仍应妥善保护本地目录、设备账号和备份文件，并按隐私政策处理未成年人信息。
 
 ## 五、注意事项
 
-1. 照片导入当前阶段 OCR 文本需手动输入，正式 OCR 接入将在后续版本完成。
+1. 照片导入已接入 Tesseract；首次识别只生成待确认记录，必须使用 `ingest_id` 确认或修正后再分析。
 2. 命令参数中的空格和特殊字符建议用引号包裹。
 3. 首次使用建议先通过手动录题熟悉流程，再尝试照片导入。
 4. 建议每周至少录入 1-2 次题目以保持掌握度追踪的连续性。
@@ -560,6 +590,7 @@ make materials
 | 命令 | 功能 |
 | :--- | :--- |
 | `make check` | 运行完整性检查 |
+| `make validate` | 运行数学映射研发验收题集 |
 | `make report` | 生成结果视图 |
 | `make materials` | 生成软著材料 |
 | `make bundle` | 打包迁移包到 `dist/` |
@@ -570,7 +601,19 @@ make materials
 """
 
 
-def build_version_note(questions: List[dict], mastery_rows: List[dict], ingest_rows: List[dict]) -> str:
+def build_version_note(
+    questions: List[dict],
+    mastery_rows: List[dict],
+    ingest_rows: List[dict],
+    version: str,
+    stats: dict[str, int],
+    evidence_rows: Optional[List[dict]] = None,
+) -> str:
+    evidence_rows = evidence_rows or []
+    current_evidence = [row for row in evidence_rows if row.get("model_version") == "rule-v2"]
+    legacy_evidence = [row for row in evidence_rows if row.get("model_version") != "rule-v2"]
+    current_evidence_ids = {row.get("event_id") for row in current_evidence if row.get("event_id")}
+    current_mastery_rows = [row for row in mastery_rows if row.get("last_evidence_id") in current_evidence_ids]
     subject_counter = Counter(row.get("subject", "未知") for row in questions)
     subject_lines = "\n".join(f"- {subject}：{count} 条" for subject, count in subject_counter.most_common()) or "- 暂无数据"
 
@@ -579,8 +622,9 @@ def build_version_note(questions: List[dict], mastery_rows: List[dict], ingest_r
     grade_lines = "\n".join(f"- {grade}：{count} 条" for grade, count in grade_counter.most_common()) or "- 暂无数据"
 
     # Correct vs wrong stats
-    correct = sum(1 for q in questions if q.get("student_answer") == q.get("answer"))
-    wrong = len(questions) - correct
+    correct = sum(1 for q in questions if q.get("is_correct") is True)
+    wrong = sum(1 for q in questions if q.get("is_correct") is False)
+    pending = sum(1 for q in questions if q.get("is_correct") is None)
 
     return f"""---
 title: 版本说明
@@ -594,7 +638,7 @@ updated: {now_date()}
 
 ## 一、当前版本
 
-当前版本：v0.1.1（首版草案）
+当前版本：v{version}（本地原型）
 
 ## 二、版本特征
 
@@ -605,11 +649,12 @@ updated: {now_date()}
 - **结果视图生成**：可生成家长端总览页、学生周报、题目详情页。
 - **软著材料生成**：可自动生成系统说明、用户操作手册、安装说明、版本说明、日志索引。
 - **审计日志**：所有关键操作写入 JSONL 日志，支持回溯。
-- **完整知识体系**：15 学科 709 知识点，基于国家 2022 版课程标准。
+- **知识体系骨架**：当前包含 {stats['point_nodes']} 个编码节点，其中 {stats['trackable_cards']} 张为可追踪知识点卡，{stats['published']} 张已发布到运行时匹配。
+- **追踪模型**：当前使用 `rule-v2` 规则掌握度模型，尚未实现四参数 BKT。
 
 ### 2.2 后续计划
 
-- 接入真实 OCR（如 PaddleOCR、Tesseract）
+- 完善整卷切题、公式识别和手写体 OCR（当前已接入 Tesseract 印刷体 OCR）
 - LLM 辅助知识点映射（当前基于规则匹配）
 - 更多学科的双向链接和跨学科追踪
 - 导出 PDF/Word 格式的软著申报材料
@@ -619,10 +664,14 @@ updated: {now_date()}
 | 指标 | 数值 |
 | :--- | :---: |
 | 题目记录数 | {len(questions)} |
-| 掌握状态记录数 | {len(mastery_rows)} |
+| 原始掌握状态记录数 | {len(mastery_rows)} |
+| 当前模型有效掌握状态数 | {len(current_mastery_rows)} |
+| 当前模型有效证据数 | {len(current_evidence)} |
+| 已隔离旧模型证据数 | {len(legacy_evidence)} |
 | 导入记录数 | {len(ingest_rows)} |
 | 正确题数 | {correct} |
 | 错题数 | {wrong} |
+| 待判断题数 | {pending} |
 
 ## 四、学科分布
 
@@ -636,10 +685,12 @@ updated: {now_date()}
 
 | 指标 | 数值 |
 | :--- | :---: |
-| 覆盖学科 | 15 |
-| 知识点卡片 | 709 |
-| INDEX 文件 | 41 |
-| 学段覆盖 | 小学（1-6 年级）✅ 初中（7-9 年级）✅ 高中 ✅ |
+| 编码节点 | {stats['point_nodes']} |
+| 可追踪知识点卡 | {stats['trackable_cards']} |
+| 运行时已发布卡片 | {stats['published']} |
+| 覆盖学科 | {stats['subjects']} |
+| INDEX 文件 | {stats['index_files']} |
+| 试点运行范围 | 小学二至三年级数学（已发布卡片） |
 
 ## 七、版本兼容性
 
@@ -684,7 +735,7 @@ def build_log_index(log_dir: Path) -> str:
         "",
         "| 文件 | 记录内容 |",
         "| :--- | :--- |",
-        "| `questions.jsonl` | 每题一比记录，含题目文字、答案、学生答案、映射知识点 |",
+        "| `questions.jsonl` | 每题一笔记录，含题目文字、答案、学生答案、映射知识点 |",
         "| `mastery.jsonl` | 知识点掌握度快照，每个知识点在各个时间点的掌握概率 |",
         "| `evidence.jsonl` | 证据事件，记录每次掌握度变化的原因和来源 |",
         "| `ingest.jsonl` | 导入记录，包含原始输入参数和时间戳 |",
@@ -713,8 +764,6 @@ def build_source_code(code_dir: Path, output_dir: Path, lines_per_page: int = 50
     py_files = sorted(py_files, key=lambda x: x.name)
 
     all_lines: list[str] = []
-    current_file_lines: list[str] = []
-
     for pf in py_files:
         rel = str(pf.relative_to(code_dir))
         all_lines.append(f"// {'='*70}")
@@ -755,7 +804,7 @@ def build_source_code(code_dir: Path, output_dir: Path, lines_per_page: int = 50
         out_lines.append("")
         # Output ALL code with line numbers
         for i, line in enumerate(all_lines, 1):
-            out_lines.append(f"{i:>5}| {escape_obsidian_link_syntax(line)}")
+            out_lines.append(_numbered_source_line(i, line))
     else:
         out_lines.append("> 代码总量超过 60 页，提交首 30 页和末 30 页。")
         out_lines.append("")
@@ -763,7 +812,7 @@ def build_source_code(code_dir: Path, output_dir: Path, lines_per_page: int = 50
         out_lines.append("")
         first = all_lines[:lines_per_page * 30]
         for i, line in enumerate(first, 1):
-            out_lines.append(f"{i:>5}| {escape_obsidian_link_syntax(line)}")
+            out_lines.append(_numbered_source_line(i, line))
         out_lines.append("")
         out_lines.append("---")
         out_lines.append("")
@@ -772,7 +821,7 @@ def build_source_code(code_dir: Path, output_dir: Path, lines_per_page: int = 50
         last = all_lines[-lines_per_page * 30:]
         offset = total - len(last)
         for i, line in enumerate(last, 1):
-            out_lines.append(f"{offset + i:>5}| {escape_obsidian_link_syntax(line)}")
+            out_lines.append(_numbered_source_line(offset + i, line))
 
     path = output_dir / "源代码.md"
     path.write_text("\n".join(out_lines) + "\n", encoding="utf-8")
@@ -781,6 +830,11 @@ def build_source_code(code_dir: Path, output_dir: Path, lines_per_page: int = 50
 
 def escape_obsidian_link_syntax(line: str) -> str:
     return line.replace("[[", "\\[\\[").replace("]]", "\\]\\]")
+
+
+def _numbered_source_line(number: int, line: str) -> str:
+    escaped = escape_obsidian_link_syntax(line)
+    return f"{number:>5}| {escaped}" if escaped else f"{number:>5}|"
 
 
 def generate_materials(project_root: Path) -> List[Path]:
@@ -794,12 +848,15 @@ def generate_materials(project_root: Path) -> List[Path]:
     questions = load_jsonl(log_dir / "questions.jsonl")
     mastery_rows = load_jsonl(log_dir / "mastery.jsonl")
     ingest_rows = load_jsonl(log_dir / "ingest.jsonl")
+    evidence_rows = load_jsonl(log_dir / "evidence.jsonl")
+    version = project_version(project_root)
+    stats = knowledge_stats(vault_root / "02-课标与知识体系" / "02-国家课标知识树")
 
     outputs = {
-        "系统说明.md": build_system_overview(service_dir),
+        "系统说明.md": build_system_overview(service_dir, version),
         "用户操作手册.md": build_user_manual(),
         "安装部署说明.md": build_installation_guide(),
-        "版本说明.md": build_version_note(questions, mastery_rows, ingest_rows),
+        "版本说明.md": build_version_note(questions, mastery_rows, ingest_rows, version, stats, evidence_rows),
         "日志索引.md": build_log_index(log_dir),
     }
 

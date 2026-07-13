@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+assessment_mode: data_reasoning_mixed
+matching_keywords:
+  - 平均数中位数众数
+  - 方差
+  - 数据分析
 prerequisites:
   - "[[数学/初中/七年级/统计与概率/数学-jun-g7-STP-001-数据的收集与整理]]"
   - "[[数学/初中/八年级/图形与几何/数学-jun-g8-GG-004-一次函数]]"
@@ -29,7 +34,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 数据的分析
 
@@ -62,11 +67,21 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：计算准确；统计量选用不当
 
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 读图、计算和明确概率结论可形成规则证据；抽样合理性、统计解释和决策建议必须保留推断过程。
+
 ## 追踪说明
 
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 比较河北两地一段时间的气温或降水数据，用集中趋势和波动程度作判断。
 
 ## 课标依据
 

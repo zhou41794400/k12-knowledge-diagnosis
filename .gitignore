@@ -2,7 +2,12 @@
 __pycache__/
 *.pyc
 教育智能体/logs/
+教育智能体/05-结果视图/学生端-*.md
+教育智能体/05-结果视图/家长端总览.md
+教育智能体/05-结果视图/题目详情/
 dist/
+backups/
+exports/
 .env
 node_modules/
 .npm/

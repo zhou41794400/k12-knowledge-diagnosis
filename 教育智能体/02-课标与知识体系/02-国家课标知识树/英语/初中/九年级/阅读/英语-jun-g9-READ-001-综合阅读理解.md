@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 综合阅读理解
+  - 阅读
+  - 英语阅读理解
+assessment_mode: reading_mixed
 prerequisites:
   - "[[英语/初中/八年级/阅读/英语-初中-八年级-READ-002-文章标题与段意判断]]"
   - "[[英语/初中/九年级/词汇/英语-jun-g9-VOC-001-中考核心词汇]]"
@@ -28,7 +33,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 综合阅读理解
 
@@ -60,6 +65,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：理解准确；推理过度
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 事实信息定位和明确推断可形成规则证据；篇章结构、作者意图和开放回应应按题目层级评价，不能只用整篇阅读总分更新单个知识点。
 
 ## 追踪说明
 

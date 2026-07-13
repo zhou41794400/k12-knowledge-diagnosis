@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 古诗文鉴赏
+  - 阅读理解与鉴赏
+  - 古诗文鉴赏评价
+assessment_mode: reading_mixed
 prerequisites:
   - "[[语文/初中/七年级/阅读与鉴赏/语文-jun-g7-READ-003-名著阅读导引]]"
   - "[[语文/初中/八年级/阅读与鉴赏/语文-jun-g8-READ-001-说明文阅读]]"
@@ -30,7 +35,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 古诗文鉴赏
 
@@ -62,6 +67,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：鉴赏有深度；理解表面
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 信息提取、文意判断等客观任务可作为规则证据；主旨阐释、人物评价和审美鉴赏等开放题应按题目层级量规评分，不能只用最终对错更新掌握度。
 
 ## 追踪说明
 

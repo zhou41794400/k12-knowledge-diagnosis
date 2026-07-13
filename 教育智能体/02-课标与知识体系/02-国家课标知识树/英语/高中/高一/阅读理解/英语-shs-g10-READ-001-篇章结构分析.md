@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 篇章结构分析
+  - 英语篇章理解
+  - 篇章结构分析题型
+assessment_mode: reading_mixed
 prerequisites:
   - "[[英语/高中/高一/听说能力/英语-shs-g10-LIS-001-听力理解与口语表达]]"
   - "[[英语/高中/高一/词汇与语法/英语-shs-g10-VGR-002-非谓语动词]]"
@@ -26,7 +31,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 篇章结构分析
 
@@ -58,6 +63,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：分析准确；主旨把握错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 事实信息定位和明确推断可形成规则证据；篇章结构、作者意图和开放回应应按题目层级评价，不能只用整篇阅读总分更新单个知识点。
 
 ## 追踪说明
 

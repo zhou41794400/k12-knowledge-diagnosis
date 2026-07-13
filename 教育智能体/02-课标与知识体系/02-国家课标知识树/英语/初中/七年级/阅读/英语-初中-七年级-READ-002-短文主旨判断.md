@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 短文主旨判断
+  - 英语阅读理解
+  - 短文主旨判断题型
+assessment_mode: reading_mixed
 prerequisites:
   - "[[英语/小学/六年级/阅读/英语-pri-g6-READ-001-语篇综合理解]]"
   - "[[英语/初中/七年级/阅读/七年级英语-阅读]]"
@@ -31,7 +36,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 短文主旨判断
 
@@ -65,6 +70,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：主旨判断正确
 > - 负向证据：只抓细节、不识整体
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 事实信息定位和明确推断可形成规则证据；篇章结构、作者意图和开放回应应按题目层级评价，不能只用整篇阅读总分更新单个知识点。
 
 ## 追踪说明
 

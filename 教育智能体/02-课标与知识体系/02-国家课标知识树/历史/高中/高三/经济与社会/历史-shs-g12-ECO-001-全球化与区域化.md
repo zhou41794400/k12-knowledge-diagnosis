@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 全球化与区域化
+  - 全球化
+  - 区域化
+  - 经济与社会
+assessment_mode: spatiotemporal_synthesis
 prerequisites:
   - "[[历史/高中/高二/经济与社会/历史-shs-g11-ECO-001-中国经济发展历程]]"
   - "[[历史/高中/高三/国家制度/历史-shs-g12-INS-001-国际组织与国际法]]"
@@ -24,7 +30,7 @@ related_points: []
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 全球化与区域化
 
@@ -56,6 +62,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：分析有深度；影响评价偏颇
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 应同时考查时间顺序、空间联系、阶段特征与历史因果；跨时期比较和综合解释需按证据链评价，单一史实命中不能替代时空综合能力。
 
 ## 追踪说明
 

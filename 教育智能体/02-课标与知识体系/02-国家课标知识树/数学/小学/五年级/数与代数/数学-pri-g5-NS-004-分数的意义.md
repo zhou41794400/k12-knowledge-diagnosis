@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+assessment_mode: calculation_rule
+matching_keywords:
+  - 分数的意义
+  - 分数单位
+  - 约分通分
 prerequisites:
   - "[[数学/小学/四年级/数与代数/数学-pri-g4-NS-005-小数初步认识]]"
   - "[[数学/小学/五年级/数与代数/数学-pri-g5-NS-001-小数乘法]]"
@@ -30,7 +35,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 分数的意义
 
@@ -64,11 +69,21 @@ updated: 2026-06-10
 > - 正向证据：正向证据：分数意义理解正确
 > - 负向证据：负向证据：约分不彻底
 
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 计算结果、步骤和概念辨析可形成结构化证据；开放解释、方法比较和真实建模不能只按最终答案判定。
+
 ## 追踪说明
 
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能边界清晰，适合追踪
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 把一块试验田或一箱水果平均分配，用分数表示其中一部分并比较大小。
 
 ## 课标依据
 

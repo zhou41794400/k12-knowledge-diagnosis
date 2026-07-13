@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 植物基本结构
+  - 植物
+  - 结构
+  - 生命现象与结构
+assessment_mode: concept_observation
 prerequisites:
   - "[[科学/小学/三年级/物质科学/科学-pri-g3-MAT-002-物质的三种状态]]"
 related_points:
@@ -27,7 +33,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 植物基本结构
 
@@ -60,6 +66,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：结构识别正确
 > - 负向证据：功能混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 概念辨识、特征比较和连续观察记录可形成结构化证据；仅凭一次观察或单道选择题，不得直接认定学生已能在新情境中稳定运用概念。
 
 ## 追踪说明
 

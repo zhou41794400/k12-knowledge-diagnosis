@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 认识生物
+  - 细胞与生物体
+  - 认识生物核心知识
+  - 核心概念与规律辨析
+assessment_mode: concept_rule
 prerequisites: []
 related_points:
   - "[[生物学/初中/七年级/生物与环境/生物学-jun-g7-ECO-001-生态系统]]"
@@ -23,7 +29,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 认识生物
 
@@ -55,6 +61,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：使用正确；显微镜操作不当
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 结构名称、功能对应、生命过程和基本机制等边界明确的任务可形成结构化证据；跨层级机制解释不能仅凭术语命中或最终结论更新掌握度。
 
 ## 追踪说明
 

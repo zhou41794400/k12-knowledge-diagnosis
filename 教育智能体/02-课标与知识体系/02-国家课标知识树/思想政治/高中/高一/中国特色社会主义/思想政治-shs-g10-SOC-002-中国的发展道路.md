@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 中国的发展道路
+  - 中国
+  - 道路
+  - 中国特色社会主义
+assessment_mode: concept_rule
 prerequisites:
   - "[[思想政治/高中/高一/中国特色社会主义/思想政治-shs-g10-SOC-001-社会主义从空想到科学]]"
 related_points:
@@ -23,7 +29,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 中国的发展道路
 
@@ -56,6 +62,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：理解有深度
 > - 负向证据：阶段混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 核心概念、基本原理和逻辑规则等边界明确的任务可形成结构化证据；概念复述正确不等同于能够迁移到复杂社会情境。
 
 ## 追踪说明
 

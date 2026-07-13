@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 网络安全与伦理
+  - 网络安全
+  - 伦理
+  - 网络安全与数字责任
+assessment_mode: knowledge_rule
 prerequisites:
   - "[[信息科技/初中/七年级/网络与安全/信息科技-jun-g7-NET-001-互联网与信息获取]]"
   - "[[信息科技/初中/九年级/人工智能/信息科技-jun-g9-AI-002-AI项目实践]]"
@@ -28,7 +34,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 网络安全与伦理
 
@@ -60,6 +66,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：安全意识强；防护知识不足
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 术语、规则、结构和安全规范等边界明确的任务可形成结构化证据；涉及真实情境取舍、数字伦理或综合方案判断时，应保留人工复核。
 
 ## 追踪说明
 

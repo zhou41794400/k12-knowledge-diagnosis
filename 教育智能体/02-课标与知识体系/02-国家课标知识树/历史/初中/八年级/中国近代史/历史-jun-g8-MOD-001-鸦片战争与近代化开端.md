@@ -16,12 +16,18 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 鸦片战争与近代化开端
+  - 鸦片战争
+  - 近代化开端
+  - 中国近代史
+assessment_mode: material_interpretation
 prerequisites: []
 related_points: []
 evidence_type: []
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 
 # 鸦片战争与近代化开端
@@ -55,6 +61,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：史实准确
 > - 负向证据：条约内容混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 史料信息提取与出处判断可记录分步证据；史料立场、因果解释和历史结论必须依据材料逐项评价，不能只用最终答案更新掌握度。
 
 ## 追踪说明
 

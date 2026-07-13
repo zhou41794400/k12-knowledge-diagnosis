@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - be动词基本用法
+  - be动词
+  - 用法
+  - 英语语法结构
+assessment_mode: language_form_rule
 prerequisites:
   - "[[英语/小学/三年级/阅读/英语-pri-g3-READ-001-简单句子阅读]]"
   - "[[英语/小学/三年级/语音/英语-pri-g3-PHO-001-字母发音与简单拼读]]"
@@ -29,7 +35,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # be动词基本用法
 
@@ -61,6 +67,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：be动词选用正确；主谓搭配错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 词形、词义、拼读和语法结构等答案边界明确的任务可形成结构化证据；真实语境中的得体性、流利度和综合表达仍需单独评价。
 
 ## 追踪说明
 

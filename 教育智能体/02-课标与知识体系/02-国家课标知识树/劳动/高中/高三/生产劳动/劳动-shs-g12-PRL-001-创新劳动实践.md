@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 创新劳动实践
+  - 创新劳动
+  - 生产劳动实践
+  - 生产劳动评价
+assessment_mode: labor_product_rubric
 prerequisites:
   - "[[劳动/高中/高一/生产劳动/劳动-shs-g10-PRL-001-工农业生产体验]]"
 related_points:
@@ -24,9 +30,9 @@ related_points:
   - "[[劳动/初中/七年级/生产劳动/劳动-jun-g7-PRL-001-种植与养殖]]"
   - "[[劳动/初中/九年级/生产劳动/劳动-jun-g9-PRL-001-综合生产实践]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 创新劳动实践
 
@@ -58,6 +64,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：创新有效；方案可行性不足
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 综合评价操作过程、安全规范、工具材料使用、成果质量、实用性和改进说明；不得仅凭成品外观、一次结果或单题对错直接判定劳动能力已经掌握。
 
 ## 追踪说明
 

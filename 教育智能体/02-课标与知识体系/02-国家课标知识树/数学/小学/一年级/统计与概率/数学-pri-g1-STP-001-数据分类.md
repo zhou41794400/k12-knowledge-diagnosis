@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+assessment_mode: data_reasoning_mixed
+matching_keywords:
+  - 分类整理
+  - 分类标准
+  - 分类计数
 prerequisites:
   - "[[数学/小学/一年级/图形与几何/数学-pri-g1-GG-002-位置与顺序]]"
   - "[[数学/小学/一年级/数与代数/数学-pri-g1-NS-004-20以内退位减法]]"
@@ -28,7 +33,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 数据分类
 
@@ -62,11 +67,21 @@ updated: 2026-06-10
 > - 正向证据：正向证据：分类清楚
 > - 负向证据：负向证据：分类标准不一致
 
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 读图、计算和明确概率结论可形成规则证据；抽样合理性、统计解释和决策建议必须保留推断过程。
+
 ## 追踪说明
 
 > [!info] 追踪方式
 > - 当前追踪方式：`RULE`
 > - 原因：规则型技能，适合基于规则的追踪
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 将苹果、鸭梨、红枣等图片按种类或颜色分类，记录每类数量，并说明采用的分类标准。
 
 ## 课标依据
 

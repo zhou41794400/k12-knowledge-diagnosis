@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 理解自然段主要意思
+  - 阅读理解与鉴赏
+  - 理解自然段主要意思评价
+assessment_mode: reading_mixed
 prerequisites:
   - "[[语文/小学/二年级/阅读与鉴赏/语文-小学-二年级-READ-002-理解短文中的人物和事件]]"
   - "[[语文/小学/三年级/阅读与鉴赏/三年级语文-阅读与鉴赏]]"
@@ -29,7 +34,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 理解自然段主要意思
 
@@ -64,6 +69,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：段意选择准确、简答抓住主旨
 > - 负向证据：只摘抄细节、无法区分主次信息
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 信息提取、文意判断等客观任务可作为规则证据；主旨阐释、人物评价和审美鉴赏等开放题应按题目层级量规评分，不能只用最终对错更新掌握度。
 
 ## 追踪说明
 

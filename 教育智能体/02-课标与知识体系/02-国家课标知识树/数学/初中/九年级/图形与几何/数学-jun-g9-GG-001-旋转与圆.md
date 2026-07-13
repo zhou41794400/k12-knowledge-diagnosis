@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+assessment_mode: reasoning_mixed
+matching_keywords:
+  - 图形旋转
+  - 圆的性质
+  - 圆周角
 prerequisites:
   - "[[数学/初中/八年级/图形与几何/数学-jun-g8-GG-004-一次函数]]"
   - "[[数学/初中/九年级/数与代数/数学-jun-g9-NS-002-反比例函数]]"
@@ -28,7 +33,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 旋转与圆
 
@@ -61,11 +66,21 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：推理正确；定理应用错误
 
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 基础识图与结论判断可形成规则证据；推理、证明、参数讨论和多步综合必须按过程分层评价。
+
 ## 追踪说明
 
 > [!info] 追踪方式
 > - 当前追踪方式：`MIXED`
 > - 原因：需综合判断
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 分析风车叶片旋转或圆形广场设计图，解决旋转中心、圆心角和圆周角问题。
 
 ## 课标依据
 

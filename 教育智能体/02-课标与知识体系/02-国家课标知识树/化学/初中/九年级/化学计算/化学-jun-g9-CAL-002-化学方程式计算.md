@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 化学方程式计算
+  - 化学计算
+  - 化学方程式计算核心知识
+  - 数量关系与规范计算
+assessment_mode: quantitative_calculation
 prerequisites:
   - "[[化学/初中/九年级/化学计算/化学-jun-g9-CAL-001-化学式计算]]"
   - "[[化学/初中/九年级/元素与化合物/化学-jun-g9-ELE-005-酸碱盐]]"
@@ -29,7 +35,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 化学方程式计算
 
@@ -61,6 +67,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：计算准确；方程式配平错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 应同时核验化学式或方程式、数量关系、单位、计算步骤和结果合理性；只答对最终数值不足以证明计算链条已经掌握。
 
 ## 追踪说明
 

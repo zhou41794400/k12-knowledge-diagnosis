@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 岩石与矿物
+  - 岩石
+  - 矿物
+  - 地球宇宙观察
+assessment_mode: concept_observation
 prerequisites:
   - "[[科学/小学/三年级/地球与宇宙/科学-pri-g3-GEO-001-天气与季节]]"
   - "[[科学/小学/四年级/生命科学/科学-pri-g4-BIO-002-生物多样性与栖息地]]"
@@ -28,7 +34,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 岩石与矿物
 
@@ -61,6 +67,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：识别正确
 > - 负向证据：岩石类型混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 概念辨识、特征比较和连续观察记录可形成结构化证据；仅凭一次观察或单道选择题，不得直接认定学生已能在新情境中稳定运用概念。
 
 ## 追踪说明
 

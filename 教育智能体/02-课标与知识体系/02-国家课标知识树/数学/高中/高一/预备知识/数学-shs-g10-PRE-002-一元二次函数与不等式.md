@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+assessment_mode: calculation_rule
+matching_keywords:
+  - 一元二次不等式
+  - 二次函数与方程
+  - 不等式解集
 prerequisites:
   - "[[数学/高中/高一/预备知识/数学-shs-g10-PRE-001-集合与逻辑]]"
 related_points:
@@ -25,7 +30,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 一元二次函数与不等式
 
@@ -59,11 +64,21 @@ updated: 2026-06-10
 > - 正向证据：解法正确
 > - 负向证据：三个二次关系混淆
 
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 计算结果、步骤和概念辨析可形成结构化证据；开放解释、方法比较和真实建模不能只按最终答案判定。
+
 ## 追踪说明
 
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 根据场地面积或收益限制建立一元二次不等式，求满足条件的参数范围。
 
 ## 课标依据
 

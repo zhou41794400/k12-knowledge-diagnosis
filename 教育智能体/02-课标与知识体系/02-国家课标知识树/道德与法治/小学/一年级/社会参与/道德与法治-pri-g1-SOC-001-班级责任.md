@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 班级责任
+  - 社会参与
+  - 道德法治情境分析
+  - 班级责任考查
+assessment_mode: material_argumentation
 prerequisites:
   - "[[道德与法治/小学/一年级/国情教育/道德与法治-pri-g1-NAT-001-认识国旗国歌]]"
   - "[[道德与法治/小学/一年级/法治教育/道德与法治-pri-g1-LAW-001-规则意识初步]]"
@@ -28,9 +34,9 @@ related_points:
   - "[[道德与法治/小学/五年级/社会参与/道德与法治-pri-g5-SOC-001-消费者权益保护]]"
   - "[[道德与法治/小学/六年级/社会参与/道德与法治-pri-g6-SOC-001-社会责任感]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 班级责任
 
@@ -62,6 +68,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：责任意识表现；推卸责任
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 必须评价观点、材料依据、规则调用和论证结构，由人工复核后形成证据；只出现结论关键词或立场正确不能直接判定掌握。
 
 ## 追踪说明
 

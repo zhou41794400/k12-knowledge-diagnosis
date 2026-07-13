@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 生产活动与地域联系
+  - 生产活动
+  - 地域联系
+  - 人文地理
+assessment_mode: material_interpretation
 prerequisites:
   - "[[地理/高中/高二/人文地理/地理-shs-g11-HUM-001-人口与聚落]]"
 related_points:
@@ -24,7 +30,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 生产活动与地域联系
 
@@ -57,6 +63,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：分析合理
 > - 负向证据：区位因素混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 地图、统计图表、遥感影像和文字材料的信息提取可记录分步证据；关系解释必须标明材料依据，不能只按结论关键词判定。
 
 ## 追踪说明
 

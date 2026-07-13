@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 信息系统的安全
+  - 信息系统
+  - 安全
+  - 信息系统与安全
+assessment_mode: knowledge_rule
 prerequisites:
   - "[[信息科技/高中/高一/信息系统/信息科技-shs-g10-SYS-001-信息系统基础]]"
   - "[[信息科技/高中/高二/数据与计算/信息科技-shs-g11-DAT-001-数据处理与分析]]"
@@ -25,7 +31,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 信息系统的安全
 
@@ -58,6 +64,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：理解正确
 > - 负向证据：加密概念混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 术语、规则、结构和安全规范等边界明确的任务可形成结构化证据；涉及真实情境取舍、数字伦理或综合方案判断时，应保留人工复核。
 
 ## 追踪说明
 

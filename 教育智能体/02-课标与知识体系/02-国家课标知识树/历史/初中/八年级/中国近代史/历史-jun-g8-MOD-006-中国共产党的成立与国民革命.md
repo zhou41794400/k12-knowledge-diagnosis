@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 中国共产党的成立与国民革命
+  - 中国共产党
+  - 成立
+  - 国民革命
+assessment_mode: material_interpretation
 prerequisites:
   - "[[历史/初中/八年级/中国近代史/历史-jun-g8-MOD-001-鸦片战争与近代化开端]]"
   - "[[历史/初中/八年级/中国近代史/历史-jun-g8-MOD-002-太平天国运动]]"
@@ -26,7 +32,7 @@ related_points: []
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 中国共产党的成立与国民革命
 
@@ -59,6 +65,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：史实正确
 > - 负向证据：历史分期混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 史料信息提取与出处判断可记录分步证据；史料立场、因果解释和历史结论必须依据材料逐项评价，不能只用最终答案更新掌握度。
 
 ## 追踪说明
 

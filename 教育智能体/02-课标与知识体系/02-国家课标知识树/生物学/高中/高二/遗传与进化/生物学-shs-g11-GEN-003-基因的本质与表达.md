@@ -16,6 +16,13 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 基因的本质与表达
+  - 遗传与进化
+  - 基因的本质与表达核心知识
+  - 核心概念与规律辨析
+  - 基因
+assessment_mode: concept_rule
 prerequisites:
   - "[[生物学/初中/八年级/遗传与进化/生物学-jun-g8-GEN-002-生物的进化]]"
   - "[[生物学/高中/高二/遗传与进化/生物学-shs-g11-GEN-001-遗传的细胞基础]]"
@@ -27,7 +34,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 基因的本质与表达
 
@@ -60,6 +67,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：理解正确
 > - 负向证据：复制转录混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 结构名称、功能对应、生命过程和基本机制等边界明确的任务可形成结构化证据；跨层级机制解释不能仅凭术语命中或最终结论更新掌握度。
 
 ## 追踪说明
 

@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 资源跨区域调配
+  - 区域发展
+  - 地理位置与区域特征
+  - 资源跨区域调配考查
+assessment_mode: spatiotemporal_synthesis
 prerequisites:
   - "[[地理/高中/高二/区域发展/地理-shs-g11-REG-001-区域与区域发展]]"
   - "[[地理/高中/高二/人文地理/地理-shs-g11-HUM-003-人地关系与可持续发展]]"
@@ -26,7 +32,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 资源跨区域调配
 
@@ -58,6 +64,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：分析全面；影响评价遗漏
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 应综合位置、尺度、过程、时间变化和人地关系评价推理链；区域比较与成因分析需按步骤取证，单项数据正确不能直接等同于综合能力达标。
 
 ## 追踪说明
 

@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+assessment_mode: reasoning_mixed
+matching_keywords:
+  - 函数概念
+  - 函数单调性
+  - 函数奇偶性
 prerequisites:
   - "[[数学/高中/高一/预备知识/数学-shs-g10-PRE-002-一元二次函数与不等式]]"
 related_points:
@@ -27,7 +32,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 函数的概念与性质
 
@@ -60,11 +65,21 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：理解正确；单调性判断错误
 
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 基础识图与结论判断可形成规则证据；推理、证明、参数讨论和多步综合必须按过程分层评价。
+
 ## 追踪说明
 
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 用气温、客流或蓄水量随时间变化的数据定义函数并分析基本性质。
 
 ## 课标依据
 

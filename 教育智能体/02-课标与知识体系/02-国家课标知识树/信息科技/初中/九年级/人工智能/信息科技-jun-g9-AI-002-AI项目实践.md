@@ -16,15 +16,21 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - AI项目实践
+  - AI项目
+  - 人工智能原理与应用
+  - 项目过程与作品量规
+assessment_mode: project_artifact
 prerequisites:
   - "[[信息科技/初中/八年级/人工智能/信息科技-jun-g8-AI-001-机器学习初步]]"
   - "[[信息科技/初中/九年级/人工智能/信息科技-jun-g9-AI-001-深度学习与神经网络]]"
 related_points:
   - "[[信息科技/初中/九年级/网络与安全/信息科技-jun-g9-NET-001-网络安全与伦理]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # AI项目实践
 
@@ -56,6 +62,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：项目完成；效果不理想
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 项目作品应按需求理解、方案设计、实现过程、功能效果、表达规范和迭代反思等维度评价；必须由人工依据量规复核，不得用单一总分替代知识点证据。
 
 ## 追踪说明
 

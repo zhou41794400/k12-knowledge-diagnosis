@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: RULE
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 多源信息整合
+  - 信息整理与探究
+  - 多源信息整合评价
+assessment_mode: rubric_human_review
 prerequisites:
   - "[[语文/小学/四年级/梳理与探究/语文-pri-g4-INQ-002-简单研究报告]]"
   - "[[语文/小学/五年级/表达与交流/语文-pri-g5-EXP-003-演讲稿写作]]"
@@ -28,9 +33,9 @@ related_points:
   - "[[语文/小学/五年级/表达与交流/语文-pri-g5-EXP-001-有详有略的记叙]]"
   - "[[语文/小学/五年级/表达与交流/语文-pri-g5-EXP-002-说明性写作]]"
 evidence_type:
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 多源信息整合
 
@@ -63,6 +68,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：正向证据：整合合理
 > - 负向证据：负向证据：信息矛盾未处理
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 采用内容、结构、语言、证据和交流效果等维度量规，由人工确认后形成证据；单次总分不得直接等同于某个知识点已掌握。
 
 ## 追踪说明
 

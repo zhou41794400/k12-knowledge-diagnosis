@@ -16,6 +16,13 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 金属与金属材料
+  - 元素与化合物
+  - 金属与金属材料核心知识
+  - 核心概念与规律辨析
+  - 金属
+assessment_mode: concept_rule
 prerequisites:
   - "[[化学/初中/九年级/元素与化合物/化学-jun-g9-ELE-001-空气与氧气]]"
   - "[[化学/初中/九年级/元素与化合物/化学-jun-g9-ELE-002-水和溶液]]"
@@ -28,7 +35,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 金属与金属材料
 
@@ -60,6 +67,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：应用正确；活动性顺序记忆错误
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 概念、符号、物质性质和反应规律等边界明确的任务可形成结构化证据；宏观现象、微观解释与符号表达应相互印证，开放解释不能只按结论关键词判定。
 
 ## 追踪说明
 

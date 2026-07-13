@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+assessment_mode: data_reasoning_mixed
+matching_keywords:
+  - 概率统计综合
+  - 概率分布
+  - 回归分析
 prerequisites:
   - "[[数学/高中/高二/概率与统计/数学-shs-g11-PRS-001-概率与统计基础]]"
   - "[[数学/高中/高三/几何与代数/数学-shs-g12-GEO-001-解析几何综合]]"
@@ -25,7 +30,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 概率统计综合
 
@@ -58,11 +63,21 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：分析正确；概率模型选择错误
 
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 读图、计算和明确概率结论可形成规则证据；抽样合理性、统计解释和决策建议必须保留推断过程。
+
 ## 追踪说明
 
 > [!info] 追踪方式
 > - 当前追踪方式：`MIXED`
 > - 原因：综合判断
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 分析农业试验或质量抽检数据，综合使用概率分布、期望和统计推断。
 
 ## 课标依据
 

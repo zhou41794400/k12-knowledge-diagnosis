@@ -16,12 +16,17 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 磁铁
+  - 物质现象与规律
+  - 实验探究与过程证据
+assessment_mode: experimental_inquiry
 prerequisites: []
 related_points: []
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 
 # 磁铁
@@ -55,6 +60,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：观察描述准确
 > - 负向证据：概念混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 实验探究须核对问题提出、变量控制、操作过程、数据记录、结论和安全规范；自动检查只能辅助判断，必须经人工复核后才能更新掌握证据。
 
 ## 追踪说明
 

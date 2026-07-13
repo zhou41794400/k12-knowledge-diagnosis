@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 短文细节信息提取
+  - 英语阅读理解
+  - 短文细节信息提取题型
+assessment_mode: reading_mixed
 prerequisites:
   - "[[英语/初中/七年级/阅读/英语-初中-七年级-READ-002-短文主旨判断]]"
   - "[[英语/初中/八年级/阅读/八年级英语-阅读]]"
@@ -31,7 +36,7 @@ related_points:
 evidence_type:
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 短文细节信息提取
 
@@ -65,6 +70,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：定位准确、回答正确
 > - 负向证据：漏看细节、误判信息
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 事实信息定位和明确推断可形成规则证据；篇章结构、作者意图和开放回应应按题目层级评价，不能只用整篇阅读总分更新单个知识点。
 
 ## 追踪说明
 

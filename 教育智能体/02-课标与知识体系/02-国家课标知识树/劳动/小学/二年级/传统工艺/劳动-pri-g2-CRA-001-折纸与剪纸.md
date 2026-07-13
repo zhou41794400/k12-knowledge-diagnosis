@@ -16,13 +16,19 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 折纸与剪纸
+  - 折纸
+  - 剪纸
+  - 传统工艺作品
+assessment_mode: labor_product_rubric
 prerequisites:
   - "[[劳动/小学/二年级/日常生活劳动/劳动-pri-g2-DLL-002-简单家务]]"
 related_points: []
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 折纸与剪纸
 
@@ -54,6 +60,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：手工完成；操作不规范
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 综合评价操作过程、安全规范、工具材料使用、成果质量、实用性和改进说明；不得仅凭成品外观、一次结果或单题对错直接判定劳动能力已经掌握。
 
 ## 追踪说明
 

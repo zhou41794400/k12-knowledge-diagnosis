@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 社会责任感
+  - 社会参与
+  - 道德法治情境分析
+  - 社会责任感考查
+assessment_mode: material_argumentation
 prerequisites:
   - "[[道德与法治/小学/五年级/社会参与/道德与法治-pri-g5-SOC-001-消费者权益保护]]"
   - "[[道德与法治/小学/六年级/国情教育/道德与法治-pri-g6-NAT-001-中国在世界中的地位]]"
@@ -29,9 +35,9 @@ related_points:
   - "[[道德与法治/小学/四年级/社会参与/道德与法治-pri-g4-SOC-001-社区服务与参与]]"
   - "[[道德与法治/初中/八年级/社会参与/道德与法治-jun-g8-SOC-001-服务社会与公益]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 社会责任感
 
@@ -63,6 +69,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：参与积极性；漠不关心
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 必须评价观点、材料依据、规则调用和论证结构，由人工复核后形成证据；只出现结论关键词或立场正确不能直接判定掌握。
 
 ## 追踪说明
 

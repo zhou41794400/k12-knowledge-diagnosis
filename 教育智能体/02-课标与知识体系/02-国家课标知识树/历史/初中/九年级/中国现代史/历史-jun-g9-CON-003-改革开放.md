@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 改革开放
+  - 中国现代史
+  - 历史事件与阶段特征
+  - 改革开放考查
+assessment_mode: material_interpretation
 prerequisites:
   - "[[历史/初中/九年级/中国现代史/历史-jun-g9-CON-001-新中国的成立与巩固]]"
   - "[[历史/初中/九年级/中国现代史/历史-jun-g9-CON-002-社会主义建设]]"
@@ -24,7 +30,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 改革开放
 
@@ -57,6 +63,11 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：理解有深度
 > - 负向证据：改革内容混淆
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 史料信息提取与出处判断可记录分步证据；史料立场、因果解释和历史结论必须依据材料逐项评价，不能只用最终答案更新掌握度。
 
 ## 追踪说明
 

@@ -16,12 +16,18 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 综合艺术展演
+  - 艺术展演
+  - 艺术展演过程
+  - 艺术展演评价
+assessment_mode: art_performance_rubric
 prerequisites: []
 related_points: []
 evidence_type: []
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 
 # 综合艺术展演
@@ -54,6 +60,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：参与积极；组织能力弱
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 依据感知理解、技能运用、表现完整性、合作参与和反思改进等维度量规评价，并保留过程记录；单题对错不得直接判定艺术表现能力已经掌握。
 
 ## 追踪说明
 

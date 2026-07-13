@@ -16,15 +16,21 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 中外名作欣赏
+  - 艺术欣赏与阐释
+  - 艺术欣赏评价
+  - 中外名作欣赏任务
+assessment_mode: art_appreciation_rubric
 prerequisites:
   - "[[艺术/小学/一年级/艺术欣赏/艺术-pri-g1-APR-001-色彩感知]]"
   - "[[艺术/小学/四年级/造型·美术/艺术-pri-g4-ART-001-构图基本原则]]"
 related_points:
   - "[[艺术/小学/六年级/艺术欣赏/艺术-pri-g6-APR-001-艺术流派认知]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 中外名作欣赏
 
@@ -56,6 +62,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：分析合理；理解表面
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 事实性识别只作为辅助证据，重点依据观察描述、审美阐释、比较分析和证据表达等维度量规；开放性艺术理解须经人工复核，不能以单题对错判定掌握。
 
 ## 追踪说明
 

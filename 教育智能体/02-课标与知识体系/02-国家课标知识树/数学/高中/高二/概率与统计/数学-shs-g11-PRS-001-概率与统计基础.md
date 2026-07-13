@@ -16,6 +16,11 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: BKT
 mastery_granularity: knowledge_point
+assessment_mode: data_reasoning_mixed
+matching_keywords:
+  - 条件概率
+  - 随机变量
+  - 统计推断
 prerequisites:
   - "[[数学/高中/高二/几何与代数/数学-shs-g11-GEO-003-圆锥曲线]]"
   - "[[数学/高中/高二/函数/数学-shs-g11-FNC-002-数列]]"
@@ -26,7 +31,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 概率与统计基础
 
@@ -59,11 +64,21 @@ updated: 2026-06-10
 > [!important] 证据规则
 > - 正向证据：计算正确；分布列错误
 
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 读图、计算和明确概率结论可形成规则证据；抽样合理性、统计解释和决策建议必须保留推断过程。
+
 ## 追踪说明
 
 > [!info] 追踪方式
 > - 当前追踪方式：`BKT`
 > - 原因：离散技能
+
+## 河北生活化例题方向
+
+> [!example] 例题方向
+> 根据产品抽检或调查数据计算条件概率，并用样本估计总体特征。
 
 ## 课标依据
 

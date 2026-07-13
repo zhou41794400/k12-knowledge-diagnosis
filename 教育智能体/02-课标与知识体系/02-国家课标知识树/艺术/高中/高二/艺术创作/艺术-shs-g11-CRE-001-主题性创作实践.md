@@ -16,12 +16,18 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 主题性创作实践
+  - 主题性创作
+  - 艺术主题创作
+  - 艺术创作评价
+assessment_mode: artwork_rubric
 prerequisites: []
 related_points: []
 evidence_type: []
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 
 # 主题性创作实践
@@ -54,6 +60,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：作品完整；技法表现不足
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 结合创作过程、材料与技法、主题表达、作品完成度和自评互评等证据进行作品量规评价；不得仅凭知识题对错或单件作品总分直接判定掌握。
 
 ## 追踪说明
 

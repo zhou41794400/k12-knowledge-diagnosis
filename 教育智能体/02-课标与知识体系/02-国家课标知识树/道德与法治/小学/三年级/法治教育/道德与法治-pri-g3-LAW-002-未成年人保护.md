@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 未成年人保护
+  - 法治教育
+  - 道德法治情境分析
+  - 未成年人保护考查
+assessment_mode: concept_rule
 prerequisites:
   - "[[道德与法治/小学/二年级/法治教育/道德与法治-pri-g2-LAW-001-交通规则]]"
   - "[[道德与法治/小学/三年级/法治教育/道德与法治-pri-g3-LAW-001-法律的基本认识]]"
@@ -30,7 +36,7 @@ related_points:
 evidence_type: "[]"
 review_required: false
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 未成年人保护
 
@@ -62,6 +68,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：自我保护意识；安全防范薄弱
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 概念含义、法律规范和权利义务边界明确的任务可形成结构化证据；会复述规则不等同于能够在真实情境中作出合理选择。
 
 ## 追踪说明
 

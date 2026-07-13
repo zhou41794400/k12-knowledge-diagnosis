@@ -16,6 +16,12 @@ standard_version: 2022
 source_type: 国家课标
 tracking_mode: MIXED
 mastery_granularity: knowledge_point
+matching_keywords:
+  - 互联网与信息获取
+  - 互联网
+  - 信息获取
+  - 网络安全与数字责任
+assessment_mode: operation_task
 prerequisites:
   - "[[信息科技/小学/五年级/网络与安全/信息科技-pri-g5-NET-001-网络安全基础]]"
   - "[[信息科技/初中/七年级/算法与编程/信息科技-jun-g7-ALG-002-数据结构基础]]"
@@ -25,9 +31,9 @@ related_points:
   - "[[信息科技/小学/四年级/网络与安全/信息科技-pri-g4-NET-001-浏览器基本使用]]"
   - "[[信息科技/初中/九年级/网络与安全/信息科技-jun-g9-NET-001-网络安全与伦理]]"
 evidence_type: "[]"
-review_required: false
+review_required: true
 status: draft
-updated: 2026-06-10
+updated: 2026-07-13
 ---
 # 互联网与信息获取
 
@@ -59,6 +65,11 @@ updated: 2026-06-10
 
 > [!important] 证据规则
 > - 正向证据：检索高效；信息辨伪不足
+
+## 学科评价边界
+
+> [!important] 证据使用边界
+> 操作任务须同时核对步骤、工具使用、过程记录和结果有效性；仅凭最终文件或单次自动判定不能确认掌握，必须由人工复核。
 
 ## 追踪说明
 
